@@ -31,6 +31,7 @@ struct CityDescriptionView: View {
             Text(currentCity.cityDescription)
                 .padding()
         }
+        .background(Image("background-image"))
         
         .navigationTitle(currentCity.cityName)
         .navigationBarBackButtonHidden(true)
