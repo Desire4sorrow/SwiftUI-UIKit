@@ -9,10 +9,20 @@ import SwiftUI
 
 struct CityDescriptionView: View {
     
+    @Environment(\.presentationMode) var presentationMode
     let currentCity: City
     
+    var btnBack : some View {
+        Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+        }) {
+            HStack {
+                Text("Назад")
+            }
+        }
+    }
+    
     var body: some View {
-        
         VStack {
             Image(currentCity.cityImage)
                 .resizable()
@@ -21,6 +31,9 @@ struct CityDescriptionView: View {
             Text(currentCity.cityDescription)
                 .padding()
         }
+        
         .navigationTitle(currentCity.cityName)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: btnBack)
     }
 }
