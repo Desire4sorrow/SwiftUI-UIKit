@@ -9,17 +9,28 @@ import SwiftUI
 
 struct CityDescriptionView: View {
     @Environment(\.presentationMode) var presentationMode
+    @State private var needShowAlert = false
+    
     let currentCity: City
     
     var cityURL: String {
         currentCity.cityURL
     }
     
-    var btnBack : some View {
-        Button(action: {
-            self.presentationMode.wrappedValue.dismiss()
-        }) {
+    var btnBack: some View {
+        Button {
+            presentationMode.wrappedValue.dismiss()
+        } label: {
             Text("Назад")
+        }
+    }
+    
+    var btnShare: some View {
+        Button(action: actionSheet) {
+            Image(systemName: "square.and.arrow.up")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 25, height: 25)
         }
     }
     
@@ -43,6 +54,12 @@ struct CityDescriptionView: View {
         .background(Image("background-image"))
         .navigationTitle(currentCity.cityName)
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: btnBack)
+        .navigationBarItems(leading: btnBack, trailing: btnShare)
+    }
+    
+    func actionSheet() {
+        guard let urlShare = URL(string: "https://developer.apple.com/xcode/swiftui/") else { return }
+        let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
+        UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
     }
 }

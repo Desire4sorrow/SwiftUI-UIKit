@@ -26,6 +26,12 @@ final class MainScreenViewController: UIViewController {
         super.viewDidLoad()
         
         configureCityTableView()
+        prepareNavigationBar()
+    }
+    
+    func prepareNavigationBar() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     @IBSegueAction func toCityInfoView(_ coder: NSCoder) -> UIViewController? {

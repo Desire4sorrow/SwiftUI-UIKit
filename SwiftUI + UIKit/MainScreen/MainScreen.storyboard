@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,28 +21,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дорожное пространство" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrt-Mq-bPX">
-                                <rect key="frame" x="13.5" y="120" width="348" height="28"/>
+                                <rect key="frame" x="13.5" y="70" width="348" height="28"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="27"/>
                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nD6-z2-mA7">
-                                <rect key="frame" x="136" y="168" width="103" height="20"/>
+                                <rect key="frame" x="136" y="128" width="103" height="20"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCC-tD-WLs">
-                                <rect key="frame" x="24" y="213" width="327" height="150"/>
+                                <rect key="frame" x="24" y="173" width="327" height="170"/>
                                 <color key="backgroundColor" red="1" green="0.78052085950758032" blue="0.82337201857409392" alpha="0.29678061782129556" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="1" green="0.78052085950758032" blue="0.82337201857409392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="EDo-Nk-d2b"/>
+                                    <constraint firstAttribute="height" constant="170" id="EDo-Nk-d2b"/>
                                 </constraints>
                             </tableView>
                             <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSs-qD-Gl5">
-                                <rect key="frame" x="10" y="453" width="355" height="190"/>
+                                <rect key="frame" x="10" y="411" width="355" height="232"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="16"/>
@@ -52,7 +53,7 @@
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Информация о городе" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bm-lr-Tu2">
-                                <rect key="frame" x="116.5" y="409" width="142.5" height="20"/>
+                                <rect key="frame" x="116.5" y="367" width="142.5" height="20"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -61,15 +62,15 @@
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nD6-z2-mA7" firstAttribute="top" secondItem="Hrt-Mq-bPX" secondAttribute="bottom" constant="20" id="DMY-br-VAq"/>
+                            <constraint firstItem="nD6-z2-mA7" firstAttribute="top" secondItem="Hrt-Mq-bPX" secondAttribute="bottom" constant="30" id="DMY-br-VAq"/>
                             <constraint firstItem="cSs-qD-Gl5" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="10" id="EL0-Km-2RB"/>
                             <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="CST-Xm-WMt" secondAttribute="trailing" id="FzR-eW-3P3"/>
                             <constraint firstItem="CST-Xm-WMt" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" id="KIe-GT-BBu"/>
                             <constraint firstAttribute="bottom" secondItem="cSs-qD-Gl5" secondAttribute="bottom" constant="24" id="OqN-D5-GPE"/>
                             <constraint firstItem="Hrt-Mq-bPX" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="Pud-uG-sI3"/>
-                            <constraint firstItem="Hrt-Mq-bPX" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" constant="120" id="QeK-GG-kca"/>
+                            <constraint firstItem="Hrt-Mq-bPX" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" constant="70" id="QeK-GG-kca"/>
                             <constraint firstItem="vCC-tD-WLs" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="24" id="Ujz-KX-uUc"/>
-                            <constraint firstItem="3bm-lr-Tu2" firstAttribute="top" secondItem="vCC-tD-WLs" secondAttribute="bottom" constant="46" id="W25-JJ-T6N"/>
+                            <constraint firstItem="3bm-lr-Tu2" firstAttribute="top" secondItem="vCC-tD-WLs" secondAttribute="bottom" constant="24" id="W25-JJ-T6N"/>
                             <constraint firstItem="nD6-z2-mA7" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="WQX-XG-nzC"/>
                             <constraint firstItem="CST-Xm-WMt" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="aPE-wr-ZWg"/>
                             <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="cSs-qD-Gl5" secondAttribute="trailing" constant="10" id="eq9-8W-aLJ"/>
