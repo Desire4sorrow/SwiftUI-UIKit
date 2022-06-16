@@ -17,7 +17,7 @@ struct CityInfoView: View {
             Image(viewModel.currentCity.cityImage)
                 .resizable()
             NavigationLink("Подробнее") {
-                CityDescriptionView()
+                CityDescriptionView(currentCity: viewModel.currentCity)
             }
             .padding()
             .font(Font.title3)

@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct CityDescriptionView: View {
+    
+    let currentCity: City
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct CityDescriptionView_Previews: PreviewProvider {
-    static var previews: some View {
-        CityDescriptionView()
+        
+        VStack {
+            Image(currentCity.cityImage)
+                .resizable()
+                .frame(height: 300)
+                .padding()
+            Text(currentCity.cityDescription)
+                .padding()
+        }
+        .navigationTitle(currentCity.cityName)
     }
 }
