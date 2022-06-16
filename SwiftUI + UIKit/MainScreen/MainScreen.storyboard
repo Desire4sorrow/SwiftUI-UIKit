@@ -42,7 +42,7 @@
                                 </constraints>
                             </tableView>
                             <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSs-qD-Gl5">
-                                <rect key="frame" x="10" y="411" width="355" height="232"/>
+                                <rect key="frame" x="10" y="411" width="355" height="216"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="16"/>
@@ -66,7 +66,7 @@
                             <constraint firstItem="cSs-qD-Gl5" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="10" id="EL0-Km-2RB"/>
                             <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="CST-Xm-WMt" secondAttribute="trailing" id="FzR-eW-3P3"/>
                             <constraint firstItem="CST-Xm-WMt" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" id="KIe-GT-BBu"/>
-                            <constraint firstAttribute="bottom" secondItem="cSs-qD-Gl5" secondAttribute="bottom" constant="24" id="OqN-D5-GPE"/>
+                            <constraint firstAttribute="bottom" secondItem="cSs-qD-Gl5" secondAttribute="bottom" constant="40" id="OqN-D5-GPE"/>
                             <constraint firstItem="Hrt-Mq-bPX" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="Pud-uG-sI3"/>
                             <constraint firstItem="Hrt-Mq-bPX" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" constant="70" id="QeK-GG-kca"/>
                             <constraint firstItem="vCC-tD-WLs" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="24" id="Ujz-KX-uUc"/>

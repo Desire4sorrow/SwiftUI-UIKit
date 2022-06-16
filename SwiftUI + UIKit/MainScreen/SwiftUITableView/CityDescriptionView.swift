@@ -27,10 +27,7 @@ struct CityDescriptionView: View {
     
     var btnShare: some View {
         Button(action: actionSheet) {
-            Image(systemName: "square.and.arrow.up")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 25, height: 25)
+            Text("Поделиться")
         }
     }
     

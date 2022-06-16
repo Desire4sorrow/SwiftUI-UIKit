@@ -19,7 +19,7 @@ struct CityInfoView: View {
             NavigationLink("Подробнее") {
                 CityDescriptionView(currentCity: viewModel.currentCity)
             }
-            .padding(10)
+            .padding(20)
             .foregroundColor(.pink)
             .font(.callout)
         }
