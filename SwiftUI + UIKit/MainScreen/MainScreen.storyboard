@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Screen View Controller-->
+        <scene sceneID="XJ1-QA-Nrj">
+            <objects>
+                <viewController storyboardIdentifier="MainScreenViewController" id="zIc-eW-6fX" customClass="MainScreenViewController" customModule="SwiftUI___UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z2g-4m-atm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-image" translatesAutoresizingMaskIntoConstraints="NO" id="CST-Xm-WMt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дорожное пространство" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrt-Mq-bPX">
+                                <rect key="frame" x="13.5" y="120" width="348" height="28"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="27"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nD6-z2-mA7">
+                                <rect key="frame" x="136" y="168" width="103" height="20"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCC-tD-WLs">
+                                <rect key="frame" x="24" y="213" width="327" height="150"/>
+                                <color key="backgroundColor" red="1" green="0.78052085950758032" blue="0.82337201857409392" alpha="0.29678061782129556" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="0.78052085950758032" blue="0.82337201857409392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="EDo-Nk-d2b"/>
+                                </constraints>
+                            </tableView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSs-qD-Gl5">
+                                <rect key="frame" x="10" y="453" width="355" height="190"/>
+                                <connections>
+                                    <segue destination="TM9-z1-Ksz" kind="embed" identifier="CityInfoVIew" destinationCreationSelector="toCityInfoView:" id="bo6-hE-Gcm"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Информация о городе" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bm-lr-Tu2">
+                                <rect key="frame" x="116.5" y="409" width="142.5" height="20"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nD6-z2-mA7" firstAttribute="top" secondItem="Hrt-Mq-bPX" secondAttribute="bottom" constant="20" id="DMY-br-VAq"/>
+                            <constraint firstItem="cSs-qD-Gl5" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="10" id="EL0-Km-2RB"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="CST-Xm-WMt" secondAttribute="trailing" id="FzR-eW-3P3"/>
+                            <constraint firstItem="CST-Xm-WMt" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" id="KIe-GT-BBu"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="bottom" secondItem="cSs-qD-Gl5" secondAttribute="bottom" constant="24" id="OqN-D5-GPE"/>
+                            <constraint firstItem="Hrt-Mq-bPX" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="Pud-uG-sI3"/>
+                            <constraint firstItem="Hrt-Mq-bPX" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" constant="120" id="QeK-GG-kca"/>
+                            <constraint firstItem="vCC-tD-WLs" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="24" id="Ujz-KX-uUc"/>
+                            <constraint firstItem="3bm-lr-Tu2" firstAttribute="top" secondItem="vCC-tD-WLs" secondAttribute="bottom" constant="46" id="W25-JJ-T6N"/>
+                            <constraint firstItem="nD6-z2-mA7" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="WQX-XG-nzC"/>
+                            <constraint firstItem="CST-Xm-WMt" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="aPE-wr-ZWg"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="cSs-qD-Gl5" secondAttribute="trailing" constant="10" id="eq9-8W-aLJ"/>
+                            <constraint firstItem="vCC-tD-WLs" firstAttribute="top" secondItem="nD6-z2-mA7" secondAttribute="bottom" constant="25" id="kaW-JH-Pj0"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="vCC-tD-WLs" secondAttribute="trailing" constant="24" id="nRK-Ju-5RF"/>
+                            <constraint firstAttribute="bottom" secondItem="CST-Xm-WMt" secondAttribute="bottom" id="tn7-W6-LQ7"/>
+                            <constraint firstItem="3bm-lr-Tu2" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="x0E-4z-XXq"/>
+                            <constraint firstItem="cSs-qD-Gl5" firstAttribute="top" secondItem="3bm-lr-Tu2" secondAttribute="bottom" constant="24" id="zy7-is-4rq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityTableView" destination="vCC-tD-WLs" id="JZQ-8h-Q1w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="303"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="99y-vn-Rzn">
+            <objects>
+                <hostingController id="TM9-z1-Ksz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fl-qW-5FF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1306" y="331"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-image" width="640" height="1136"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
