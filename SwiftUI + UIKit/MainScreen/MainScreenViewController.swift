@@ -29,8 +29,9 @@ final class MainScreenViewController: UIViewController {
     }
     
     @IBSegueAction func toCityInfoView(_ coder: NSCoder) -> UIViewController? {
-        self.viewModel = CityViewModel.init(currectCity: city)
-        return UIHostingController(coder: coder, rootView: CityInfoView(viewModel: viewModel!))
+        viewModel = CityViewModel.init(currectCity: city)
+        let controller = UIHostingController(coder: coder, rootView: CityInfoView(viewModel: viewModel!))
+        return controller
     }
     
     func configureCityTableView() {

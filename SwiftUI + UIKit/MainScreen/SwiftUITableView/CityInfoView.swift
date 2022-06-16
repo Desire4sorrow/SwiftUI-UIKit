@@ -16,8 +16,13 @@ struct CityInfoView: View {
         VStack {
             Image(viewModel.currentCity.cityImage)
                 .resizable()
-            Text(viewModel.currentCity.cityDescription)
+            NavigationLink("Подробнее") {
+                CityDescriptionView()
+            }
+            .padding()
+            .font(Font.title3)
         }
+        .background(Color.pink.opacity(0.2))
         .opacity(animationOpacity)
         .animation(.easeIn(duration: animationDuration))
         .onAppear {
