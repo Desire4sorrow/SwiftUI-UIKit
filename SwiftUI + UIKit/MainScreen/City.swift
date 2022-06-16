@@ -91,4 +91,23 @@ public enum City: CaseIterable {
             return "Откуда там 3 миллиона жителей? Промышленный северный город. Достаточно грязный, зато зарплаты хорошие."
         }
     }
+    
+    public var cityURL: String {
+        switch self {
+        case .kazan:
+            return "https://yandex.ru/maps/43/kazan/?ll=49.108795%2C55.796289&z=12"
+        case .moskow:
+            return "https://yandex.ru/maps/geo/moskva/53166393/?ll=37.646930%2C55.725146&z=10.87"
+        case .saintP:
+            return "https://yandex.ru/maps/geo/sankt_peterburg/53152804/?ll=30.304908%2C59.917952&z=11.13"
+        case .novgorod:
+            return "https://yandex.ru/maps/geo/nizhniy_novgorod/53105078/?ll=43.833528%2C56.304645&z=11.81"
+        case .cheboksary:
+            return "https://yandex.ru/maps/geo/cheboksary/53104617/?ll=47.266880%2C56.104037&z=12.72"
+        case .ekaterinburg:
+            return "https://yandex.ru/maps/geo/yekaterinburg/53166537/?ll=60.475066%2C56.788751&z=11.09"
+        case .novosibirsk:
+            return "https://yandex.ru/maps/geo/novosibirsk/53118058/?ll=82.956043%2C55.002021&z=11.13"
+        }
+    }
 }
