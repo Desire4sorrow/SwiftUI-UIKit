@@ -15,6 +15,6 @@ final class CityTableViewCell: UITableViewCell {
     
     func setup(city: City) {
         cityNameLabel.text = city.cityName
-        coordinatesLabel.text = city.coordinates
+        coordinatesLabel.text = "\(city.latitude)  \(city.longitude)"
     }
 }

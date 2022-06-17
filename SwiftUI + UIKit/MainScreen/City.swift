@@ -35,22 +35,41 @@ public enum City: CaseIterable {
         }
     }
     
-    public var coordinates: String {
+    public var latitude: Double {
         switch self {
         case .kazan:
-            return "55.7887, 49.1221"
+            return 55.7887
         case .moskow:
-            return "55.4513, 37.3693"
+            return 55.8555
         case .saintP:
-            return "59.9386, 30.3141"
+            return 59.9386
         case .novgorod:
-            return "56.3286, 44.0020"
+            return 56.3286
         case .cheboksary:
-            return "56.1322, 47.2519"
+            return 56.1322
         case .ekaterinburg:
-            return "56.8519, 60.6122"
+            return 56.8519
         case .novosibirsk:
-            return "55.0415,  82.9346"
+            return 55.0415
+        }
+    }
+    
+    public var longitude: Double {
+        switch self {
+        case .kazan:
+            return 49.1221
+        case .moskow:
+            return 37.543
+        case .saintP:
+            return 30.3141
+        case .novgorod:
+            return 44.0020
+        case .cheboksary:
+            return 47.2519
+        case .ekaterinburg:
+            return 60.6122
+        case .novosibirsk:
+            return 82.9346
         }
     }
     
@@ -76,19 +95,19 @@ public enum City: CaseIterable {
     public var cityDescription: String {
         switch self {
         case .kazan:
-            return "Казань - город татар. Образован хз когда и хз кем. Сейчас третья столица России."
+            return "Город чак-чака"
         case .moskow:
-            return "Москва - не Россия. Живут там одни богачи, а половина работников - это удаленщики."
+            return "Москва - не Россия"
         case .saintP:
-            return "В Питере пить. Еще и соль, море, ветер. Мерзкий город в целом."
+            return "В Питере пить"
         case .novgorod:
-            return "А где Верхний? Город старый и грязный, если вы не купили жилье в центре по цене Московских аппартаментов."
+            return "А где Верхний?"
         case .cheboksary:
-            return "Эх, родные ЧЕБОКСАРЫ... Пиво и тракторы. Больше и сказать нечего."
+            return "Эх, родные ЧЕБОКСАРЫ... "
         case .ekaterinburg:
-            return "На границе Европы. Легенда кожаного мяча оттуда. Уральские горы - это нечто."
+            return "На границе Европы"
         case .novosibirsk:
-            return "Откуда там 3 миллиона жителей? Промышленный северный город. Достаточно грязный, зато зарплаты хорошие."
+            return "Откуда там 3 миллиона жителей?"
         }
     }
     

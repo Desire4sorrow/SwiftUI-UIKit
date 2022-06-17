@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C4B6C1D285C7C9000064537 /* CustomActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C1C285C7C9000064537 /* CustomActivityView.swift */; };
 		9C4B6C1F285C82DB00064537 /* CustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C1E285C82DB00064537 /* CustomActivity.swift */; };
+		9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C21285CAA5C00064537 /* LocationManager.swift */; };
 		9C5C4E832859C706008C69F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5C4E822859C706008C69F2 /* AppDelegate.swift */; };
 		9C5C4E8A2859C706008C69F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5C4E882859C706008C69F2 /* Main.storyboard */; };
 		9C5C4E8C2859C709008C69F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C5C4E8B2859C709008C69F2 /* Assets.xcassets */; };
@@ -48,14 +49,15 @@
 /* Begin PBXFileReference section */
 		9C4B6C1C285C7C9000064537 /* CustomActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityView.swift; sourceTree = "<group>"; };
 		9C4B6C1E285C82DB00064537 /* CustomActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivity.swift; sourceTree = "<group>"; };
-		9C5C4E7F2859C706008C69F2 /* SwiftUI + UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI + UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4B6C21285CAA5C00064537 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		9C5C4E7F2859C706008C69F2 /* City Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5C4E822859C706008C69F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C5C4E892859C706008C69F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C5C4E8B2859C709008C69F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C5C4E8E2859C709008C69F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C5C4E902859C709008C69F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C5C4E952859C709008C69F2 /* SwiftUI + UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI + UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C5C4E9F2859C70A008C69F2 /* SwiftUI + UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI + UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C5C4E952859C709008C69F2 /* City GuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "City GuideTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C5C4E9F2859C70A008C69F2 /* City GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "City GuideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5C4EB32859C743008C69F2 /* MainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 		9C5C4EB42859C743008C69F2 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
 		9C5C4EB52859C743008C69F2 /* MainScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
@@ -105,6 +107,15 @@
 			path = CustomActivityView;
 			sourceTree = "<group>";
 		};
+		9C4B6C20285CAA3800064537 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C5C4EC42859D187008C69F2 /* Extensions.swift */,
+				9C4B6C21285CAA5C00064537 /* LocationManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		9C5C4E762859C706008C69F2 = {
 			isa = PBXGroup;
 			children = (
@@ -116,9 +127,9 @@
 		9C5C4E802859C706008C69F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C5C4E7F2859C706008C69F2 /* SwiftUI + UIKit.app */,
-				9C5C4E952859C709008C69F2 /* SwiftUI + UIKitTests.xctest */,
-				9C5C4E9F2859C70A008C69F2 /* SwiftUI + UIKitUITests.xctest */,
+				9C5C4E7F2859C706008C69F2 /* City Guide.app */,
+				9C5C4E952859C709008C69F2 /* City GuideTests.xctest */,
+				9C5C4E9F2859C70A008C69F2 /* City GuideUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +137,8 @@
 		9C5C4E812859C706008C69F2 /* SwiftUI + UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				9C5C4EC62859E08D008C69F2 /* SwiftUITableView */,
+				9C4B6C20285CAA3800064537 /* Helpers */,
+				9C5C4EC62859E08D008C69F2 /* SwiftUIViews */,
 				9C4B6C1B285C7C7100064537 /* CustomActivityView */,
 				9C5C4EB22859C71E008C69F2 /* MainScreen */,
 				9C5C4E822859C706008C69F2 /* AppDelegate.swift */,
@@ -134,7 +146,6 @@
 				9C5C4E8B2859C709008C69F2 /* Assets.xcassets */,
 				9C5C4E8D2859C709008C69F2 /* LaunchScreen.storyboard */,
 				9C5C4E902859C709008C69F2 /* Info.plist */,
-				9C5C4EC42859D187008C69F2 /* Extensions.swift */,
 			);
 			path = "SwiftUI + UIKit";
 			sourceTree = "<group>";
@@ -163,22 +174,22 @@
 			path = CityTableViewCell;
 			sourceTree = "<group>";
 		};
-		9C5C4EC62859E08D008C69F2 /* SwiftUITableView */ = {
+		9C5C4EC62859E08D008C69F2 /* SwiftUIViews */ = {
 			isa = PBXGroup;
 			children = (
 				9C5C4EC72859E0AD008C69F2 /* CityInfoView.swift */,
 				9C5C4ECD285A207A008C69F2 /* CityViewModel.swift */,
 				9C723D05285B228500B2D09E /* CityDescriptionView.swift */,
 			);
-			path = SwiftUITableView;
+			path = SwiftUIViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C5C4E7E2859C706008C69F2 /* SwiftUI + UIKit */ = {
+		9C5C4E7E2859C706008C69F2 /* City Guide */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C5C4EA92859C70A008C69F2 /* Build configuration list for PBXNativeTarget "SwiftUI + UIKit" */;
+			buildConfigurationList = 9C5C4EA92859C70A008C69F2 /* Build configuration list for PBXNativeTarget "City Guide" */;
 			buildPhases = (
 				9C5C4E7B2859C706008C69F2 /* Sources */,
 				9C5C4E7C2859C706008C69F2 /* Frameworks */,
@@ -188,14 +199,14 @@
 			);
 			dependencies = (
 			);
-			name = "SwiftUI + UIKit";
+			name = "City Guide";
 			productName = "SwiftUI + UIKit";
-			productReference = 9C5C4E7F2859C706008C69F2 /* SwiftUI + UIKit.app */;
+			productReference = 9C5C4E7F2859C706008C69F2 /* City Guide.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9C5C4E942859C709008C69F2 /* SwiftUI + UIKitTests */ = {
+		9C5C4E942859C709008C69F2 /* City GuideTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C5C4EAC2859C70A008C69F2 /* Build configuration list for PBXNativeTarget "SwiftUI + UIKitTests" */;
+			buildConfigurationList = 9C5C4EAC2859C70A008C69F2 /* Build configuration list for PBXNativeTarget "City GuideTests" */;
 			buildPhases = (
 				9C5C4E912859C709008C69F2 /* Sources */,
 				9C5C4E922859C709008C69F2 /* Frameworks */,
@@ -206,14 +217,14 @@
 			dependencies = (
 				9C5C4E972859C709008C69F2 /* PBXTargetDependency */,
 			);
-			name = "SwiftUI + UIKitTests";
+			name = "City GuideTests";
 			productName = "SwiftUI + UIKitTests";
-			productReference = 9C5C4E952859C709008C69F2 /* SwiftUI + UIKitTests.xctest */;
+			productReference = 9C5C4E952859C709008C69F2 /* City GuideTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9C5C4E9E2859C70A008C69F2 /* SwiftUI + UIKitUITests */ = {
+		9C5C4E9E2859C70A008C69F2 /* City GuideUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C5C4EAF2859C70A008C69F2 /* Build configuration list for PBXNativeTarget "SwiftUI + UIKitUITests" */;
+			buildConfigurationList = 9C5C4EAF2859C70A008C69F2 /* Build configuration list for PBXNativeTarget "City GuideUITests" */;
 			buildPhases = (
 				9C5C4E9B2859C70A008C69F2 /* Sources */,
 				9C5C4E9C2859C70A008C69F2 /* Frameworks */,
@@ -224,9 +235,9 @@
 			dependencies = (
 				9C5C4EA12859C70A008C69F2 /* PBXTargetDependency */,
 			);
-			name = "SwiftUI + UIKitUITests";
+			name = "City GuideUITests";
 			productName = "SwiftUI + UIKitUITests";
-			productReference = 9C5C4E9F2859C70A008C69F2 /* SwiftUI + UIKitUITests.xctest */;
+			productReference = 9C5C4E9F2859C70A008C69F2 /* City GuideUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -252,7 +263,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9C5C4E7A2859C706008C69F2 /* Build configuration list for PBXProject "SwiftUI + UIKit" */;
+			buildConfigurationList = 9C5C4E7A2859C706008C69F2 /* Build configuration list for PBXProject "City Guide" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -265,9 +276,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C5C4E7E2859C706008C69F2 /* SwiftUI + UIKit */,
-				9C5C4E942859C709008C69F2 /* SwiftUI + UIKitTests */,
-				9C5C4E9E2859C70A008C69F2 /* SwiftUI + UIKitUITests */,
+				9C5C4E7E2859C706008C69F2 /* City Guide */,
+				9C5C4E942859C709008C69F2 /* City GuideTests */,
+				9C5C4E9E2859C70A008C69F2 /* City GuideUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -308,6 +319,7 @@
 			files = (
 				9C5C4ECA2859FC98008C69F2 /* City.swift in Sources */,
 				9C5C4ECE285A207A008C69F2 /* CityViewModel.swift in Sources */,
+				9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */,
 				9C5C4EBA2859C743008C69F2 /* MainScreenPresenter.swift in Sources */,
 				9C5C4EC52859D187008C69F2 /* Extensions.swift in Sources */,
 				9C723D06285B228500B2D09E /* CityDescriptionView.swift in Sources */,
@@ -342,12 +354,12 @@
 /* Begin PBXTargetDependency section */
 		9C5C4E972859C709008C69F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C5C4E7E2859C706008C69F2 /* SwiftUI + UIKit */;
+			target = 9C5C4E7E2859C706008C69F2 /* City Guide */;
 			targetProxy = 9C5C4E962859C709008C69F2 /* PBXContainerItemProxy */;
 		};
 		9C5C4EA12859C70A008C69F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C5C4E7E2859C706008C69F2 /* SwiftUI + UIKit */;
+			target = 9C5C4E7E2859C706008C69F2 /* City Guide */;
 			targetProxy = 9C5C4EA02859C70A008C69F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -422,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -476,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -557,7 +569,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI + UIKit.app/SwiftUI + UIKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/City Guide.app/City Guide";
 			};
 			name = Debug;
 		};
@@ -576,7 +588,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI + UIKit.app/SwiftUI + UIKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/City Guide.app/City Guide";
 			};
 			name = Release;
 		};
@@ -617,7 +629,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C5C4E7A2859C706008C69F2 /* Build configuration list for PBXProject "SwiftUI + UIKit" */ = {
+		9C5C4E7A2859C706008C69F2 /* Build configuration list for PBXProject "City Guide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C5C4EA72859C70A008C69F2 /* Debug */,
@@ -626,7 +638,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C5C4EA92859C70A008C69F2 /* Build configuration list for PBXNativeTarget "SwiftUI + UIKit" */ = {
+		9C5C4EA92859C70A008C69F2 /* Build configuration list for PBXNativeTarget "City Guide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C5C4EAA2859C70A008C69F2 /* Debug */,
@@ -635,7 +647,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C5C4EAC2859C70A008C69F2 /* Build configuration list for PBXNativeTarget "SwiftUI + UIKitTests" */ = {
+		9C5C4EAC2859C70A008C69F2 /* Build configuration list for PBXNativeTarget "City GuideTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C5C4EAD2859C70A008C69F2 /* Debug */,
@@ -644,7 +656,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C5C4EAF2859C70A008C69F2 /* Build configuration list for PBXNativeTarget "SwiftUI + UIKitUITests" */ = {
+		9C5C4EAF2859C70A008C69F2 /* Build configuration list for PBXNativeTarget "City GuideUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C5C4EB02859C70A008C69F2 /* Debug */,
