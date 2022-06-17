@@ -53,6 +53,7 @@ struct CityDescriptionView: View {
                 .frame(height: 300)
                 .cornerRadius(8)
             NavigationLink("Просмотреть достопримечательности") {
+                CityObjectsView()
             }
                 .padding()
                 .background(Color.purple.opacity(0.7))

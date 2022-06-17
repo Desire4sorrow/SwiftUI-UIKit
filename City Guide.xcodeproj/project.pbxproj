@@ -10,6 +10,7 @@
 		9C4B6C1D285C7C9000064537 /* CustomActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C1C285C7C9000064537 /* CustomActivityView.swift */; };
 		9C4B6C1F285C82DB00064537 /* CustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C1E285C82DB00064537 /* CustomActivity.swift */; };
 		9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C21285CAA5C00064537 /* LocationManager.swift */; };
+		9C4B6C25285CC67000064537 /* CityObjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C24285CC67000064537 /* CityObjectsView.swift */; };
 		9C5C4E832859C706008C69F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5C4E822859C706008C69F2 /* AppDelegate.swift */; };
 		9C5C4E8A2859C706008C69F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5C4E882859C706008C69F2 /* Main.storyboard */; };
 		9C5C4E8C2859C709008C69F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C5C4E8B2859C709008C69F2 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		9C4B6C1C285C7C9000064537 /* CustomActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityView.swift; sourceTree = "<group>"; };
 		9C4B6C1E285C82DB00064537 /* CustomActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivity.swift; sourceTree = "<group>"; };
 		9C4B6C21285CAA5C00064537 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		9C4B6C24285CC67000064537 /* CityObjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityObjectsView.swift; sourceTree = "<group>"; };
 		9C5C4E7F2859C706008C69F2 /* City Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5C4E822859C706008C69F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C5C4E892859C706008C69F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		9C4B6C23285CC5F100064537 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C5C4EC92859FC98008C69F2 /* City.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9C5C4E762859C706008C69F2 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +147,7 @@
 		9C5C4E812859C706008C69F2 /* SwiftUI + UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9C4B6C23285CC5F100064537 /* Models */,
 				9C4B6C20285CAA3800064537 /* Helpers */,
 				9C5C4EC62859E08D008C69F2 /* SwiftUIViews */,
 				9C4B6C1B285C7C7100064537 /* CustomActivityView */,
@@ -160,7 +171,6 @@
 				9C5C4EB62859C743008C69F2 /* MainScreenViewController.swift */,
 				9C5C4EB72859C743008C69F2 /* MainScreenProtocols.swift */,
 				9C5C4EB82859C743008C69F2 /* MainScreenConfigurator.swift */,
-				9C5C4EC92859FC98008C69F2 /* City.swift */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -180,6 +190,7 @@
 				9C5C4EC72859E0AD008C69F2 /* CityInfoView.swift */,
 				9C5C4ECD285A207A008C69F2 /* CityViewModel.swift */,
 				9C723D05285B228500B2D09E /* CityDescriptionView.swift */,
+				9C4B6C24285CC67000064537 /* CityObjectsView.swift */,
 			);
 			path = SwiftUIViews;
 			sourceTree = "<group>";
@@ -331,6 +342,7 @@
 				9C5C4EBC2859C743008C69F2 /* MainScreenViewController.swift in Sources */,
 				9C5C4EC82859E0AD008C69F2 /* CityInfoView.swift in Sources */,
 				9C5C4EBE2859C743008C69F2 /* MainScreenConfigurator.swift in Sources */,
+				9C4B6C25285CC67000064537 /* CityObjectsView.swift in Sources */,
 				9C4B6C1F285C82DB00064537 /* CustomActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
