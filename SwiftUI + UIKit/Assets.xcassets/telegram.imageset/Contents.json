@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "bigstock-Paper-Plane-Flat-Icon-189688921_600x-2.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

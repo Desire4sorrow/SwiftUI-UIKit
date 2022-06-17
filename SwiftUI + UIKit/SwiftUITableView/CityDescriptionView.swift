@@ -9,9 +9,17 @@ import SwiftUI
 
 struct CityDescriptionView: View {
     @Environment(\.presentationMode) var presentationMode
-    @State private var needShowAlert = false
+    @State var isSharePresented = false
     
     let currentCity: City
+    
+    let telegramActivity = CustomActivity(title: "Telegram", imageName: "telegram") {
+        UIApplication.shared.open(URL(string: "https://omega-r.ru")!)
+    }
+    
+    let whatsAppActivity = CustomActivity(title: "Whats App", imageName: "whats-app") {
+        UIApplication.shared.open(URL(string: "https://omega-r.ru")!)
+    }
     
     var cityURL: String {
         currentCity.cityURL
@@ -26,8 +34,11 @@ struct CityDescriptionView: View {
     }
     
     var btnShare: some View {
-        Button(action: actionSheet) {
-            Text("Поделиться")
+        Button("Share with") {
+            isSharePresented = true
+        }
+        .sheet(isPresented: $isSharePresented) {
+            ActivityView(activityItems: ["Поделиться информацией с помощью"], applicationActivities: [telegramActivity, whatsAppActivity])
         }
     }
     
@@ -55,7 +66,7 @@ struct CityDescriptionView: View {
     }
     
     func actionSheet() {
-        guard let urlShare = URL(string: "https://developer.apple.com/xcode/swiftui/") else { return }
+        guard let urlShare = URL(string: "https://omega-r.ru") else { return }
         let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
         UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
     }
