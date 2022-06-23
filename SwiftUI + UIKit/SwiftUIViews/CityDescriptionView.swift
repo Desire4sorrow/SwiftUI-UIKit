@@ -33,6 +33,7 @@ struct CityDescriptionView: View {
         } label: {
             Text("Назад")
         }
+        .foregroundColor(.pink.opacity(0.7))
     }
     
     var btnShare: some View {
@@ -42,6 +43,7 @@ struct CityDescriptionView: View {
         .sheet(isPresented: $isSharePresented) {
             ActivityView(activityItems: ["Share with"], applicationActivities: [telegramActivity])
         }
+        .foregroundColor(.pink.opacity(0.7))
     }
     
     var body: some View {
@@ -53,7 +55,7 @@ struct CityDescriptionView: View {
                 .frame(height: 300)
                 .cornerRadius(8)
             NavigationLink("Просмотреть достопримечательности") {
-                CityObjectsView()
+                CityObjectsView(cityObjects: currentCity.cityObjects)
             }
                 .padding()
                 .background(Color.purple.opacity(0.7))

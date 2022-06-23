@@ -92,22 +92,36 @@ public enum City: CaseIterable {
         }
     }
     
-    public var cityDescription: String {
+    public var cityObjects: [Objects] {
         switch self {
         case .kazan:
-            return "Город чак-чака"
+            return [Objects.init(id: 1, objectIcon: "kremlin",
+                                objectName: "Московский Кремль",
+                                timeOfWork: "8:00 - 18:00")]
         case .moskow:
-            return "Москва - не Россия"
+            return [Objects.init(id: 1, objectIcon: "No",
+                                objectName: "No",
+                                timeOfWork: "No")]
         case .saintP:
-            return "В Питере пить"
+            return [Objects.init(id: 1, objectIcon: "No",
+                                objectName: "No",
+                                timeOfWork: "No")]
         case .novgorod:
-            return "А где Верхний?"
+            return [Objects.init(id: 1, objectIcon: "No",
+                                objectName: "No",
+                                timeOfWork: "No")]
         case .cheboksary:
-            return "Эх, родные ЧЕБОКСАРЫ... "
+            return [Objects.init(id: 1, objectIcon: "No",
+                                objectName: "No",
+                                timeOfWork: "No")]
         case .ekaterinburg:
-            return "На границе Европы"
+            return [Objects.init(id: 1, objectIcon: "No",
+                                objectName: "No",
+                                timeOfWork: "No")]
         case .novosibirsk:
-            return "Откуда там 3 миллиона жителей?"
+            return [Objects.init(id: 1, objectIcon: "No",
+                                objectName: "No",
+                                timeOfWork: "No")]
         }
     }
     

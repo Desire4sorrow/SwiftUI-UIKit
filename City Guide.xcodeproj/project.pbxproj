@@ -27,6 +27,7 @@
 		9C5C4EC82859E0AD008C69F2 /* CityInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5C4EC72859E0AD008C69F2 /* CityInfoView.swift */; };
 		9C5C4ECA2859FC98008C69F2 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5C4EC92859FC98008C69F2 /* City.swift */; };
 		9C5C4ECE285A207A008C69F2 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5C4ECD285A207A008C69F2 /* CityViewModel.swift */; };
+		9C658DFA28647D730023DAB0 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C658DF928647D730023DAB0 /* Objects.swift */; };
 		9C723D06285B228500B2D09E /* CityDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C723D05285B228500B2D09E /* CityDescriptionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		9C5C4EC72859E0AD008C69F2 /* CityInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInfoView.swift; sourceTree = "<group>"; };
 		9C5C4EC92859FC98008C69F2 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		9C5C4ECD285A207A008C69F2 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		9C658DF928647D730023DAB0 /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
 		9C723D05285B228500B2D09E /* CityDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				9C5C4EC92859FC98008C69F2 /* City.swift */,
+				9C658DF928647D730023DAB0 /* Objects.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				9C5C4ECE285A207A008C69F2 /* CityViewModel.swift in Sources */,
 				9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */,
 				9C5C4EBA2859C743008C69F2 /* MainScreenPresenter.swift in Sources */,
+				9C658DFA28647D730023DAB0 /* Objects.swift in Sources */,
 				9C5C4EC52859D187008C69F2 /* Extensions.swift in Sources */,
 				9C723D06285B228500B2D09E /* CityDescriptionView.swift in Sources */,
 				9C5C4EC32859D0B5008C69F2 /* CityTableViewCell.swift in Sources */,

@@ -9,23 +9,19 @@ import SwiftUI
 
 struct CityObjectsView: View {
     @State var isSelected = false
+    var cityObjects = [Objects]()
     
     var body: some View {
         List {
-            VStack {
-                Button {
-                    isSelected = true
-                } label: {
-                    Text("Bebra")
+            ForEach(cityObjects) { object in
+                HStack {
+                    Image(object.objectIcon)
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                    Text(object.objectName)
+                    Text(object.timeOfWork)
                 }
-                
             }
         }
-    }
-}
-
-struct CityObjectsView_Previews: PreviewProvider {
-    static var previews: some View {
-        CityObjectsView()
     }
 }
