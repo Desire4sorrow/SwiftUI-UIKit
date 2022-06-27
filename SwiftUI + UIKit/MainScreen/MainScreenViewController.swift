@@ -35,8 +35,9 @@ final class MainScreenViewController: UIViewController {
     }
     
     @IBSegueAction func toCityInfoView(_ coder: NSCoder) -> UIViewController? {
-        viewModel = CityViewModel.init(currectCity: city)
-        let controller = UIHostingController(coder: coder, rootView: CityInfoView(viewModel: viewModel!))
+        viewModel = .init(currectCity: city)
+        let controller = UIHostingController(coder: coder,
+                                             rootView: CityInfoView(viewModel: viewModel!))
         return controller
     }
     
@@ -57,6 +58,7 @@ extension MainScreenViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedCity = City.allCases[indexPath.row]
         viewModel?.update(newCity: city)
+        presenter.cityChanged()
     }
 }
 
@@ -67,6 +69,9 @@ extension MainScreenViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueCell(for: indexPath, ofType: CityTableViewCell.self)
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = .gray
+        cell.selectedBackgroundView = backgroundView
         cell.setup(city: City.allCases[indexPath.row])
         return cell
     }

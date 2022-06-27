@@ -15,7 +15,9 @@ final class MainScreenPresenter {
 // MARK: - MainScreenPresenterInput
 
 extension MainScreenPresenter: MainScreenPresenterInput {
-    
+    func cityChanged() {
+        postNotification(.cityChanged)
+    }
 }
 
 // MARK: - MainScreenOutput

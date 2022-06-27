@@ -9,7 +9,7 @@ import MapKit
 import CoreLocation
 
 class LocationManager: NSObject,CLLocationManagerDelegate, ObservableObject {
-
+    
     @Published var region = MKCoordinateRegion()
     
     private let manager = CLLocationManager()
@@ -30,5 +30,4 @@ class LocationManager: NSObject,CLLocationManagerDelegate, ObservableObject {
             )
         }
     }
-    
 }

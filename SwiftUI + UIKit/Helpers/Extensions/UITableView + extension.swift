@@ -1,5 +1,5 @@
 //
-//  Extensions.swift
+//  UITableView + extension.swift
 //  SwiftUI + UIKit
 //
 //  Created by Omega on 15.06.2022.
@@ -24,11 +24,3 @@ extension UITableView {
         register(nib, forCellReuseIdentifier: String(describing: cellClass))
     }
 }
-
-extension NSObject {
-    
-    static var className: String {
-        String(describing: Self.self)
-    }
-}
-

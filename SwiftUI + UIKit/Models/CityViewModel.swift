@@ -8,6 +8,7 @@
 import SwiftUI
 
 class CityViewModel: ObservableObject {
+    
     @Published private(set) var currentCity: City
     
     init(currectCity: City) {
@@ -15,7 +16,9 @@ class CityViewModel: ObservableObject {
     }
     
     func update(newCity: City) {
-        currentCity = newCity
+        withAnimation {
+            currentCity = newCity
+        }
     }
 }
 

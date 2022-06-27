@@ -9,22 +9,39 @@ import SwiftUI
 
 struct CityObjectsView: View {
     @State var isSelected = false
-    var cityObjects = [Objects]()
+
+    var objectsViewModel: ObjectsViewModel
+    
+    init(objectsViewModel: ObjectsViewModel) {
+        self.objectsViewModel = objectsViewModel
+        UITableView.appearance().backgroundColor = .clear
+        UITableViewCell.appearance().backgroundColor = .clear
+    }
     
     var body: some View {
-        NavigationView {
-            List(cityObjects) { object in
-                HStack {
-                    Image(object.objectIcon)
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                    Text(object.objectName)
-                    Spacer()
-                    Text(object.timeOfWork)
+            List(objectsViewModel.cityObjects) { object in
+                NavigationLink {
+                    ObjectDescriptionView()
+                } label: {
+                    HStack {
+                        Image(object.objectIcon)
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                        Text(object.objectName)
+                        Spacer()
+                        Text(object.timeOfWork)
+                    }
                 }
             }
-            .navigationTitle("Достопримечательности города")
+            .navigationTitle(objectsViewModel.city)
             .navigationBarTitleDisplayMode(.inline)
-        }
+            .background(
+                Image(objectsViewModel.backgroundImage)
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
+                    .scaledToFill()
+                    .opacity(0.7)
+                    .blur(radius: 5)
+            )
     }
 }
