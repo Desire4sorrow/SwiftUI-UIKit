@@ -95,9 +95,14 @@ public enum City: CaseIterable {
     public var cityObjects: [Objects] {
         switch self {
         case .kazan:
-            return [Objects.init(id: 1, objectIcon: "kremlin",
-                                objectName: "Московский Кремль",
-                                timeOfWork: "8:00 - 18:00")]
+            return [.init(id: 1,
+                          objectIcon: "kazan-kul-sharif",
+                          objectName: "Мечеть Кул-Шариф",
+                          timeOfWork: "9:00 - 17:00"),
+                    .init(id: 2,
+                          objectIcon: "kazan-cup",
+                          objectName: "Загс Чаша",
+                          timeOfWork: "9:00 - 16:00")]
         case .moskow:
             return [Objects.init(id: 1, objectIcon: "No",
                                 objectName: "No",

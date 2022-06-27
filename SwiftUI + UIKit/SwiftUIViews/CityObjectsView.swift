@@ -12,16 +12,19 @@ struct CityObjectsView: View {
     var cityObjects = [Objects]()
     
     var body: some View {
-        List {
-            ForEach(cityObjects) { object in
+        NavigationView {
+            List(cityObjects) { object in
                 HStack {
                     Image(object.objectIcon)
                         .resizable()
                         .frame(width: 50, height: 50)
                     Text(object.objectName)
+                    Spacer()
                     Text(object.timeOfWork)
                 }
             }
+            .navigationTitle("Достопримечательности города")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

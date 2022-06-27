@@ -49,9 +49,10 @@ struct CityDescriptionView: View {
     var body: some View {
         VStack {
             Map(coordinateRegion: $region, showsUserLocation: true)
-                        .frame(height: 200)
+                .frame(height: 200)
             Image(currentCity.cityImage)
                 .resizable()
+                .clipShape(Circle())
                 .frame(height: 300)
                 .cornerRadius(8)
             NavigationLink("Просмотреть достопримечательности") {
