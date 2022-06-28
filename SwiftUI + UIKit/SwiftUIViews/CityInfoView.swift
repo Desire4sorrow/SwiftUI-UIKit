@@ -41,34 +41,29 @@ struct CityImageView: View {
         Image(city.cityImage)
             .resizable()
             .animation(.easeInOut(duration: 2), value: 2)
-            .onAppear {
-                withAnimation {
-                    
+            .blur(radius: blurValue)
+            .scaleEffect(animationAmount)
+            .opacity(2 - animationAmount)
+            .animation(.easeInOut, value: animationAmount)
+            .onLoad {
+                addNotificationObserver(name: .cityChanged) { _ in
+                    self.updateImage()
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    animationAmount = 1
+                    blurValue = 0
                 }
             }
     }
+    
+    func updateImage() {
+        animationAmount = 0.5
+        blurValue = 25
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            animationAmount = 1
+            blurValue = 0
+        }
+    }
 }
-//            .blur(radius: blurValue)
-//            .scaleEffect(animationAmount)
-//            .opacity(2 - animationAmount)
-//            .animation(.easeInOut, value: animationAmount)
-//            .onLoad {
-//                addNotificationObserver(name: .cityChanged) { _ in
-//                    self.updateImage()
-//                }
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-//                    animationAmount = 1
-//                    blurValue = 0
-//                }
-//            }
-//    }
-//
-//    func updateImage() {
-//        animationAmount = -0.1
-//        blurValue = 25
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-//            animationAmount = 1
-//            blurValue = 0
-//        }
-//    }
+
 
