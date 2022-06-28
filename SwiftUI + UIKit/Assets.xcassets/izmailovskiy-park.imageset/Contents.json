@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "park_smfKLTP.2e16d0ba.fill-1280x800-c100.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

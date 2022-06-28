@@ -55,11 +55,13 @@ struct CityDescriptionView: View {
             VStack {
                 Map(coordinateRegion: $region, showsUserLocation: true)
                     .frame(height: 200)
+                    .shadow(radius: 3)
                 Image(currentCity.cityImage)
                     .resizable()
                     .clipShape(Circle())
                     .frame(height: 300)
                     .cornerRadius(8)
+                    .shadow(radius: 3)
                 NavigationLink("Просмотреть достопримечательности") {
                     CityObjectsView(objectsViewModel: .init(city: currentCity.cityName,
                                                             backgroundImage: currentCity.cityImage,
@@ -69,12 +71,14 @@ struct CityDescriptionView: View {
                 .background(Color.purple.opacity(0.7))
                 .foregroundColor(Color.white)
                 .cornerRadius(8)
+                .shadow(radius: 3)
                 
                 Link("Открыть в приложении Яндекс.Карты", destination: URL(string: cityURL)!)
                     .padding()
                     .background(Color.purple.opacity(0.7))
                     .foregroundColor(Color.white)
                     .cornerRadius(8)
+                    .shadow(radius: 3)
             }
             .onLoad {
                 region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: currentCity.latitude,

@@ -21,5 +21,6 @@ struct CityInfoButtonView: View {
         .background(.purple)
         .foregroundColor(.white)
         .cornerRadius(16)
+        .shadow(radius: 3)
     }
 }

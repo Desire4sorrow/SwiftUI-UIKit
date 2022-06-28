@@ -104,9 +104,18 @@ public enum City: CaseIterable {
                           objectName: "Загс Чаша",
                           timeOfWork: "9:00 - 16:00")]
         case .moskow:
-            return [Objects.init(id: 1, objectIcon: "No",
-                                objectName: "No",
-                                timeOfWork: "No")]
+            return [.init(id: 1,
+                          objectIcon: "moskow-kremlin",
+                          objectName: "Московский Кремль",
+                          timeOfWork: "9:00 - 17:00"),
+                    .init(id: 2,
+                          objectIcon: "sobor-vasiliy",
+                          objectName: "Собор Василия Блаженного",
+                          timeOfWork: "9:00 - 16:00"),
+                    .init(id: 3,
+                          objectIcon: "izmailovskiy-park",
+                          objectName: "Измайловский парк",
+                          timeOfWork: "Круглосуточно")]
         case .saintP:
             return [Objects.init(id: 1, objectIcon: "No",
                                 objectName: "No",
