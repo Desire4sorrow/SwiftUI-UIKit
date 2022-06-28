@@ -26,14 +26,21 @@ struct CityObjectsView: View {
                 HStack {
                     Image(object.objectIcon)
                         .resizable()
-                        .frame(width: 70, height: 70)
+                        .frame(width: 80, height: 80)
                     Text(object.objectName)
                     Spacer()
                     Text(object.timeOfWork)
                 }
             }
-            .listRowInsets(EdgeInsets())
             .padding(.trailing, 10)
+            .background(Color.white)
+            .cornerRadius(16)
+            .listRowBackground(Color.clear)
+            .listRowSeparator(.hidden)
+            .listRowInsets(EdgeInsets(.init(top: 15,
+                                            leading: 0,
+                                            bottom: 15,
+                                            trailing: 0)))
         }
         .navigationTitle(objectsViewModel.city)
         .navigationBarTitleDisplayMode(.inline)
