@@ -82,9 +82,9 @@ struct CityObjectsView: View {
             .cornerRadius(16)
             .listRowBackground(Color.clear)
             .listRowSeparator(.hidden)
-            .listRowInsets(EdgeInsets(.init(top: 15,
+            .listRowInsets(EdgeInsets(.init(top: 10,
                                             leading: 0,
-                                            bottom: 15,
+                                            bottom: 10,
                                             trailing: 0)))
         }
     }

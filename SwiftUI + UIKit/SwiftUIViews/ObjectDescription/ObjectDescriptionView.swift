@@ -40,8 +40,8 @@ struct ObjectDescriptionView: View {
                 Text(objectModel.object.objectDescription)
                     .padding(.horizontal)
                     .font(.title3.bold())
-                    .foregroundColor(.black)
-                    .shadow(color: .white, radius: 2, x: 1, y: 1)
+                    .foregroundColor(.purple)
+                    .shadow(color: .white, radius: 1, x: 1, y: 1)
             }
             .modifier(OffsetModifier(offset: $offset))
         }
