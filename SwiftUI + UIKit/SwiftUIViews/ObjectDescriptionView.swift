@@ -9,8 +9,19 @@ import SwiftUI
 
 struct ObjectDescriptionView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     let objectModel: ObjectDescriptionModel
     let maxHeight = UIScreen.main.bounds.height / 2.3
+    
+    var backButton: some View {
+        Button {
+            presentationMode.wrappedValue.dismiss()
+        } label: {
+            Image(systemName: "arrow.left")
+                .foregroundColor(.pink)
+        }
+    }
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -26,5 +37,7 @@ struct ObjectDescriptionView: View {
                 .frame(height: maxHeight)
             }
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: backButton)
     }
 }
