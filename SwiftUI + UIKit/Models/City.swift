@@ -99,12 +99,12 @@ public enum City: CaseIterable {
                           objectIcon: "kazan-kul-sharif",
                           objectName: "Мечеть Кул-Шариф",
                           timeOfWork: "9:00 - 17:00",
-                          objectDescription: ""),
+                          objectDescription: Description.kulCharif.rawValue),
                     .init(id: 2,
                           objectIcon: "kazan-cup",
                           objectName: "Загс Чаша",
                           timeOfWork: "9:00 - 16:00",
-                          objectDescription: "")]
+                          objectDescription: Description.chasha.rawValue)]
         case .moskow:
             return [.init(id: 1,
                           objectIcon: "moskow-kremlin",

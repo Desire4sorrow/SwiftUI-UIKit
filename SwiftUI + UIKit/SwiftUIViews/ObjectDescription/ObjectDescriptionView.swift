@@ -26,16 +26,30 @@ struct ObjectDescriptionView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            VStack(spacing: 15) {
+            VStack(spacing: 10) {
                 GeometryReader { proxy in
-                    TopBar(offset: $offset, edge: objectModel.topEdge, object: objectModel.object)
+                    TopBar(offset: $offset,
+                           edge: objectModel.topEdge,
+                           object: objectModel.object)
                         .frame(height: maxHeight + offset, alignment: .bottom)
+                        .cornerRadius(10)
                 }
                 .frame(height: maxHeight)
                 .offset(y: -offset)
+                
+                Text(objectModel.object.objectDescription)
+                    .padding(.horizontal)
+                    .font(.title3.bold())
+                    .foregroundColor(.black)
+                    .shadow(color: .white, radius: 2, x: 1, y: 1)
             }
             .modifier(OffsetModifier(offset: $offset))
         }
+        .background(
+            Image("background-image")
+                .opacity(0.5)
+                .blur(radius: 10)
+        )
         .coordinateSpace(name: "availableScroll")
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: backButton)

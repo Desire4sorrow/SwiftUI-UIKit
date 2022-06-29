@@ -15,16 +15,13 @@ struct OffsetModifier: ViewModifier {
         content
             .overlay(
                 GeometryReader { proxy -> Color in
-                    
                     let minY = proxy.frame(in: .named("availableScroll")).minY
                     
                     DispatchQueue.main.async {
                         self.offset = minY
                     }
-                
                     return Color.clear
-                }
-                ,alignment: .top
+                },alignment: .top
             )
     }
 }

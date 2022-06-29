@@ -44,6 +44,7 @@
 		9C91BAA3286C392400D3C5B7 /* ObjectDescriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAA2286C392400D3C5B7 /* ObjectDescriptionModel.swift */; };
 		9C91BAA6286C8FF800D3C5B7 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAA5286C8FF800D3C5B7 /* TopBar.swift */; };
 		9C91BAAB286C957C00D3C5B7 /* OffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAAA286C957C00D3C5B7 /* OffsetModifier.swift */; };
+		9C91BAAD286C9B1D00D3C5B7 /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAAC286C9B1D00D3C5B7 /* Descriptions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		9C91BAA2286C392400D3C5B7 /* ObjectDescriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDescriptionModel.swift; sourceTree = "<group>"; };
 		9C91BAA5286C8FF800D3C5B7 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		9C91BAAA286C957C00D3C5B7 /* OffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetModifier.swift; sourceTree = "<group>"; };
+		9C91BAAC286C9B1D00D3C5B7 /* Descriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descriptions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				9C0D5C9F2869A3E00048C06F /* ViewDidLoadModifier.swift */,
 				9C0D5CA12869DC480048C06F /* Notifications.swift */,
 				9C91BA9D286B02C400D3C5B7 /* Theme.swift */,
+				9C91BAAC286C9B1D00D3C5B7 /* Descriptions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				9C0D5CA22869DC480048C06F /* Notifications.swift in Sources */,
 				9C0D5CA42869DCBD0048C06F /* NotificationName + extension.swift in Sources */,
 				9C0D5C97286999650048C06F /* ObjectDescriptionView.swift in Sources */,
+				9C91BAAD286C9B1D00D3C5B7 /* Descriptions.swift in Sources */,
 				9C5C4ECA2859FC98008C69F2 /* City.swift in Sources */,
 				9C5C4ECE285A207A008C69F2 /* CityViewModel.swift in Sources */,
 				9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */,
