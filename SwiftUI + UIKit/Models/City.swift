@@ -92,50 +92,60 @@ public enum City: CaseIterable {
         }
     }
     
-    public var cityObjects: [Objects] {
+    public var cityObjects: [Object] {
         switch self {
         case .kazan:
             return [.init(id: 1,
                           objectIcon: "kazan-kul-sharif",
                           objectName: "Мечеть Кул-Шариф",
-                          timeOfWork: "9:00 - 17:00"),
+                          timeOfWork: "9:00 - 17:00",
+                          objectDescription: ""),
                     .init(id: 2,
                           objectIcon: "kazan-cup",
                           objectName: "Загс Чаша",
-                          timeOfWork: "9:00 - 16:00")]
+                          timeOfWork: "9:00 - 16:00",
+                          objectDescription: "")]
         case .moskow:
             return [.init(id: 1,
                           objectIcon: "moskow-kremlin",
                           objectName: "Московский Кремль",
-                          timeOfWork: "9:00 - 17:00"),
+                          timeOfWork: "9:00 - 17:00",
+                          objectDescription: ""),
                     .init(id: 2,
                           objectIcon: "sobor-vasiliy",
                           objectName: "Собор Василия Блаженного",
-                          timeOfWork: "9:00 - 16:00"),
+                          timeOfWork: "9:00 - 16:00",
+                          objectDescription: ""),
                     .init(id: 3,
                           objectIcon: "izmailovskiy-park",
                           objectName: "Измайловский парк",
-                          timeOfWork: "24 часа")]
+                          timeOfWork: "24 часа",
+                          objectDescription: "")]
         case .saintP:
-            return [Objects.init(id: 1, objectIcon: "No",
+            return [Object.init(id: 1, objectIcon: "No",
                                 objectName: "No",
-                                timeOfWork: "No")]
+                                timeOfWork: "No",
+                                objectDescription: "")]
         case .novgorod:
-            return [Objects.init(id: 1, objectIcon: "No",
+            return [Object.init(id: 1, objectIcon: "No",
                                 objectName: "No",
-                                timeOfWork: "No")]
+                                timeOfWork: "No",
+                                objectDescription: "")]
         case .cheboksary:
-            return [Objects.init(id: 1, objectIcon: "No",
+            return [Object.init(id: 1, objectIcon: "No",
                                 objectName: "No",
-                                timeOfWork: "No")]
+                                timeOfWork: "No",
+                                objectDescription: "")]
         case .ekaterinburg:
-            return [Objects.init(id: 1, objectIcon: "No",
+            return [Object.init(id: 1, objectIcon: "No",
                                 objectName: "No",
-                                timeOfWork: "No")]
+                                timeOfWork: "No",
+                                objectDescription: "")]
         case .novosibirsk:
-            return [Objects.init(id: 1, objectIcon: "No",
+            return [Object.init(id: 1, objectIcon: "No",
                                 objectName: "No",
-                                timeOfWork: "No")]
+                                timeOfWork: "No",
+                                objectDescription: "")]
         }
     }
     

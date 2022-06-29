@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct ObjectDescriptionView: View {
+    
+    let objectModel: ObjectDescriptionModel
+    let maxHeight = UIScreen.main.bounds.height / 2.3
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct ObjectDescriptionView_Previews: PreviewProvider {
-    static var previews: some View {
-        ObjectDescriptionView()
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack(spacing: 15) {
+                GeometryReader { proxy in
+                    VStack(alignment: .leading, spacing: 15) {
+                        Image(objectModel.object.objectIcon)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+                }
+                .frame(height: maxHeight)
+            }
+        }
     }
 }

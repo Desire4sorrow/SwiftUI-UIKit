@@ -10,5 +10,5 @@ import Foundation
 struct ObjectsViewModel {
     let city: String
     let backgroundImage: String
-    let cityObjects: [Objects]
+    let cityObjects: [Object]
 }

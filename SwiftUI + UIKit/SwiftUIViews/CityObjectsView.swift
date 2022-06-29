@@ -24,7 +24,7 @@ struct CityObjectsView: View {
         
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithTransparentBackground()
-        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor(named: "GuidePurple")!]
+        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.black]
         UINavigationBar.appearance().standardAppearance = coloredAppearance
     }
     
@@ -59,7 +59,13 @@ struct CityObjectsView: View {
     var objectsTable: some View {
         List(objectsViewModel.cityObjects) { object in
             NavigationLink {
-                ObjectDescriptionView()
+                GeometryReader { proxy in
+                    let topEdge = proxy.safeAreaInsets.top
+                    ObjectDescriptionView(objectModel: .init(object: object,
+                                                             cityName: objectsViewModel.city,
+                                                             topEdge: topEdge))
+                        .ignoresSafeArea(.all, edges: .top)
+                }
             } label: {
                 HStack {
                     Image(object.objectIcon)
@@ -95,4 +101,3 @@ struct CityObjectsView: View {
             }
     }
 }
-
