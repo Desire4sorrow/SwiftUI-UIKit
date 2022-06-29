@@ -28,9 +28,16 @@ struct ObjectDescriptionView: View {
             VStack(spacing: 15) {
                 GeometryReader { proxy in
                     VStack(alignment: .leading, spacing: 15) {
-                        Image(objectModel.object.objectIcon)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
+                        ZStack(alignment: .bottomLeading) {
+                            Image(objectModel.object.objectIcon)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                            Text(objectModel.object.objectName)
+                                .font(.largeTitle.bold())
+                                .foregroundColor(.white)
+                                .shadow(color: .black, radius: 3, x: 1, y: 1)
+                                .padding()
+                        }
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
                 }
