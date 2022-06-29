@@ -42,6 +42,8 @@
 		9C91BA9E286B02C400D3C5B7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BA9D286B02C400D3C5B7 /* Theme.swift */; };
 		9C91BAA1286B167700D3C5B7 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 9C91BAA0286B167700D3C5B7 /* Introspect */; };
 		9C91BAA3286C392400D3C5B7 /* ObjectDescriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAA2286C392400D3C5B7 /* ObjectDescriptionModel.swift */; };
+		9C91BAA6286C8FF800D3C5B7 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAA5286C8FF800D3C5B7 /* TopBar.swift */; };
+		9C91BAAB286C957C00D3C5B7 /* OffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAAA286C957C00D3C5B7 /* OffsetModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		9C91BA9B286AF91E00D3C5B7 /* Color .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color .swift"; sourceTree = "<group>"; };
 		9C91BA9D286B02C400D3C5B7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		9C91BAA2286C392400D3C5B7 /* ObjectDescriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDescriptionModel.swift; sourceTree = "<group>"; };
+		9C91BAA5286C8FF800D3C5B7 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		9C91BAAA286C957C00D3C5B7 /* OffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 		9C4B6C20285CAA3800064537 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9C91BAA9286C956500D3C5B7 /* Modifiers */,
+				9C4B6C1B285C7C7100064537 /* CustomActivityView */,
 				9C0D5C9E2869A3BE0048C06F /* Extensions */,
 				9C4B6C21285CAA5C00064537 /* LocationManager.swift */,
 				9C0D5C9F2869A3E00048C06F /* ViewDidLoadModifier.swift */,
@@ -197,7 +203,6 @@
 				9C4B6C23285CC5F100064537 /* Models */,
 				9C4B6C20285CAA3800064537 /* Helpers */,
 				9C5C4EC62859E08D008C69F2 /* SwiftUIViews */,
-				9C4B6C1B285C7C7100064537 /* CustomActivityView */,
 				9C5C4EB22859C71E008C69F2 /* MainScreen */,
 				9C5C4E822859C706008C69F2 /* AppDelegate.swift */,
 				9C5C4E882859C706008C69F2 /* Main.storyboard */,
@@ -232,10 +237,10 @@
 		9C5C4EC62859E08D008C69F2 /* SwiftUIViews */ = {
 			isa = PBXGroup;
 			children = (
+				9C91BAA4286C8FD500D3C5B7 /* ObjectDescription */,
 				9C91BA95286AD49600D3C5B7 /* CityInfo */,
 				9C723D05285B228500B2D09E /* CityDescriptionView.swift */,
 				9C4B6C24285CC67000064537 /* CityObjectsView.swift */,
-				9C0D5C96286999650048C06F /* ObjectDescriptionView.swift */,
 			);
 			path = SwiftUIViews;
 			sourceTree = "<group>";
@@ -258,6 +263,23 @@
 				9C91BA9B286AF91E00D3C5B7 /* Color .swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C91BAA4286C8FD500D3C5B7 /* ObjectDescription */ = {
+			isa = PBXGroup;
+			children = (
+				9C0D5C96286999650048C06F /* ObjectDescriptionView.swift */,
+				9C91BAA5286C8FF800D3C5B7 /* TopBar.swift */,
+			);
+			path = ObjectDescription;
+			sourceTree = "<group>";
+		};
+		9C91BAA9286C956500D3C5B7 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				9C91BAAA286C957C00D3C5B7 /* OffsetModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C91BAAB286C957C00D3C5B7 /* OffsetModifier.swift in Sources */,
 				9C0D5CA22869DC480048C06F /* Notifications.swift in Sources */,
 				9C0D5CA42869DCBD0048C06F /* NotificationName + extension.swift in Sources */,
 				9C0D5C97286999650048C06F /* ObjectDescriptionView.swift in Sources */,
@@ -406,6 +429,7 @@
 				9C5C4ECE285A207A008C69F2 /* CityViewModel.swift in Sources */,
 				9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */,
 				9C5C4EBA2859C743008C69F2 /* MainScreenPresenter.swift in Sources */,
+				9C91BAA6286C8FF800D3C5B7 /* TopBar.swift in Sources */,
 				9C0D5CA62869E7A90048C06F /* CityButtonInfoView.swift in Sources */,
 				9C658DFA28647D730023DAB0 /* Object.swift in Sources */,
 				9C91BAA3286C392400D3C5B7 /* ObjectDescriptionModel.swift in Sources */,

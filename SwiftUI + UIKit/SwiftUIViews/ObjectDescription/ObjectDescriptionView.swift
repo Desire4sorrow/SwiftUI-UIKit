@@ -10,6 +10,7 @@ import SwiftUI
 struct ObjectDescriptionView: View {
     
     @Environment(\.presentationMode) var presentationMode
+    @State var offset: CGFloat = 0
     
     let objectModel: ObjectDescriptionModel
     let maxHeight = UIScreen.main.bounds.height / 2.3
@@ -27,23 +28,15 @@ struct ObjectDescriptionView: View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 15) {
                 GeometryReader { proxy in
-                    VStack(alignment: .leading, spacing: 15) {
-                        ZStack(alignment: .bottomLeading) {
-                            Image(objectModel.object.objectIcon)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                            Text(objectModel.object.objectName)
-                                .font(.largeTitle.bold())
-                                .foregroundColor(.white)
-                                .shadow(color: .black, radius: 3, x: 1, y: 1)
-                                .padding()
-                        }
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+                    TopBar(offset: $offset, edge: objectModel.topEdge, object: objectModel.object)
+                        .frame(height: maxHeight + offset, alignment: .bottom)
                 }
                 .frame(height: maxHeight)
+                .offset(y: -offset)
             }
+            .modifier(OffsetModifier(offset: $offset))
         }
+        .coordinateSpace(name: "availableScroll")
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: backButton)
     }
