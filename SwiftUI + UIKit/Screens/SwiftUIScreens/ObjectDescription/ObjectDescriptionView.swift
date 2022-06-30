@@ -28,9 +28,7 @@ struct ObjectDescriptionView: View {
         ZStack {
             Rectangle()
                 .cornerRadius(20)
-                .foregroundColor(Color.guidePink)
-                .blur(radius: 2)
-                .shadow(radius: 2)
+                .foregroundColor(.white.opacity(0.8))
             HStack {
                 Image(objectModel.cityImage)
                     .resizable()
@@ -58,7 +56,6 @@ struct ObjectDescriptionView: View {
                                       object: objectModel.object,
                                       maxHeight: maxHeight))
                 .frame(height: getHeaderHeight(), alignment: .bottom)
-                .cornerRadius(10)
         }
         .zIndex(1)
         .frame(height: maxHeight)
@@ -84,15 +81,11 @@ struct ObjectDescriptionView: View {
                 topBarView
                 objectDescriptionText
                 bottomButton
-                    .padding(.top, 30)
+                    .padding(.vertical, 30)
             }
             .modifier(OffsetModifier(offset: $offset))
         }
-        .background(
-            Image.background
-                .opacity(0.5)
-                .blur(radius: 10)
-        )
+        .background(Color.guidePinkWithHighOpacity)
         .coordinateSpace(name: "availableScroll")
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: backButton, trailing: cityImage)

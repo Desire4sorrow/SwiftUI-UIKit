@@ -42,15 +42,18 @@ struct FeedbackView: View {
             .padding(.horizontal, 60)
             .padding(.vertical, 15)
             .font(.callout)
-            .background(.purple)
+            .background(Color.guidePurple)
             .foregroundColor(.white)
             .cornerRadius(16)
             .shadow(radius: 3)
+            
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: backButton)
         .introspectViewController { nav in
             nav.navigationItem.title = "Отзывы"
         }
+        .padding(.bottom, 20)
+        .background(Color.guidePurpleWithHighOpacity)
     }
 }

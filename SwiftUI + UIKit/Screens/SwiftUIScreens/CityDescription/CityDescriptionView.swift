@@ -43,7 +43,29 @@ struct CityDescriptionView: View {
         .sheet(isPresented: $isSharePresented) {
             ActivityView(activityItems: ["Share with"], applicationActivities: [telegramActivity])
         }
-        .foregroundColor(.purple)
+        .foregroundColor(Color.guidePurple)
+    }
+    
+    var objectsButton: some View {
+        NavigationLink("Просмотреть достопримечательности") {
+            CityObjectsView(objectsViewModel: .init(city: currentCity.cityName,
+                                                    backgroundImage: currentCity.cityImage,
+                                                    cityObjects: currentCity.cityObjects))
+        }
+        .padding()
+        .background(Color.guidePurpleWithLowOpacity)
+        .foregroundColor(.white)
+        .cornerRadius(8)
+        .shadow(radius: 3)
+    }
+    
+    var mapsButton: some View {
+        Link("Открыть в приложении Яндекс.Карты", destination: URL(string: cityURL)!)
+            .padding()
+            .background(Color.guidePurpleWithLowOpacity)
+            .foregroundColor(.white)
+            .cornerRadius(8)
+            .shadow(radius: 3)
     }
     
     init(currentCity: City) {
@@ -59,26 +81,11 @@ struct CityDescriptionView: View {
                 Image(currentCity.cityImage)
                     .resizable()
                     .clipShape(Circle())
-                    .frame(height: 300)
+                    .frame(height: 250)
                     .cornerRadius(8)
                     .shadow(radius: 3)
-                NavigationLink("Просмотреть достопримечательности") {
-                    CityObjectsView(objectsViewModel: .init(city: currentCity.cityName,
-                                                            backgroundImage: currentCity.cityImage,
-                                                            cityObjects: currentCity.cityObjects))
-                }
-                .padding()
-                .background(Color.purple.opacity(0.7))
-                .foregroundColor(Color.white)
-                .cornerRadius(8)
-                .shadow(radius: 3)
-                
-                Link("Открыть в приложении Яндекс.Карты", destination: URL(string: cityURL)!)
-                    .padding()
-                    .background(Color.purple.opacity(0.7))
-                    .foregroundColor(Color.white)
-                    .cornerRadius(8)
-                    .shadow(radius: 3)
+                objectsButton
+                mapsButton
             }
             .onLoad {
                 region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: currentCity.latitude,

@@ -49,6 +49,7 @@
 		9C91BAB5286D874B00D3C5B7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAB4286D874B00D3C5B7 /* Image.swift */; };
 		9C91BABC286D93CD00D3C5B7 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BABB286D93CD00D3C5B7 /* FeedbackView.swift */; };
 		9C91BABF286D988200D3C5B7 /* AddFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BABE286D988200D3C5B7 /* AddFeedbackView.swift */; };
+		9C91BAC3286DD6FF00D3C5B7 /* UIApplication + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAC2286DD6FF00D3C5B7 /* UIApplication + extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		9C91BAB4286D874B00D3C5B7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		9C91BABB286D93CD00D3C5B7 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
 		9C91BABE286D988200D3C5B7 /* AddFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedbackView.swift; sourceTree = "<group>"; };
+		9C91BAC2286DD6FF00D3C5B7 /* UIApplication + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				9C0D5C9A2869A3480048C06F /* NSObject + extension.swift */,
 				9C5C4EC42859D187008C69F2 /* UITableView + extension.swift */,
 				9C0D5CA32869DCBD0048C06F /* NotificationName + extension.swift */,
+				9C91BAC2286DD6FF00D3C5B7 /* UIApplication + extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				9C0D5C9928699B1E0048C06F /* ObjectsViewModel.swift in Sources */,
 				9C0D5C9D2869A3990048C06F /* View + extension.swift in Sources */,
 				9C5C4EC52859D187008C69F2 /* UITableView + extension.swift in Sources */,
+				9C91BAC3286DD6FF00D3C5B7 /* UIApplication + extension.swift in Sources */,
 				9C723D06285B228500B2D09E /* CityDescriptionView.swift in Sources */,
 				9C5C4EC32859D0B5008C69F2 /* CityTableViewCell.swift in Sources */,
 				9C5C4E832859C706008C69F2 /* AppDelegate.swift in Sources */,

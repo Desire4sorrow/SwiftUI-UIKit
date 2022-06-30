@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Introspect
 
 struct AddFeedbackView: View {
     
@@ -21,11 +22,49 @@ struct AddFeedbackView: View {
         }
     }
     
+    var reviewTextView: some View {
+        TextEditor(text: $text)
+            .frame(height: 200)
+            .background(Color.guidePinkWithHighOpacity)
+            .onChange(of: text) { newValue in
+                
+            }
+    }
+    
+    var addButton: some View {
+        Button {
+            presentationMode.wrappedValue.dismiss()
+        } label: {
+            Text("Добавить")
+        }
+        .padding(.horizontal, 60)
+        .padding(.vertical, 15)
+        .font(.callout)
+        .background(Color.guidePurple)
+        .foregroundColor(.white)
+        .cornerRadius(16)
+        .shadow(radius: 3)
+    }
+    
     var body: some View {
         VStack {
-            TextField("Username", text: $text)
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Выберите оценку")
+                //оценка может пикером
+                Text("Текст отзыва")
+                reviewTextView
+            }
+            .onTapGesture {
+                UIApplication.shared.endEditing()
+            }
+            Spacer()
+            addButton
         }
         .padding()
+        .introspectViewController { nav in
+            nav.navigationItem.title = "Добавить отзыв"
+        }
+        .background(Color.guidePinkWithHighOpacity)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: backButton)
     }

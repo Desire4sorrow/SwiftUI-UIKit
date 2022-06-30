@@ -18,7 +18,7 @@ struct CityInfoButtonView: View {
         .padding(.horizontal, 60)
         .padding(.vertical, 15)
         .font(.callout)
-        .background(.purple)
+        .background(Color.guidePurple)
         .foregroundColor(.white)
         .cornerRadius(16)
         .shadow(radius: 3)
