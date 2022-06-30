@@ -28,9 +28,9 @@ struct ObjectDescriptionView: View {
         ZStack {
             Rectangle()
                 .cornerRadius(20)
-                .foregroundColor(Color.guidePink.opacity(0.8))
-                .blur(radius: 3)
-                .shadow(radius: 3)
+                .foregroundColor(Color.guidePink)
+                .blur(radius: 2)
+                .shadow(radius: 2)
             HStack {
                 Image(objectModel.cityImage)
                     .resizable()
@@ -67,7 +67,7 @@ struct ObjectDescriptionView: View {
             .modifier(OffsetModifier(offset: $offset))
         }
         .background(
-            Image("background-image")
+            Image.background
                 .opacity(0.5)
                 .blur(radius: 10)
         )

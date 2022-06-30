@@ -93,7 +93,7 @@ struct CityDescriptionView: View {
                 }
             }
             .padding()
-            .background(Image("background-image"))
+            .background(Image.background)
             .navigationTitle(currentCity.cityName)
             .navigationBarItems(leading: btnBack, trailing: btnShare)
         }

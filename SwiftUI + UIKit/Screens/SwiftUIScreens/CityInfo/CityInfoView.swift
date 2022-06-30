@@ -21,12 +21,12 @@ struct CityInfoView: View {
             Spacer()
         }
         .onReceive(viewModel.$currentCity) { newValue in
-            withAnimation(.easeInOut(duration: 1)) {
+            withAnimation(.easeInOut(duration: 0.1)) {
                 city = newValue
             }
         }
         .background(
-            Image("background-image")
+            Image.background
                 .blur(radius: 25)
         )
         .shadow(radius: 3)

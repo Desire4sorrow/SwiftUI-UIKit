@@ -46,6 +46,7 @@
 		9C91BAAB286C957C00D3C5B7 /* OffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAAA286C957C00D3C5B7 /* OffsetModifier.swift */; };
 		9C91BAAD286C9B1D00D3C5B7 /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAAC286C9B1D00D3C5B7 /* Descriptions.swift */; };
 		9C91BAB3286D794D00D3C5B7 /* TopBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAB2286D794D00D3C5B7 /* TopBarModel.swift */; };
+		9C91BAB5286D874B00D3C5B7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAB4286D874B00D3C5B7 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		9C91BAAA286C957C00D3C5B7 /* OffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetModifier.swift; sourceTree = "<group>"; };
 		9C91BAAC286C9B1D00D3C5B7 /* Descriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descriptions.swift; sourceTree = "<group>"; };
 		9C91BAB2286D794D00D3C5B7 /* TopBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarModel.swift; sourceTree = "<group>"; };
+		9C91BAB4286D874B00D3C5B7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +265,7 @@
 				9C91BA98286AF87900D3C5B7 /* Colors.xcassets */,
 				9C5C4E8B2859C709008C69F2 /* Assets.xcassets */,
 				9C91BA9B286AF91E00D3C5B7 /* Color .swift */,
+				9C91BAB4286D874B00D3C5B7 /* Image.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -304,8 +307,8 @@
 		9C91BAB0286D760500D3C5B7 /* SwiftUIScreens */ = {
 			isa = PBXGroup;
 			children = (
-				9C91BAB1286D763000D3C5B7 /* CityDescription */,
 				9C91BA95286AD49600D3C5B7 /* CityInfo */,
+				9C91BAB1286D763000D3C5B7 /* CityDescription */,
 				9C91BAA4286C8FD500D3C5B7 /* ObjectDescription */,
 				9C5C4EC62859E08D008C69F2 /* CityObjects */,
 			);
@@ -470,6 +473,7 @@
 				9C5C4EBA2859C743008C69F2 /* MainScreenPresenter.swift in Sources */,
 				9C91BAA6286C8FF800D3C5B7 /* TopBar.swift in Sources */,
 				9C0D5CA62869E7A90048C06F /* CityButtonInfoView.swift in Sources */,
+				9C91BAB5286D874B00D3C5B7 /* Image.swift in Sources */,
 				9C658DFA28647D730023DAB0 /* Object.swift in Sources */,
 				9C91BAA3286C392400D3C5B7 /* ObjectDescriptionModel.swift in Sources */,
 				9C91BA97286AD4B400D3C5B7 /* CityImageView.swift in Sources */,

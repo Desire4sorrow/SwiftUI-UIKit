@@ -22,12 +22,23 @@ final class MainScreenViewController: UIViewController {
         selectedCity ?? currentCity
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureCityTableView()
         prepareNavigationBar()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        let indexPath = NSIndexPath(row: 0, section: 0)
+        cityTableView.selectRow(at: indexPath as IndexPath, animated: false, scrollPosition: .none)
+      }
     
     func prepareNavigationBar() {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
