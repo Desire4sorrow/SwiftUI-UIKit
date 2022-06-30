@@ -31,9 +31,10 @@ struct ObjectDescriptionView: View {
                     TopBar(offset: $offset,
                            edge: objectModel.topEdge,
                            object: objectModel.object)
-                        .frame(height: maxHeight + offset, alignment: .bottom)
+                        .frame(height: getHeaderHeight(), alignment: .bottom)
                         .cornerRadius(10)
                 }
+                .zIndex(1)
                 .frame(height: maxHeight)
                 .offset(y: -offset)
                 
@@ -42,6 +43,7 @@ struct ObjectDescriptionView: View {
                     .font(.title3.bold())
                     .foregroundColor(.purple)
                     .shadow(color: .white, radius: 1, x: 1, y: 1)
+                    .zIndex(0)
             }
             .modifier(OffsetModifier(offset: $offset))
         }
@@ -53,5 +55,13 @@ struct ObjectDescriptionView: View {
         .coordinateSpace(name: "availableScroll")
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: backButton)
+    }
+    
+    func getHeaderHeight() -> CGFloat {
+        let topHeight = maxHeight + offset
+        
+        return topHeight > (80 + objectModel.topEdge)
+          ? topHeight
+          : (80 + objectModel.topEdge)
     }
 }

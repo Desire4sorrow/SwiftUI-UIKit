@@ -45,6 +45,7 @@
 		9C91BAA6286C8FF800D3C5B7 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAA5286C8FF800D3C5B7 /* TopBar.swift */; };
 		9C91BAAB286C957C00D3C5B7 /* OffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAAA286C957C00D3C5B7 /* OffsetModifier.swift */; };
 		9C91BAAD286C9B1D00D3C5B7 /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAAC286C9B1D00D3C5B7 /* Descriptions.swift */; };
+		9C91BAB3286D794D00D3C5B7 /* TopBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAB2286D794D00D3C5B7 /* TopBarModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		9C91BAA5286C8FF800D3C5B7 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		9C91BAAA286C957C00D3C5B7 /* OffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetModifier.swift; sourceTree = "<group>"; };
 		9C91BAAC286C9B1D00D3C5B7 /* Descriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descriptions.swift; sourceTree = "<group>"; };
+		9C91BAB2286D794D00D3C5B7 /* TopBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				9C658DF928647D730023DAB0 /* Object.swift */,
 				9C0D5C9828699B1E0048C06F /* ObjectsViewModel.swift */,
 				9C91BAA2286C392400D3C5B7 /* ObjectDescriptionModel.swift */,
+				9C91BAB2286D794D00D3C5B7 /* TopBarModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				9C5C4EC32859D0B5008C69F2 /* CityTableViewCell.swift in Sources */,
 				9C5C4E832859C706008C69F2 /* AppDelegate.swift in Sources */,
 				9C5C4EBD2859C743008C69F2 /* MainScreenProtocols.swift in Sources */,
+				9C91BAB3286D794D00D3C5B7 /* TopBarModel.swift in Sources */,
 				9C4B6C1D285C7C9000064537 /* CustomActivityView.swift in Sources */,
 				9C0D5C9B2869A3480048C06F /* NSObject + extension.swift in Sources */,
 				9C5C4EBB2859C743008C69F2 /* MainScreenRouter.swift in Sources */,
