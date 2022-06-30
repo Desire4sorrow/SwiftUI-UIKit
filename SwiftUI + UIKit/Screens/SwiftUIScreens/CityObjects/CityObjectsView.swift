@@ -63,6 +63,7 @@ struct CityObjectsView: View {
                     let topEdge = proxy.safeAreaInsets.top
                     ObjectDescriptionView(objectModel: .init(object: object,
                                                              cityName: objectsViewModel.city,
+                                                             cityImage: objectsViewModel.backgroundImage,
                                                              topEdge: topEdge))
                         .ignoresSafeArea(.all, edges: .top)
                 }

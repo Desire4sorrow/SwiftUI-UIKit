@@ -11,21 +11,20 @@ struct TopBar: View {
     
     @Binding var offset: CGFloat
     
-    let edge: CGFloat
-    let object: Object
+    let topBarModel: TopBarModel
     
     var body: some View {
-            ZStack(alignment: .bottomLeading) {
-                Image(object.objectIcon)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                Text(object.objectName)
-                    .font(.largeTitle.bold())
-                    .foregroundColor(.white)
-                    .shadow(color: .black, radius: 4, x: 1, y: 1)
-                    .padding()
-            }
-            .padding(.bottom)
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+        ZStack(alignment: .bottomLeading) {
+            Image(topBarModel.object.objectIcon)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+            Text(topBarModel.object.objectName)
+                .font(.largeTitle.bold())
+                .foregroundColor(.white)
+                .shadow(color: .black, radius: 4, x: 1, y: 1)
+                .padding()
         }
+        .padding(.bottom)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+    }
 }

@@ -24,13 +24,32 @@ struct ObjectDescriptionView: View {
         }
     }
     
+    var cityImage: some View {
+        ZStack {
+            Rectangle()
+                .cornerRadius(20)
+                .foregroundColor(Color.guidePink.opacity(0.8))
+                .blur(radius: 3)
+                .shadow(radius: 3)
+            HStack {
+                Image(objectModel.cityImage)
+                    .resizable()
+                    .clipShape(Circle())
+                    .frame(width: 40, height: 40)
+                Text(objectModel.cityName)
+                    .padding(.trailing)
+            }
+        }
+    }
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 10) {
                 GeometryReader { proxy in
                     TopBar(offset: $offset,
-                           edge: objectModel.topEdge,
-                           object: objectModel.object)
+                           topBarModel: .init(edge: objectModel.topEdge,
+                                              object: objectModel.object,
+                                              maxHeight: maxHeight))
                         .frame(height: getHeaderHeight(), alignment: .bottom)
                         .cornerRadius(10)
                 }
@@ -54,7 +73,7 @@ struct ObjectDescriptionView: View {
         )
         .coordinateSpace(name: "availableScroll")
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: backButton)
+        .navigationBarItems(leading: backButton, trailing: cityImage)
     }
     
     func getHeaderHeight() -> CGFloat {
