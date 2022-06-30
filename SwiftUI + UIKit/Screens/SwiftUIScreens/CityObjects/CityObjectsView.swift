@@ -32,7 +32,7 @@ struct CityObjectsView: View {
         Button {
             presentationMode.wrappedValue.dismiss()
         } label: {
-            Image(systemName: "arrow.left")
+            Image.backArrow
                 .foregroundColor(needShowDarkTheme ? .white : .pink)
         }
     }

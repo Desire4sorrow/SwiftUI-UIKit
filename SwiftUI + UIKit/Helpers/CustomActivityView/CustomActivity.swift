@@ -22,23 +22,23 @@ class CustomActivity: UIActivity {
     }
     
     override var activityType: UIActivity.ActivityType? {
-        return customActivityType
+        customActivityType
     }
     
     override var activityTitle: String? {
-        return activityName
+        activityName
     }
     
     override class var activityCategory: UIActivity.Category {
-        return .share
+        .share
     }
     
     override var activityImage: UIImage? {
-        return UIImage(named: activityImageName)
+        UIImage(named: activityImageName)
     }
     
     override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
-        return true
+        true
     }
     
     override func prepare(withActivityItems activityItems: [Any]) {

@@ -47,6 +47,8 @@
 		9C91BAAD286C9B1D00D3C5B7 /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAAC286C9B1D00D3C5B7 /* Descriptions.swift */; };
 		9C91BAB3286D794D00D3C5B7 /* TopBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAB2286D794D00D3C5B7 /* TopBarModel.swift */; };
 		9C91BAB5286D874B00D3C5B7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAB4286D874B00D3C5B7 /* Image.swift */; };
+		9C91BABC286D93CD00D3C5B7 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BABB286D93CD00D3C5B7 /* FeedbackView.swift */; };
+		9C91BABF286D988200D3C5B7 /* AddFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BABE286D988200D3C5B7 /* AddFeedbackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		9C91BAAC286C9B1D00D3C5B7 /* Descriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descriptions.swift; sourceTree = "<group>"; };
 		9C91BAB2286D794D00D3C5B7 /* TopBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarModel.swift; sourceTree = "<group>"; };
 		9C91BAB4286D874B00D3C5B7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		9C91BABB286D93CD00D3C5B7 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
+		9C91BABE286D988200D3C5B7 /* AddFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedbackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,10 +311,12 @@
 		9C91BAB0286D760500D3C5B7 /* SwiftUIScreens */ = {
 			isa = PBXGroup;
 			children = (
+				9C91BABD286D987300D3C5B7 /* AddFeedback */,
+				9C91BABA286D93A600D3C5B7 /* Feedback */,
 				9C91BA95286AD49600D3C5B7 /* CityInfo */,
 				9C91BAB1286D763000D3C5B7 /* CityDescription */,
-				9C91BAA4286C8FD500D3C5B7 /* ObjectDescription */,
 				9C5C4EC62859E08D008C69F2 /* CityObjects */,
+				9C91BAA4286C8FD500D3C5B7 /* ObjectDescription */,
 			);
 			path = SwiftUIScreens;
 			sourceTree = "<group>";
@@ -321,6 +327,22 @@
 				9C723D05285B228500B2D09E /* CityDescriptionView.swift */,
 			);
 			path = CityDescription;
+			sourceTree = "<group>";
+		};
+		9C91BABA286D93A600D3C5B7 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				9C91BABB286D93CD00D3C5B7 /* FeedbackView.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		9C91BABD286D987300D3C5B7 /* AddFeedback */ = {
+			isa = PBXGroup;
+			children = (
+				9C91BABE286D988200D3C5B7 /* AddFeedbackView.swift */,
+			);
+			path = AddFeedback;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,6 +486,7 @@
 			files = (
 				9C91BAAB286C957C00D3C5B7 /* OffsetModifier.swift in Sources */,
 				9C0D5CA22869DC480048C06F /* Notifications.swift in Sources */,
+				9C91BABF286D988200D3C5B7 /* AddFeedbackView.swift in Sources */,
 				9C0D5CA42869DCBD0048C06F /* NotificationName + extension.swift in Sources */,
 				9C0D5C97286999650048C06F /* ObjectDescriptionView.swift in Sources */,
 				9C91BAAD286C9B1D00D3C5B7 /* Descriptions.swift in Sources */,
@@ -483,6 +506,7 @@
 				9C723D06285B228500B2D09E /* CityDescriptionView.swift in Sources */,
 				9C5C4EC32859D0B5008C69F2 /* CityTableViewCell.swift in Sources */,
 				9C5C4E832859C706008C69F2 /* AppDelegate.swift in Sources */,
+				9C91BABC286D93CD00D3C5B7 /* FeedbackView.swift in Sources */,
 				9C5C4EBD2859C743008C69F2 /* MainScreenProtocols.swift in Sources */,
 				9C91BAB3286D794D00D3C5B7 /* TopBarModel.swift in Sources */,
 				9C4B6C1D285C7C9000064537 /* CustomActivityView.swift in Sources */,

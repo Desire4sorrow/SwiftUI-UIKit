@@ -9,4 +9,5 @@ import SwiftUI
 
 extension Image {
     static let background = Image("background-image")
+    static let backArrow = Image(systemName: "arrow.left")
 }
