@@ -164,7 +164,6 @@
 				9C0D5C9F2869A3E00048C06F /* ViewDidLoadModifier.swift */,
 				9C0D5CA12869DC480048C06F /* Notifications.swift */,
 				9C91BA9D286B02C400D3C5B7 /* Theme.swift */,
-				9C91BAAC286C9B1D00D3C5B7 /* Descriptions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -172,6 +171,7 @@
 		9C4B6C23285CC5F100064537 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9C91BAAC286C9B1D00D3C5B7 /* Descriptions.swift */,
 				9C5C4ECD285A207A008C69F2 /* CityViewModel.swift */,
 				9C5C4EC92859FC98008C69F2 /* City.swift */,
 				9C658DF928647D730023DAB0 /* Object.swift */,
@@ -202,11 +202,10 @@
 		9C5C4E812859C706008C69F2 /* SwiftUI + UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9C91BAAE286D75E000D3C5B7 /* Screens */,
 				9C91BA9A286AF87F00D3C5B7 /* Resources */,
 				9C4B6C23285CC5F100064537 /* Models */,
 				9C4B6C20285CAA3800064537 /* Helpers */,
-				9C5C4EC62859E08D008C69F2 /* SwiftUIViews */,
-				9C5C4EB22859C71E008C69F2 /* MainScreen */,
 				9C5C4E822859C706008C69F2 /* AppDelegate.swift */,
 				9C5C4E882859C706008C69F2 /* Main.storyboard */,
 				9C5C4E902859C709008C69F2 /* Info.plist */,
@@ -237,15 +236,12 @@
 			path = CityTableViewCell;
 			sourceTree = "<group>";
 		};
-		9C5C4EC62859E08D008C69F2 /* SwiftUIViews */ = {
+		9C5C4EC62859E08D008C69F2 /* CityObjects */ = {
 			isa = PBXGroup;
 			children = (
-				9C91BAA4286C8FD500D3C5B7 /* ObjectDescription */,
-				9C91BA95286AD49600D3C5B7 /* CityInfo */,
-				9C723D05285B228500B2D09E /* CityDescriptionView.swift */,
 				9C4B6C24285CC67000064537 /* CityObjectsView.swift */,
 			);
-			path = SwiftUIViews;
+			path = CityObjects;
 			sourceTree = "<group>";
 		};
 		9C91BA95286AD49600D3C5B7 /* CityInfo */ = {
@@ -283,6 +279,42 @@
 				9C91BAAA286C957C00D3C5B7 /* OffsetModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		9C91BAAE286D75E000D3C5B7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9C91BAB0286D760500D3C5B7 /* SwiftUIScreens */,
+				9C91BAAF286D75EE00D3C5B7 /* UIKitScreens */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9C91BAAF286D75EE00D3C5B7 /* UIKitScreens */ = {
+			isa = PBXGroup;
+			children = (
+				9C5C4EB22859C71E008C69F2 /* MainScreen */,
+			);
+			path = UIKitScreens;
+			sourceTree = "<group>";
+		};
+		9C91BAB0286D760500D3C5B7 /* SwiftUIScreens */ = {
+			isa = PBXGroup;
+			children = (
+				9C91BAB1286D763000D3C5B7 /* CityDescription */,
+				9C91BA95286AD49600D3C5B7 /* CityInfo */,
+				9C91BAA4286C8FD500D3C5B7 /* ObjectDescription */,
+				9C5C4EC62859E08D008C69F2 /* CityObjects */,
+			);
+			path = SwiftUIScreens;
+			sourceTree = "<group>";
+		};
+		9C91BAB1286D763000D3C5B7 /* CityDescription */ = {
+			isa = PBXGroup;
+			children = (
+				9C723D05285B228500B2D09E /* CityDescriptionView.swift */,
+			);
+			path = CityDescription;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
