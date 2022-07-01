@@ -8,20 +8,20 @@
 import UIKit
 
 struct MainScreenConfigurator {
-  static func configure() -> MainScreenViewController {
-    let storyboard = UIStoryboard(name: "MainScreen", bundle: nil)
-    let view = storyboard.instantiateViewController(withIdentifier: "MainScreenViewController") as! MainScreenViewController
-    let presenter = MainScreenPresenter()
-    let router = MainScreenRouter()
+    static func configure() -> MainScreenViewController {
+        let storyboard = UIStoryboard(name: "MainScreen", bundle: nil)
+        let view = storyboard.instantiateViewController(withIdentifier: "MainScreenViewController") as! MainScreenViewController
+        let presenter = MainScreenPresenter()
+        let router = MainScreenRouter()
 
-    view.presenter = presenter
+        view.presenter = presenter
 
-    router.presenter = presenter
-    router.view = view
+        router.presenter = presenter
+        router.view = view
 
-    presenter.view = view
-    presenter.router = router
+        presenter.view = view
+        presenter.router = router
 
-    return view
-  }
+        return view
+    }
 }

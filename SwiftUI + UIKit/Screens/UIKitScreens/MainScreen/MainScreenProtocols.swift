@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MainScreenPresenterInput: AnyObject {
-  func cityChanged()
+    func cityChanged()
 }
 
 protocol MainScreenViewInput: AnyObject {}

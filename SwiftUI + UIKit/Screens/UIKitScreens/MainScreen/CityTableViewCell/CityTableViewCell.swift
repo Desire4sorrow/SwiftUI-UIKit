@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 
 final class CityTableViewCell: UITableViewCell {
-  @IBOutlet var coordinatesLabel: UILabel!
-  @IBOutlet var cityNameLabel: UILabel!
+    @IBOutlet var coordinatesLabel: UILabel!
+    @IBOutlet var cityNameLabel: UILabel!
 
-  func setup(city: City) {
-    cityNameLabel.text = city.cityName
-    coordinatesLabel.text = "\(city.latitude)  \(city.longitude)"
-  }
+    func setup(city: City) {
+        cityNameLabel.text = city.cityName
+        coordinatesLabel.text = "\(city.latitude)  \(city.longitude)"
+    }
 }

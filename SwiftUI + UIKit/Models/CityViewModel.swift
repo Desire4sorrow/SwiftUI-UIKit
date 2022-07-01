@@ -8,15 +8,15 @@
 import SwiftUI
 
 class CityViewModel: ObservableObject {
-  @Published private(set) var currentCity: City
+    @Published private(set) var currentCity: City
 
-  init(currectCity: City) {
-    currentCity = currectCity
-  }
-
-  func update(newCity: City) {
-    withAnimation {
-      currentCity = newCity
+    init(currectCity: City) {
+        currentCity = currectCity
     }
-  }
+
+    func update(newCity: City) {
+        withAnimation {
+            currentCity = newCity
+        }
+    }
 }

@@ -9,25 +9,25 @@ import Foundation
 import SwiftUI
 
 struct CityInfoView: View {
-  @ObservedObject var viewModel: CityViewModel
+    @ObservedObject var viewModel: CityViewModel
 
-  @State private var city: City = .kazan
+    @State private var city: City = .kazan
 
-  var body: some View {
-    VStack {
-      CityImageView(city: city)
-      CityInfoButtonView(city: viewModel.currentCity)
-      Spacer()
+    var body: some View {
+        VStack {
+            CityImageView(city: city)
+            CityInfoButtonView(city: viewModel.currentCity)
+            Spacer()
+        }
+        .onReceive(viewModel.$currentCity) { newValue in
+            withAnimation(.easeInOut(duration: 0.1)) {
+                city = newValue
+            }
+        }
+        .background(
+            Image.background
+                .blur(radius: 25)
+        )
+        .shadow(radius: 3)
     }
-    .onReceive(viewModel.$currentCity) { newValue in
-      withAnimation(.easeInOut(duration: 0.1)) {
-        city = newValue
-      }
-    }
-    .background(
-      Image.background
-        .blur(radius: 25)
-    )
-    .shadow(radius: 3)
-  }
 }

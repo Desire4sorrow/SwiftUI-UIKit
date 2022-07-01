@@ -8,8 +8,8 @@
 import UIKit
 
 struct ObjectDescriptionModel {
-  let object: Object
-  let cityName: String
-  let cityImage: String
-  let topEdge: CGFloat
+    let object: Object
+    let cityName: String
+    let cityImage: String
+    let topEdge: CGFloat
 }

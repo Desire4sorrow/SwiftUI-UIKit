@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct ActivityView: UIViewControllerRepresentable {
-  typealias UIViewControllerType = UIActivityViewController
+    typealias UIViewControllerType = UIActivityViewController
 
-  public var activityItems: [Any]
-  public var applicationActivities: [UIActivity]?
+    public var activityItems: [Any]
+    public var applicationActivities: [UIActivity]?
 
-  func makeUIViewController(context _: Context) -> UIActivityViewController {
-    let vc = UIActivityViewController(activityItems: activityItems, applicationActivities: applicationActivities)
+    func makeUIViewController(context _: Context) -> UIActivityViewController {
+        let vc = UIActivityViewController(activityItems: activityItems, applicationActivities: applicationActivities)
 
-    return vc
-  }
+        return vc
+    }
 
-  func updateUIViewController(_: UIActivityViewController, context _: Context) {}
+    func updateUIViewController(_: UIActivityViewController, context _: Context) {}
 }

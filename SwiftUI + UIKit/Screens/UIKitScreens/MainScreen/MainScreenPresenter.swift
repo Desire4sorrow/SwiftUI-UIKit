@@ -8,16 +8,16 @@
 import Foundation
 
 final class MainScreenPresenter {
-  unowned var view: MainScreenViewInput!
-  var router: MainScreenRouterInput!
+    unowned var view: MainScreenViewInput!
+    var router: MainScreenRouterInput!
 }
 
 // MARK: - MainScreenPresenterInput
 
 extension MainScreenPresenter: MainScreenPresenterInput {
-  func cityChanged() {
-    postNotification(.cityChanged)
-  }
+    func cityChanged() {
+        postNotification(.cityChanged)
+    }
 }
 
 // MARK: - MainScreenOutput
