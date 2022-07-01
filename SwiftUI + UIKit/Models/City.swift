@@ -18,10 +18,7 @@ public enum City: CaseIterable {
     case yoshkarOla
     
     public var baseUrl: String {
-        switch self {
-        default:
-            return "https://yandex.ru/maps/"
-        }
+        "https://yandex.ru/maps/"
     }
     
     public var cityName: String {
@@ -159,10 +156,21 @@ public enum City: CaseIterable {
                           timeOfWork: "24 часа",
                           objectDescription: Description.petropavlovskaya.rawValue)]
         case .novgorod:
-            return [.init(id: 1, objectIcon: "No",
-                                objectName: "No",
-                                timeOfWork: "No",
-                                objectDescription: "")]
+            return [.init(id: 1,
+                          objectIcon: "nizhniy-kremlin",
+                          objectName: "Нижегородский кремль",
+                          timeOfWork: "8:00 - 17:00",
+                          objectDescription: Description.nizhniyKremlin.rawValue),
+                    .init(id: 2,
+                          objectIcon: "nizhniy-naberezhnaya",
+                          objectName: "Набережная Федоровского",
+                          timeOfWork: "24 часа",
+                          objectDescription: Description.nizhniyNaberezhnaya.rawValue),
+                    .init(id: 3,
+                          objectIcon: "nizhniy-lestnitsa",
+                          objectName: "Чкаловская лестница",
+                          timeOfWork: "24 часа",
+                          objectDescription: Description.nizhniyLestnitsa.rawValue)]
         case .cheboksary:
             return [.init(id: 1, objectIcon: "No",
                                 objectName: "No",
@@ -189,21 +197,21 @@ public enum City: CaseIterable {
     public var cityURL: String {
         switch self {
         case .kazan:
-            return "https://yandex.ru/maps/43/kazan/?ll=49.108795%2C55.796289&z=12"
+            return baseUrl + "43/kazan/?ll=49.108795%2C55.796289&z=12"
         case .moskow:
-            return "https://yandex.ru/maps/geo/moskva/53166393/?ll=37.646930%2C55.725146&z=10.87"
+            return baseUrl + "geo/moskva/53166393/?ll=37.646930%2C55.725146&z=10.87"
         case .saintP:
-            return "https://yandex.ru/maps/geo/sankt_peterburg/53152804/?ll=30.304908%2C59.917952&z=11.13"
+            return baseUrl + "geo/sankt_peterburg/53152804/?ll=30.304908%2C59.917952&z=11.13"
         case .novgorod:
-            return "https://yandex.ru/maps/geo/nizhniy_novgorod/53105078/?ll=43.833528%2C56.304645&z=11.81"
+            return baseUrl + "geo/nizhniy_novgorod/53105078/?ll=43.833528%2C56.304645&z=11.81"
         case .cheboksary:
-            return "https://yandex.ru/maps/geo/cheboksary/53104617/?ll=47.266880%2C56.104037&z=12.72"
+            return baseUrl + "geo/cheboksary/53104617/?ll=47.266880%2C56.104037&z=12.72"
         case .ekaterinburg:
-            return "https://yandex.ru/maps/geo/yekaterinburg/53166537/?ll=60.475066%2C56.788751&z=11.09"
+            return baseUrl + "geo/yekaterinburg/53166537/?ll=60.475066%2C56.788751&z=11.09"
         case .novosibirsk:
-            return "https://yandex.ru/maps/geo/novosibirsk/53118058/?ll=82.956043%2C55.002021&z=11.13"
+            return baseUrl + "geo/novosibirsk/53118058/?ll=82.956043%2C55.002021&z=11.13"
         case .yoshkarOla:
-            return "https://yandex.ru/maps/41/yoshkar-ola/?ll=47.842594%2C56.645599&z=15"
+            return baseUrl + "41/yoshkar-ola/?ll=47.842594%2C56.645599&z=15"
         }
     }
 }
