@@ -48,10 +48,16 @@ struct AddFeedbackView: View {
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 20) {
-                Text("Выберите оценку")
-                Picker("Оценка", selection: $marks) {
-
+                HStack {
+                    Text("Выберите оценку:")
+                    Spacer()
+                    Picker("Текущая: ", selection: $marks) {
+                        ForEach(1..<6) {
+                            Text("\($0)")
+                        }
+                    }
                 }
+                .font(.title2)
                 Text("Текст отзыва")
                 reviewTextView
             }
