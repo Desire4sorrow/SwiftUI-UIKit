@@ -15,6 +15,14 @@ public enum City: CaseIterable {
     case cheboksary
     case ekaterinburg
     case novosibirsk
+    case yoshkarOla
+    
+    public var baseUrl: String {
+        switch self {
+        default:
+            return "https://yandex.ru/maps/"
+        }
+    }
     
     public var cityName: String {
         switch self {
@@ -32,6 +40,8 @@ public enum City: CaseIterable {
             return "Екатеринбург"
         case .novosibirsk:
             return "Новосибирск"
+        case .yoshkarOla:
+            return "Йошкар-Ола"
         }
     }
     
@@ -51,6 +61,8 @@ public enum City: CaseIterable {
             return 56.8519
         case .novosibirsk:
             return 55.0415
+        case .yoshkarOla:
+            return 56.3819
         }
     }
     
@@ -70,6 +82,8 @@ public enum City: CaseIterable {
             return 60.6122
         case .novosibirsk:
             return 82.9346
+        case .yoshkarOla:
+            return 47.5326
         }
     }
     
@@ -89,6 +103,8 @@ public enum City: CaseIterable {
             return "ekaterinburg"
         case .novosibirsk:
             return "novosibirsk"
+        case .yoshkarOla:
+            return "yoshkar-ola"
         }
     }
     
@@ -122,27 +138,43 @@ public enum City: CaseIterable {
                           timeOfWork: "24 часа",
                           objectDescription: Description.ismailovskiy.rawValue)]
         case .saintP:
-            return [Object.init(id: 1, objectIcon: "No",
-                                objectName: "No",
-                                timeOfWork: "No",
-                                objectDescription: "")]
+            return [.init(id: 1,
+                          objectIcon: "hermitage",
+                          objectName: "Эрмитаж",
+                          timeOfWork: "8:00 - 17:00",
+                          objectDescription: Description.ermitage.rawValue),
+                    .init(id: 2,
+                          objectIcon: "isaakievskiy",
+                          objectName: "Исаакиевский собор",
+                          timeOfWork: "6:00 - 20:00",
+                          objectDescription: Description.isaakievskiy.rawValue),
+                    .init(id: 3,
+                          objectIcon: "petropavlovskaya",
+                          objectName: "Петропавловская крепость",
+                          timeOfWork: "24 часа",
+                          objectDescription: Description.petropavlovskaya.rawValue)]
         case .novgorod:
-            return [Object.init(id: 1, objectIcon: "No",
+            return [.init(id: 1, objectIcon: "No",
                                 objectName: "No",
                                 timeOfWork: "No",
                                 objectDescription: "")]
         case .cheboksary:
-            return [Object.init(id: 1, objectIcon: "No",
+            return [.init(id: 1, objectIcon: "No",
                                 objectName: "No",
                                 timeOfWork: "No",
                                 objectDescription: "")]
         case .ekaterinburg:
-            return [Object.init(id: 1, objectIcon: "No",
+            return [.init(id: 1, objectIcon: "No",
                                 objectName: "No",
                                 timeOfWork: "No",
                                 objectDescription: "")]
         case .novosibirsk:
-            return [Object.init(id: 1, objectIcon: "No",
+            return [.init(id: 1, objectIcon: "No",
+                                objectName: "No",
+                                timeOfWork: "No",
+                                objectDescription: "")]
+        case .yoshkarOla:
+            return [.init(id: 1, objectIcon: "No",
                                 objectName: "No",
                                 timeOfWork: "No",
                                 objectDescription: "")]
@@ -165,6 +197,8 @@ public enum City: CaseIterable {
             return "https://yandex.ru/maps/geo/yekaterinburg/53166537/?ll=60.475066%2C56.788751&z=11.09"
         case .novosibirsk:
             return "https://yandex.ru/maps/geo/novosibirsk/53118058/?ll=82.956043%2C55.002021&z=11.13"
+        case .yoshkarOla:
+            return "https://yandex.ru/maps/41/yoshkar-ola/?ll=47.842594%2C56.645599&z=15"
         }
     }
 }
