@@ -9,7 +9,11 @@ import Introspect
 import SwiftUI
 
 struct FeedbackView: View {
+
     @Environment(\.presentationMode) var presentationMode
+
+    @UserDefaultsBacked(key: "reviewList", defaultValue: [])
+    static var reviewList: [ReviewModel]
 
     var backButton: some View {
         Button {
@@ -23,18 +27,18 @@ struct FeedbackView: View {
     var body: some View {
         VStack {
             List {
-                Text("Text отзыва")
-                Text("Text отзыва")
-                Text("Text отзыва")
-                Text("Text отзыва")
-                Text("Text отзыва")
-                Text("Text отзыва")
-                Text("Text отзыва")
-                Text("Text отзыва")
-                Text("Text отзыва")
-                Text("Text отзыва")
+                ForEach(FeedbackView.reviewList) { model in
+                    if !FeedbackView.reviewList.isEmpty {
+                        NavigationLink(destination: ReviewTextView(model: model)) {
+                            ReviewRow(model: model)
+                        }
+                    } else {
+                        Text("Отзывов пока нет")
+                    }
+                }
             }
-
+            .listRowSeparator(.hidden)
+            
             NavigationLink("Оставить отзыв") {
                 AddFeedbackView()
             }

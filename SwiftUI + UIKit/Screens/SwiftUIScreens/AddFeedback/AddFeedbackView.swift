@@ -12,11 +12,9 @@ struct AddFeedbackView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var text = ""
     @State private var currentMarks = 5
-
-    @UserDefaultsBacked(key: "savedMark", defaultValue: nil)
-    static var savedMark: Int?
-    @UserDefaultsBacked(key: "savedReview", defaultValue: "")
-    static var savedReview: String
+    @State private var senderName = ""
+    @UserDefaultsBacked(key: "id", defaultValue: 0)
+    static var reviewId: Int
 
     var backButton: some View {
         Button {
@@ -28,17 +26,32 @@ struct AddFeedbackView: View {
     }
 
     var reviewTextView: some View {
-        TextEditor(text: $text)
-            .frame(height: 200)
-            .background(Color.guidePinkWithHighOpacity)
-            .onChange(of: text) { _ in
+        VStack(alignment: .leading) {
+            Text("Текст отзыва:")
+            VStack {
+                TextEditor(text: $text)
+                    .cornerRadius(10)
+                    .frame(height: 200)
+                    .background(Color.guidePinkWithHighOpacity)
             }
+            .cornerRadius(10)
+        }
     }
 
     var addButton: some View {
         Button {
+            if text != "", senderName != "" {
+                AddFeedbackView.reviewId += 1
+                FeedbackView.reviewList.append(.init(
+                    id: AddFeedbackView.reviewId,
+                    name: senderName,
+                    mark: currentMarks,
+                    reviewText: text
+                ))
+                print(FeedbackView.reviewList)
+            }
             presentationMode.wrappedValue.dismiss()
-            AddFeedbackView.savedMark = currentMarks
+
         } label: {
             Text("Добавить")
         }
@@ -55,7 +68,7 @@ struct AddFeedbackView: View {
         HStack {
             Text("Выберите оценку:")
             Spacer()
-            Picker(" ", selection: $currentMarks) {
+            Picker("", selection: $currentMarks) {
                 ForEach(1..<6) { index in
                     Text("\(index)").tag(index)
                 }
@@ -63,11 +76,25 @@ struct AddFeedbackView: View {
         }
     }
 
+    var nameTextField: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            Text("Введите Ваше имя:")
+            VStack {
+                TextField(text: $senderName) {}
+                    .frame(height: 40)
+                    .cornerRadius(10)
+                    .padding(.leading, 5)
+                    .background(.white)
+            }
+            .cornerRadius(10)
+        }
+    }
+
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 20) {
                 markRow
-                Text("Текст отзыва")
+                nameTextField
                 reviewTextView
             }
             .onTapGesture {
