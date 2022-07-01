@@ -50,6 +50,7 @@
 		9C91BABC286D93CD00D3C5B7 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BABB286D93CD00D3C5B7 /* FeedbackView.swift */; };
 		9C91BABF286D988200D3C5B7 /* AddFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BABE286D988200D3C5B7 /* AddFeedbackView.swift */; };
 		9C91BAC3286DD6FF00D3C5B7 /* UIApplication + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAC2286DD6FF00D3C5B7 /* UIApplication + extension.swift */; };
+		9CF0D2AA286F19CC006B6DEB /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2A9286F19CC006B6DEB /* UserDefaultKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		9C91BABB286D93CD00D3C5B7 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
 		9C91BABE286D988200D3C5B7 /* AddFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedbackView.swift; sourceTree = "<group>"; };
 		9C91BAC2286DD6FF00D3C5B7 /* UIApplication + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + extension.swift"; sourceTree = "<group>"; };
+		9CF0D2A9286F19CC006B6DEB /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				9C0D5C9F2869A3E00048C06F /* ViewDidLoadModifier.swift */,
 				9C0D5CA12869DC480048C06F /* Notifications.swift */,
 				9C91BA9D286B02C400D3C5B7 /* Theme.swift */,
+				9CF0D2A9286F19CC006B6DEB /* UserDefaultKeys.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				9C91BAB3286D794D00D3C5B7 /* TopBarModel.swift in Sources */,
 				9C4B6C1D285C7C9000064537 /* CustomActivityView.swift in Sources */,
 				9C0D5C9B2869A3480048C06F /* NSObject + extension.swift in Sources */,
+				9CF0D2AA286F19CC006B6DEB /* UserDefaultKeys.swift in Sources */,
 				9C5C4EBB2859C743008C69F2 /* MainScreenRouter.swift in Sources */,
 				9C5C4EBC2859C743008C69F2 /* MainScreenViewController.swift in Sources */,
 				9C91BA9E286B02C400D3C5B7 /* Theme.swift in Sources */,

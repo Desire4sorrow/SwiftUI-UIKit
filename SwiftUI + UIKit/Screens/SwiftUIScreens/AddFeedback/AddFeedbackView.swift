@@ -11,7 +11,12 @@ import SwiftUI
 struct AddFeedbackView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var text = ""
-    @State private var marks = 5
+    @State private var currentMarks = 5
+
+    @UserDefaultsBacked(key: "savedMark", defaultValue: nil)
+    static var savedMark: Int?
+    @UserDefaultsBacked(key: "savedReview", defaultValue: "")
+    static var savedReview: String
 
     var backButton: some View {
         Button {
@@ -33,6 +38,7 @@ struct AddFeedbackView: View {
     var addButton: some View {
         Button {
             presentationMode.wrappedValue.dismiss()
+            AddFeedbackView.savedMark = currentMarks
         } label: {
             Text("Добавить")
         }
@@ -45,19 +51,22 @@ struct AddFeedbackView: View {
         .shadow(radius: 3)
     }
 
+    var markRow: some View {
+        HStack {
+            Text("Выберите оценку:")
+            Spacer()
+            Picker(" ", selection: $currentMarks) {
+                ForEach(1..<6) { index in
+                    Text("\(index)").tag(index)
+                }
+            }
+        }
+    }
+
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 20) {
-                HStack {
-                    Text("Выберите оценку:")
-                    Spacer()
-                    Picker("Текущая: ", selection: $marks) {
-                        ForEach(1..<6) {
-                            Text("\($0)")
-                        }
-                    }
-                }
-                .font(.title2)
+                markRow
                 Text("Текст отзыва")
                 reviewTextView
             }
