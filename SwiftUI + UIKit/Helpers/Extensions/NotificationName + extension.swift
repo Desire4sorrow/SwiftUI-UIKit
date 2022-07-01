@@ -8,5 +8,5 @@
 import Foundation
 
 public extension Notification.Name {
-    static let cityChanged = Self(rawValue: "cityChanged")
+  static let cityChanged = Self(rawValue: "cityChanged")
 }

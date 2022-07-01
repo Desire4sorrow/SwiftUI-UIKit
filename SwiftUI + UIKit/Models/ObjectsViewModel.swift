@@ -8,7 +8,7 @@
 import Foundation
 
 struct ObjectsViewModel {
-    let city: String
-    let backgroundImage: String
-    let cityObjects: [Object]
+  let city: String
+  let backgroundImage: String
+  let cityObjects: [Object]
 }

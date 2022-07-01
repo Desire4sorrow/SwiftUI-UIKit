@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 public struct Object: Identifiable {
-    public var id: Int
-    public var objectIcon: String
-    public var objectName: String
-    public var timeOfWork: String
-    public var objectDescription: String
+  public var id: Int
+  public var objectIcon: String
+  public var objectName: String
+  public var timeOfWork: String
+  public var objectDescription: String
 }

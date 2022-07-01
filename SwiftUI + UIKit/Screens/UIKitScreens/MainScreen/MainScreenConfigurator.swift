@@ -1,4 +1,4 @@
-//  
+//
 //  MainScreenConfigurator.swift
 //  SwiftUI + UIKit
 //
@@ -8,21 +8,20 @@
 import UIKit
 
 struct MainScreenConfigurator {
+  static func configure() -> MainScreenViewController {
+    let storyboard = UIStoryboard(name: "MainScreen", bundle: nil)
+    let view = storyboard.instantiateViewController(withIdentifier: "MainScreenViewController") as! MainScreenViewController
+    let presenter = MainScreenPresenter()
+    let router = MainScreenRouter()
 
-    static func configure() -> MainScreenViewController {
-        let storyboard = UIStoryboard(name: "MainScreen", bundle: nil)
-        let view = storyboard.instantiateViewController(withIdentifier: "MainScreenViewController") as! MainScreenViewController
-        let presenter = MainScreenPresenter()
-        let router = MainScreenRouter()
-        
-        view.presenter = presenter
-        
-        router.presenter = presenter
-        router.view = view
-        
-        presenter.view = view
-        presenter.router = router
+    view.presenter = presenter
 
-        return view
-    }
+    router.presenter = presenter
+    router.view = view
+
+    presenter.view = view
+    presenter.router = router
+
+    return view
+  }
 }

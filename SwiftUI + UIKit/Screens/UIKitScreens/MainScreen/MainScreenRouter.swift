@@ -1,4 +1,4 @@
-//  
+//
 //  MainScreenRouter.swift
 //  SwiftUI + UIKit
 //
@@ -8,10 +8,8 @@
 import UIKit
 
 final class MainScreenRouter {
-    unowned var view: UIViewController!
-    unowned var presenter: MainScreenRouterOutput!
+  unowned var view: UIViewController!
+  unowned var presenter: MainScreenRouterOutput!
 }
 
-extension MainScreenRouter: MainScreenRouterInput {
-    
-}
+extension MainScreenRouter: MainScreenRouterInput {}

@@ -1,4 +1,4 @@
-//  
+//
 //  MainScreenProtocols.swift
 //  SwiftUI + UIKit
 //
@@ -8,17 +8,11 @@
 import Foundation
 
 protocol MainScreenPresenterInput: AnyObject {
-    func cityChanged()
+  func cityChanged()
 }
 
-protocol MainScreenViewInput: AnyObject {
+protocol MainScreenViewInput: AnyObject {}
 
-}
+protocol MainScreenRouterInput: AnyObject {}
 
-protocol MainScreenRouterInput: AnyObject {
-
-}
-
-protocol MainScreenRouterOutput: AnyObject {
-    
-}
+protocol MainScreenRouterOutput: AnyObject {}

@@ -8,7 +8,7 @@
 import UIKit
 
 struct TopBarModel {
-    let edge: CGFloat
-    let object: Object
-    let maxHeight: CGFloat
+  let edge: CGFloat
+  let object: Object
+  let maxHeight: CGFloat
 }

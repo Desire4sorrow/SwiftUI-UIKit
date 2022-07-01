@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct CityInfoButtonView: View {
-    
-    let city: City
-    
-    var body: some View {
-        NavigationLink("Подробнее") {
-            CityDescriptionView(currentCity: city)
-        }
-        .padding(.horizontal, 60)
-        .padding(.vertical, 15)
-        .font(.callout)
-        .background(Color.guidePurple)
-        .foregroundColor(.white)
-        .cornerRadius(16)
-        .shadow(radius: 3)
+  let city: City
+
+  var body: some View {
+    NavigationLink("Подробнее") {
+      CityDescriptionView(currentCity: city)
     }
+    .padding(.horizontal, 60)
+    .padding(.vertical, 15)
+    .font(.callout)
+    .background(Color.guidePurple)
+    .foregroundColor(.white)
+    .cornerRadius(16)
+    .shadow(radius: 3)
+  }
 }
