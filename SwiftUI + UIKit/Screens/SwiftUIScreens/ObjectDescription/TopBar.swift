@@ -17,6 +17,9 @@ struct TopBar: View {
         ZStack(alignment: .bottomLeading) {
             Image(topBarModel.object.objectIcon)
                 .resizable()
+                .cornerRadius(10)
+                        .overlay(RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.orange, lineWidth: 0))
                 .aspectRatio(contentMode: .fill)
             Text(topBarModel.object.objectName)
                 .font(.largeTitle.bold())
