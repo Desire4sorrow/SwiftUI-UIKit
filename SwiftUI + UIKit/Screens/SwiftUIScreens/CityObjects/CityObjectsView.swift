@@ -58,16 +58,7 @@ struct CityObjectsView: View {
     var objectsTable: some View {
         List(objectsViewModel.cityObjects) { object in
             NavigationLink {
-                GeometryReader { proxy in
-                    let topEdge = proxy.safeAreaInsets.top
-                    ObjectDescriptionView(objectModel: .init(
-                        object: object,
-                        cityName: objectsViewModel.city,
-                        cityImage: objectsViewModel.backgroundImage,
-                        topEdge: topEdge
-                    ))
-                    .ignoresSafeArea(.all, edges: .top)
-                }
+                PurposalLinkCell(object: object, viewModel: objectsViewModel)
             } label: {
                 HStack {
                     Image(object.objectIcon)
@@ -91,6 +82,7 @@ struct CityObjectsView: View {
                 trailing: 0
             )))
         }
+        .padding(.top, 5)
     }
 
     var body: some View {

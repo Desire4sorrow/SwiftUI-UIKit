@@ -77,33 +77,27 @@ struct CityDescriptionView: View {
         self.currentCity = currentCity
     }
 
+    var cityView: some View {
+        VStack {
+            Map(coordinateRegion: $region, showsUserLocation: true)
+                .frame(height: 200)
+                .shadow(radius: 3)
+            Image(currentCity.cityImage)
+                .resizable()
+                .clipShape(Circle())
+                .frame(height: 250)
+                .cornerRadius(8)
+                .shadow(radius: 3)
+            objectsButton
+            mapsButton
+        }
+    }
+
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack {
-                    Map(coordinateRegion: $region, showsUserLocation: true)
-                        .frame(height: 200)
-                        .shadow(radius: 3)
-                    Image(currentCity.cityImage)
-                        .resizable()
-                        .clipShape(Circle())
-                        .frame(height: 250)
-                        .cornerRadius(8)
-                        .shadow(radius: 3)
-                    objectsButton
-                    mapsButton
-                }
-                .onLoad {
-                    region = MKCoordinateRegion(
-                        center: CLLocationCoordinate2D(
-                            latitude: currentCity.latitude,
-                            longitude: currentCity.longitude
-                        ),
-                        span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
-                    )
-                }
-                .onAppear {
-                    withAnimation {
+                cityView
+                    .onLoad {
                         region = MKCoordinateRegion(
                             center: CLLocationCoordinate2D(
                                 latitude: currentCity.latitude,
@@ -112,11 +106,21 @@ struct CityDescriptionView: View {
                             span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
                         )
                     }
-                }
-                .padding()
-                .background(Image.background)
-                .navigationTitle(currentCity.cityName)
-                .navigationBarItems(leading: btnBack, trailing: btnShare)
+                    .onAppear {
+                        withAnimation {
+                            region = MKCoordinateRegion(
+                                center: CLLocationCoordinate2D(
+                                    latitude: currentCity.latitude,
+                                    longitude: currentCity.longitude
+                                ),
+                                span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
+                            )
+                        }
+                    }
+                    .padding()
+                    .background(Image.background)
+                    .navigationTitle(currentCity.cityName)
+                    .navigationBarItems(leading: btnBack, trailing: btnShare)
             }
         }
         .navigationBarHidden(true)
@@ -125,7 +129,14 @@ struct CityDescriptionView: View {
 
     func actionSheet() {
         guard let urlShare = URL(string: "https://omega-r.ru") else { return }
-        let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
-        UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+        let activityVC = UIActivityViewController(
+            activityItems: [urlShare],
+            applicationActivities: nil
+        )
+        UIApplication.shared.windows.first?.rootViewController?.present(
+            activityVC,
+            animated: true,
+            completion: nil
+        )
     }
 }
