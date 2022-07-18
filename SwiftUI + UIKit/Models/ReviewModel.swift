@@ -9,6 +9,7 @@ import Foundation
 
 struct ReviewModel: Codable, Identifiable {
     let id: Int
+    let objectId: Int
     let name: String
     let mark: Int
     let reviewText: String

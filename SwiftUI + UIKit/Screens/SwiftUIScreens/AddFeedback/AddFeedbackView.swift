@@ -10,11 +10,15 @@ import SwiftUI
 
 struct AddFeedbackView: View {
     @Environment(\.presentationMode) var presentationMode
+
     @State private var text = ""
     @State private var currentMarks = 5
     @State private var senderName = ""
+
     @UserDefaultsBacked(key: "id", defaultValue: 0)
     static var reviewId: Int
+
+    let objectId: Int
 
     var backButton: some View {
         Button {
@@ -44,6 +48,7 @@ struct AddFeedbackView: View {
                 AddFeedbackView.reviewId += 1
                 FeedbackView.reviewList.append(.init(
                     id: AddFeedbackView.reviewId,
+                    objectId: objectId,
                     name: senderName,
                     mark: currentMarks,
                     reviewText: text

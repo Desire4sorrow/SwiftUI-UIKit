@@ -15,6 +15,8 @@ struct FeedbackView: View {
     @UserDefaultsBacked(key: "reviewList", defaultValue: [])
     static var reviewList: [ReviewModel]
 
+    let objectId: Int
+
     var backButton: some View {
         Button {
             presentationMode.wrappedValue.dismiss()
@@ -24,23 +26,29 @@ struct FeedbackView: View {
         }
     }
 
-    var body: some View {
-        VStack {
-            List {
-                ForEach(FeedbackView.reviewList) { model in
-                    if !FeedbackView.reviewList.isEmpty {
-                        NavigationLink(destination: ReviewTextView(model: model)) {
-                            ReviewRow(model: model)
-                        }
-                    } else {
-                        Text("Отзывов пока нет")
-                    }
+    var reviewList: some View {
+        List {
+            let reviewsById = FeedbackView.reviewList.filter { element in
+                element.objectId == objectId
+            }
+            if reviewsById.isEmpty {
+                Text("Отзывов пока не оставлено")
+            }
+            ForEach(reviewsById) { model in
+                NavigationLink(destination: ReviewTextView(model: model)) {
+                    ReviewRow(model: model)
                 }
             }
-            .listRowSeparator(.hidden)
+        }
+    }
 
+    var body: some View {
+        VStack(spacing: 15) {
+            reviewList
+                .listRowSeparator(.hidden)
+            Text("Средняя оценка: 5")
             NavigationLink("Оставить отзыв") {
-                AddFeedbackView()
+                AddFeedbackView(objectId: objectId)
             }
             .padding(.horizontal, 60)
             .padding(.vertical, 15)

@@ -67,7 +67,7 @@ struct ObjectDescriptionView: View {
 
     var bottomButton: some View {
         NavigationLink("Отзывы") {
-            FeedbackView()
+            FeedbackView(objectId: objectModel.object.id)
         }
         .padding(.horizontal, 60)
         .padding(.vertical, 15)

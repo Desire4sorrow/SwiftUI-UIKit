@@ -134,21 +134,21 @@ public enum City: CaseIterable {
         case .moskow:
             return [
                 .init(
-                    id: 1,
+                    id: 4,
                     objectIcon: "moskow-kremlin",
                     objectName: "Московский Кремль",
                     timeOfWork: "9:00 - 17:00",
                     objectDescription: Description.moskowKremlin.rawValue
                 ),
                 .init(
-                    id: 2,
+                    id: 5,
                     objectIcon: "sobor-vasiliy",
                     objectName: "Собор Василия Блаженного",
                     timeOfWork: "9:00 - 16:00",
                     objectDescription: Description.vasiliy.rawValue
                 ),
                 .init(
-                    id: 3,
+                    id: 6,
                     objectIcon: "izmailovskiy-park",
                     objectName: "Измайловский парк",
                     timeOfWork: "24 часа",
@@ -158,21 +158,21 @@ public enum City: CaseIterable {
         case .saintP:
             return [
                 .init(
-                    id: 1,
+                    id: 7,
                     objectIcon: "hermitage",
                     objectName: "Эрмитаж",
                     timeOfWork: "8:00 - 17:00",
                     objectDescription: Description.ermitage.rawValue
                 ),
                 .init(
-                    id: 2,
+                    id: 8,
                     objectIcon: "isaakievskiy",
                     objectName: "Исаакиевский собор",
                     timeOfWork: "6:00 - 20:00",
                     objectDescription: Description.isaakievskiy.rawValue
                 ),
                 .init(
-                    id: 3,
+                    id: 9,
                     objectIcon: "petropavlovskaya",
                     objectName: "Петропавловская крепость",
                     timeOfWork: "24 часа",
@@ -182,21 +182,21 @@ public enum City: CaseIterable {
         case .novgorod:
             return [
                 .init(
-                    id: 1,
+                    id: 10,
                     objectIcon: "nizhniy-kremlin",
                     objectName: "Нижегородский кремль",
                     timeOfWork: "8:00 - 17:00",
                     objectDescription: Description.nizhniyKremlin.rawValue
                 ),
                 .init(
-                    id: 2,
+                    id: 11,
                     objectIcon: "nizhniy-naberezhnaya",
                     objectName: "Набережная Федоровского",
                     timeOfWork: "24 часа",
                     objectDescription: Description.nizhniyNaberezhnaya.rawValue
                 ),
                 .init(
-                    id: 3,
+                    id: 12,
                     objectIcon: "nizhniy-lestnitsa",
                     objectName: "Чкаловская лестница",
                     timeOfWork: "24 часа",
@@ -205,7 +205,7 @@ public enum City: CaseIterable {
             ]
         case .cheboksary:
             return [.init(
-                id: 1,
+                id: 13,
                 objectIcon: "No",
                 objectName: "No",
                 timeOfWork: "No",
@@ -213,7 +213,7 @@ public enum City: CaseIterable {
             )]
         case .ekaterinburg:
             return [.init(
-                id: 1,
+                id: 14,
                 objectIcon: "No",
                 objectName: "No",
                 timeOfWork: "No",
@@ -221,7 +221,7 @@ public enum City: CaseIterable {
             )]
         case .novosibirsk:
             return [.init(
-                id: 1,
+                id: 15,
                 objectIcon: "No",
                 objectName: "No",
                 timeOfWork: "No",
@@ -229,7 +229,7 @@ public enum City: CaseIterable {
             )]
         case .yoshkarOla:
             return [.init(
-                id: 1,
+                id: 16,
                 objectIcon: "No",
                 objectName: "No",
                 timeOfWork: "No",
