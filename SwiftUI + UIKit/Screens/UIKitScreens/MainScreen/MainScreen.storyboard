@@ -34,7 +34,7 @@
                                 </constraints>
                             </tableView>
                             <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSs-qD-Gl5">
-                                <rect key="frame" x="10" y="423" width="355" height="214"/>
+                                <rect key="frame" x="10" y="423" width="355" height="224"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="16"/>
@@ -57,13 +57,12 @@
                             <constraint firstItem="cSs-qD-Gl5" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="10" id="EL0-Km-2RB"/>
                             <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="CST-Xm-WMt" secondAttribute="trailing" id="FzR-eW-3P3"/>
                             <constraint firstItem="CST-Xm-WMt" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" id="KIe-GT-BBu"/>
-                            <constraint firstAttribute="bottom" secondItem="cSs-qD-Gl5" secondAttribute="bottom" constant="30" id="OqN-D5-GPE"/>
+                            <constraint firstAttribute="bottom" secondItem="cSs-qD-Gl5" secondAttribute="bottom" constant="20" id="OqN-D5-GPE"/>
                             <constraint firstItem="Hrt-Mq-bPX" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="Pud-uG-sI3"/>
                             <constraint firstItem="Hrt-Mq-bPX" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" constant="70" id="QeK-GG-kca"/>
                             <constraint firstItem="vCC-tD-WLs" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="24" id="Ujz-KX-uUc"/>
                             <constraint firstItem="3bm-lr-Tu2" firstAttribute="top" secondItem="vCC-tD-WLs" secondAttribute="bottom" constant="24" id="W25-JJ-T6N"/>
                             <constraint firstItem="CST-Xm-WMt" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="aPE-wr-ZWg"/>
-                            <constraint firstItem="3bm-lr-Tu2" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="63" id="dHa-P7-ZUT"/>
                             <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="cSs-qD-Gl5" secondAttribute="trailing" constant="10" id="eq9-8W-aLJ"/>
                             <constraint firstItem="vCC-tD-WLs" firstAttribute="top" secondItem="Hrt-Mq-bPX" secondAttribute="bottom" constant="50" id="hYM-vm-Yu9"/>
                             <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="vCC-tD-WLs" secondAttribute="trailing" constant="24" id="nRK-Ju-5RF"/>

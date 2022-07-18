@@ -19,6 +19,8 @@
 		9C4B6C1F285C82DB00064537 /* CustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C1E285C82DB00064537 /* CustomActivity.swift */; };
 		9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C21285CAA5C00064537 /* LocationManager.swift */; };
 		9C4B6C25285CC67000064537 /* CityObjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C24285CC67000064537 /* CityObjectsView.swift */; };
+		9C4FC1A22885481400815124 /* ScaledFont + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FC1A12885481400815124 /* ScaledFont + extension.swift */; };
+		9C4FC1A428854AE900815124 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FC1A328854AE900815124 /* RoundedCorner.swift */; };
 		9C5C4E832859C706008C69F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5C4E822859C706008C69F2 /* AppDelegate.swift */; };
 		9C5C4E8A2859C706008C69F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5C4E882859C706008C69F2 /* Main.storyboard */; };
 		9C5C4E8C2859C709008C69F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C5C4E8B2859C709008C69F2 /* Assets.xcassets */; };
@@ -86,6 +88,8 @@
 		9C4B6C1E285C82DB00064537 /* CustomActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivity.swift; sourceTree = "<group>"; };
 		9C4B6C21285CAA5C00064537 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		9C4B6C24285CC67000064537 /* CityObjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityObjectsView.swift; sourceTree = "<group>"; };
+		9C4FC1A12885481400815124 /* ScaledFont + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScaledFont + extension.swift"; sourceTree = "<group>"; };
+		9C4FC1A328854AE900815124 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		9C5C4E7F2859C706008C69F2 /* City Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5C4E822859C706008C69F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C5C4E892859C706008C69F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 				9C5C4EC42859D187008C69F2 /* UITableView + extension.swift */,
 				9C0D5CA32869DCBD0048C06F /* NotificationName + extension.swift */,
 				9C91BAC2286DD6FF00D3C5B7 /* UIApplication + extension.swift */,
+				9C4FC1A12885481400815124 /* ScaledFont + extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 				9C0D5CA12869DC480048C06F /* Notifications.swift */,
 				9C91BA9D286B02C400D3C5B7 /* Theme.swift */,
 				9CF0D2A9286F19CC006B6DEB /* UserDefaultKeys.swift */,
+				9C4FC1A328854AE900815124 /* RoundedCorner.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -538,6 +544,7 @@
 				9C91BAA3286C392400D3C5B7 /* ObjectDescriptionModel.swift in Sources */,
 				9C91BA97286AD4B400D3C5B7 /* CityImageView.swift in Sources */,
 				9C0D5C9928699B1E0048C06F /* ObjectsViewModel.swift in Sources */,
+				9C4FC1A428854AE900815124 /* RoundedCorner.swift in Sources */,
 				9C0D5C9D2869A3990048C06F /* View + extension.swift in Sources */,
 				9C5C4EC52859D187008C69F2 /* UITableView + extension.swift in Sources */,
 				9C91BAC3286DD6FF00D3C5B7 /* UIApplication + extension.swift in Sources */,
@@ -548,6 +555,7 @@
 				9C91BABC286D93CD00D3C5B7 /* FeedbackView.swift in Sources */,
 				9C5C4EBD2859C743008C69F2 /* MainScreenProtocols.swift in Sources */,
 				9C91BAB3286D794D00D3C5B7 /* TopBarModel.swift in Sources */,
+				9C4FC1A22885481400815124 /* ScaledFont + extension.swift in Sources */,
 				9C4B6C1D285C7C9000064537 /* CustomActivityView.swift in Sources */,
 				9C0D5C9B2869A3480048C06F /* NSObject + extension.swift in Sources */,
 				9CF0D2AA286F19CC006B6DEB /* UserDefaultKeys.swift in Sources */,

@@ -38,7 +38,7 @@ struct FeedbackView: View {
                 }
             }
             .listRowSeparator(.hidden)
-            
+
             NavigationLink("Оставить отзыв") {
                 AddFeedbackView()
             }
