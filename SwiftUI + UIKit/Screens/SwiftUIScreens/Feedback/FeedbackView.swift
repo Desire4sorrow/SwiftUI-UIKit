@@ -11,6 +11,8 @@ import SwiftUI
 struct FeedbackView: View {
 
     @Environment(\.presentationMode) var presentationMode
+    @State var reviewsById: [ReviewModel] = []
+    @Binding var middleMark: Double
 
     @UserDefaultsBacked(key: "reviewList", defaultValue: [])
     static var reviewList: [ReviewModel]
@@ -28,13 +30,13 @@ struct FeedbackView: View {
 
     var reviewList: some View {
         List {
-            let reviewsById = FeedbackView.reviewList.filter { element in
+            let reviewsList = FeedbackView.reviewList.filter { element in
                 element.objectId == objectId
             }
-            if reviewsById.isEmpty {
+            if reviewsList.isEmpty {
                 Text("Отзывов пока не оставлено")
             }
-            ForEach(reviewsById) { model in
+            ForEach(reviewsList) { model in
                 NavigationLink(destination: ReviewTextView(model: model)) {
                     ReviewRow(model: model)
                 }
@@ -46,7 +48,7 @@ struct FeedbackView: View {
         VStack(spacing: 15) {
             reviewList
                 .listRowSeparator(.hidden)
-            Text("Средняя оценка: 5")
+            Text("Средняя оценка: " + String(format: "%.2f", middleMark))
             NavigationLink("Оставить отзыв") {
                 AddFeedbackView(objectId: objectId)
             }
@@ -65,5 +67,15 @@ struct FeedbackView: View {
         }
         .padding(.bottom, 20)
         .background(Color.guidePurpleWithHighOpacity)
+        .onAppear {
+            middleMark = 0.0
+            reviewsById = FeedbackView.reviewList.filter { element in
+                element.objectId == objectId
+            }
+            reviewsById.forEach { element in
+                middleMark += Double(element.mark)
+            }
+            middleMark = middleMark / Double(reviewsById.count)
+        }
     }
 }

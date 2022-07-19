@@ -10,6 +10,7 @@ import SwiftUI
 struct ObjectDescriptionView: View {
     @Environment(\.presentationMode) var presentationMode
     @State var offset: CGFloat = 0
+    @State var mark = 0.0
 
     let objectModel: ObjectDescriptionModel
     let maxHeight = UIScreen.main.bounds.height / 2.3
@@ -67,7 +68,7 @@ struct ObjectDescriptionView: View {
 
     var bottomButton: some View {
         NavigationLink("Отзывы") {
-            FeedbackView(objectId: objectModel.object.id)
+            FeedbackView(middleMark: $mark, objectId: objectModel.object.id)
         }
         .padding(.horizontal, 60)
         .padding(.vertical, 15)
