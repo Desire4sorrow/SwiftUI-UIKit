@@ -11,7 +11,16 @@ struct ReviewTextView: View {
 
     let model: ReviewModel
 
+    var starsView: some View {
+        HStack {
+
+        }
+    }
+
     var body: some View {
-        Text(model.reviewText)
+        VStack {
+
+            Text(model.reviewText)
+        }
     }
 }

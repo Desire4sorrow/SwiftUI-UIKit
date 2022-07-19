@@ -14,6 +14,9 @@ struct AddFeedbackView: View {
     @State private var text = ""
     @State private var currentMarks = 5
     @State private var senderName = ""
+    @State private var isAlertPresented = false
+    @State private var inputImage: UIImage?
+    @State private var image: Image?
 
     @UserDefaultsBacked(key: "id", defaultValue: 0)
     static var reviewId: Int
@@ -95,8 +98,17 @@ struct AddFeedbackView: View {
         }
     }
 
+    var addPhotoButton: some View {
+        Button {
+            isAlertPresented = true
+        } label: {
+            Text("Прикрепить фото 📷")
+                .foregroundColor(Color.guidePurple)
+        }
+    }
+
     var body: some View {
-        VStack {
+        VStack(spacing: 30) {
             VStack(alignment: .leading, spacing: 20) {
                 markRow
                 nameTextField
@@ -105,6 +117,13 @@ struct AddFeedbackView: View {
             .onTapGesture {
                 UIApplication.shared.endEditing()
             }
+            image?
+                .resizable()
+                .scaledToFit()
+            addPhotoButton
+                .sheet(isPresented: $isAlertPresented) {
+                    ImagePicker(image: $inputImage)
+                }
             Spacer()
             addButton
         }
@@ -115,5 +134,13 @@ struct AddFeedbackView: View {
         .background(Color.guidePinkWithHighOpacity)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: backButton)
+        .onChange(of: inputImage) { _ in
+            loadImage()
+        }
+    }
+
+    func loadImage() {
+        guard let inputImage = inputImage else { return }
+        image = Image(uiImage: inputImage)
     }
 }

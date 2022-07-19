@@ -53,6 +53,7 @@
 		9C91BABC286D93CD00D3C5B7 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BABB286D93CD00D3C5B7 /* FeedbackView.swift */; };
 		9C91BABF286D988200D3C5B7 /* AddFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BABE286D988200D3C5B7 /* AddFeedbackView.swift */; };
 		9C91BAC3286DD6FF00D3C5B7 /* UIApplication + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAC2286DD6FF00D3C5B7 /* UIApplication + extension.swift */; };
+		9CA301FA2886B334006A0D44 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA301F92886B334006A0D44 /* ImagePicker.swift */; };
 		9CF0D2AA286F19CC006B6DEB /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2A9286F19CC006B6DEB /* UserDefaultKeys.swift */; };
 		9CF0D2AC286F4538006B6DEB /* ReviewTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2AB286F4538006B6DEB /* ReviewTextView.swift */; };
 		9CF0D2B0286F4A26006B6DEB /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2AF286F4A26006B6DEB /* ReviewModel.swift */; };
@@ -126,6 +127,7 @@
 		9C91BABB286D93CD00D3C5B7 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
 		9C91BABE286D988200D3C5B7 /* AddFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedbackView.swift; sourceTree = "<group>"; };
 		9C91BAC2286DD6FF00D3C5B7 /* UIApplication + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + extension.swift"; sourceTree = "<group>"; };
+		9CA301F92886B334006A0D44 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		9CF0D2A9286F19CC006B6DEB /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 		9CF0D2AB286F4538006B6DEB /* ReviewTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTextView.swift; sourceTree = "<group>"; };
 		9CF0D2AF286F4A26006B6DEB /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				9C91BABE286D988200D3C5B7 /* AddFeedbackView.swift */,
+				9CA301F92886B334006A0D44 /* ImagePicker.swift */,
 			);
 			path = AddFeedback;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				9C5C4EBA2859C743008C69F2 /* MainScreenPresenter.swift in Sources */,
 				9CF0D2B2286F4FA6006B6DEB /* ReviewRow.swift in Sources */,
 				9C91BAA6286C8FF800D3C5B7 /* TopBar.swift in Sources */,
+				9CA301FA2886B334006A0D44 /* ImagePicker.swift in Sources */,
 				9C0D5CA62869E7A90048C06F /* CityButtonInfoView.swift in Sources */,
 				9C91BAB5286D874B00D3C5B7 /* Image.swift in Sources */,
 				9C658DFA28647D730023DAB0 /* Object.swift in Sources */,
