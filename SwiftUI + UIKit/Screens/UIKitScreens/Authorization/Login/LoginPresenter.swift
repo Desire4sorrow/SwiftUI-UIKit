@@ -15,7 +15,10 @@ final class LoginPresenter {
 // MARK: - LoginPresenterInput
 
 extension LoginPresenter: LoginPresenterInput {
-
+    
+    func registrationButtonTouched() {
+        router.showRegistrationScreen()
+    }
 }
 
 // MARK: - LoginOutput

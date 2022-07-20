@@ -13,5 +13,8 @@ final class LoginRouter {
 }
 
 extension LoginRouter: LoginRouterInput {
-
+    
+    func showRegistrationScreen() {
+        view.show(RegistrationConfigurator.configure(), sender: nil)
+    }
 }

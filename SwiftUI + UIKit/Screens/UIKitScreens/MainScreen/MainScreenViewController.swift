@@ -25,7 +25,7 @@ final class MainScreenViewController: UIViewController {
         selectedCity ?? currentCity
     }
 
-    var isLoggedIn = true
+    var isLoggedIn = false
 
     override func viewDidLoad() {
         super.viewDidLoad()

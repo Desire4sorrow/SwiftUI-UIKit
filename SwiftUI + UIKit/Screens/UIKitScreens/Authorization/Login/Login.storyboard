@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,17 +10,83 @@
         <!--Login View Controller-->
         <scene sceneID="XJ1-QA-Nrj">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="zIc-eW-6fX" customClass="LoginViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="zIc-eW-6fX" customClass="LoginViewController" customModule="City_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z2g-4m-atm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-image" translatesAutoresizingMaskIntoConstraints="NO" id="T1S-jz-Voc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вход в аккаунт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZa-7S-akR">
+                                <rect key="frame" x="71.5" y="120" width="232" height="31"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <color key="textColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите почту" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d99-j8-UgT">
+                                <rect key="frame" x="50" y="191" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rHg-dt-UAn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xqP-YQ-5iw">
+                                <rect key="frame" x="50" y="266" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3XM-ae-aAD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нет аккаунта?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Woh-Fa-VSG">
+                                <rect key="frame" x="130.5" y="340" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkA-tl-T5B">
+                                <rect key="frame" x="105.5" y="378" width="164" height="31"/>
+                                <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Зарегистрироваться"/>
+                                <connections>
+                                    <action selector="onRegistrationButtonTouched" destination="zIc-eW-6fX" eventType="touchUpInside" id="9Mb-YF-OhH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="xqP-YQ-5iw" secondAttribute="trailing" constant="50" id="3oU-ix-oS2"/>
+                            <constraint firstItem="T1S-jz-Voc" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="7ZY-oy-XVA"/>
+                            <constraint firstItem="Woh-Fa-VSG" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="7zM-bt-Wsx"/>
+                            <constraint firstItem="FkA-tl-T5B" firstAttribute="top" secondItem="Woh-Fa-VSG" secondAttribute="bottom" constant="17" id="94d-GF-8WA"/>
+                            <constraint firstItem="d99-j8-UgT" firstAttribute="top" secondItem="VZa-7S-akR" secondAttribute="bottom" constant="40" id="Afu-mq-qsH"/>
+                            <constraint firstItem="T1S-jz-Voc" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" id="Jfj-yj-I38"/>
+                            <constraint firstAttribute="trailing" secondItem="T1S-jz-Voc" secondAttribute="trailing" id="LxU-hX-94c"/>
+                            <constraint firstItem="xqP-YQ-5iw" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="50" id="SbS-HD-v8q"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="d99-j8-UgT" secondAttribute="trailing" constant="50" id="YjC-pb-IeV"/>
+                            <constraint firstItem="Woh-Fa-VSG" firstAttribute="top" secondItem="xqP-YQ-5iw" secondAttribute="bottom" constant="24" id="bRO-2P-rqY"/>
+                            <constraint firstItem="FkA-tl-T5B" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="cVt-Dj-CSs"/>
+                            <constraint firstItem="d99-j8-UgT" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="50" id="dZn-cx-Cev"/>
+                            <constraint firstItem="VZa-7S-akR" firstAttribute="top" secondItem="3pi-N7-nbV" secondAttribute="top" constant="120" id="gTZ-Ed-Wup"/>
+                            <constraint firstAttribute="bottom" secondItem="T1S-jz-Voc" secondAttribute="bottom" id="gvS-Ny-FF8"/>
+                            <constraint firstItem="xqP-YQ-5iw" firstAttribute="top" secondItem="d99-j8-UgT" secondAttribute="bottom" constant="25" id="wW5-km-Tw2"/>
+                            <constraint firstItem="VZa-7S-akR" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="ydW-BK-qCp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="registrationButton" destination="FkA-tl-T5B" id="rIm-rk-oBO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="306" y="303"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background-image" width="640" height="1136"/>
+    </resources>
 </document>
