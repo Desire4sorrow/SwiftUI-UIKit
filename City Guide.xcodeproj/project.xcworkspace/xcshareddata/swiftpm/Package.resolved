@@ -91,12 +91,30 @@
       }
     },
     {
+      "identity" : "orcommonui-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Omega-R/ORCommonUI-Swift",
+      "state" : {
+        "revision" : "4642becbba9c0a10e379fb0cb5d9f7e9ea5fc2c4",
+        "version" : "6.0.2"
+      }
+    },
+    {
       "identity" : "promises",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/promises.git",
       "state" : {
         "revision" : "3e4e743631e86c8c70dbc6efdc7beaa6e90fd3bb",
         "version" : "2.1.1"
+      }
+    },
+    {
+      "identity" : "purelayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PureLayout/PureLayout",
+      "state" : {
+        "revision" : "5561683c96dc49b023c1299bfe4f6fbeed5f8199",
+        "version" : "3.1.9"
       }
     },
     {

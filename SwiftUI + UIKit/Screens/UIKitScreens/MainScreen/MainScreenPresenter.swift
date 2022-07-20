@@ -18,6 +18,10 @@ extension MainScreenPresenter: MainScreenPresenterInput {
     func cityChanged() {
         postNotification(.cityChanged)
     }
+
+    func onLoginTouched() {
+        router.showLoginScreen()
+    }
 }
 
 // MARK: - MainScreenOutput

@@ -1,4 +1,4 @@
-// 
+//
 //  LoginPresenter.swift
 //  City Guide
 //
@@ -15,11 +15,11 @@ final class LoginPresenter {
 // MARK: - LoginPresenterInput
 
 extension LoginPresenter: LoginPresenterInput {
-    
+
 }
 
 // MARK: - LoginOutput
 
 extension LoginPresenter: LoginRouterOutput {
-    
+
 }

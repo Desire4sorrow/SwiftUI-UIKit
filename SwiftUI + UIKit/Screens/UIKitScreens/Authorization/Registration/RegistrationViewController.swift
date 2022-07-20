@@ -1,4 +1,4 @@
-//  
+//
 //  RegistrationViewController.swift
 //  City Guide
 //

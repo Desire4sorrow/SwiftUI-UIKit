@@ -12,4 +12,9 @@ final class MainScreenRouter {
     unowned var presenter: MainScreenRouterOutput!
 }
 
-extension MainScreenRouter: MainScreenRouterInput {}
+extension MainScreenRouter: MainScreenRouterInput {
+
+    func showLoginScreen() {
+        view.show(LoginConfigurator.configure(), sender: nil)
+    }
+}

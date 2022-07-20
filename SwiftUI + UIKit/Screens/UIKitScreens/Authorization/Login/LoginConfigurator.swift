@@ -1,4 +1,4 @@
-//  
+//
 //  LoginConfigurator.swift
 //  City Guide
 //
@@ -14,12 +14,12 @@ struct LoginConfigurator {
         let view = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
         let presenter = LoginPresenter()
         let router = LoginRouter()
-        
+
         view.presenter = presenter
-        
+
         router.presenter = presenter
         router.view = view
-        
+
         presenter.view = view
         presenter.router = router
 

@@ -1,4 +1,4 @@
-//  
+//
 //  RegistrationProtocols.swift
 //  City Guide
 //
@@ -20,5 +20,5 @@ protocol RegistrationRouterInput: AnyObject {
 }
 
 protocol RegistrationRouterOutput: AnyObject {
-    
+
 }

@@ -1,4 +1,4 @@
-//  
+//
 //  RegistrationRouter.swift
 //  City Guide
 //
@@ -13,5 +13,5 @@ final class RegistrationRouter {
 }
 
 extension RegistrationRouter: RegistrationRouterInput {
-    
+
 }

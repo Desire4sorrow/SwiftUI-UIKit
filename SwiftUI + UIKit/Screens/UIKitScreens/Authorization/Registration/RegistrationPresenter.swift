@@ -1,4 +1,4 @@
-// 
+//
 //  RegistrationPresenter.swift
 //  City Guide
 //
@@ -15,11 +15,11 @@ final class RegistrationPresenter {
 // MARK: - RegistrationPresenterInput
 
 extension RegistrationPresenter: RegistrationPresenterInput {
-    
+
 }
 
 // MARK: - RegistrationOutput
 
 extension RegistrationPresenter: RegistrationRouterOutput {
-    
+
 }

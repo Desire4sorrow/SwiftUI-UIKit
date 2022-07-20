@@ -31,6 +31,7 @@
 		9C1B700F288831CD005045F7 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B7009288831CD005045F7 /* RegistrationViewController.swift */; };
 		9C1B7010288831CD005045F7 /* RegistrationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B700A288831CD005045F7 /* RegistrationProtocols.swift */; };
 		9C1B7011288831CD005045F7 /* RegistrationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B700B288831CD005045F7 /* RegistrationConfigurator.swift */; };
+		9C1B701428883ACB005045F7 /* ORCommonUI-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1B701328883ACB005045F7 /* ORCommonUI-Swift */; };
 		9C4B6C1D285C7C9000064537 /* CustomActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C1C285C7C9000064537 /* CustomActivityView.swift */; };
 		9C4B6C1F285C82DB00064537 /* CustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C1E285C82DB00064537 /* CustomActivity.swift */; };
 		9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C21285CAA5C00064537 /* LocationManager.swift */; };
@@ -167,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1B701428883ACB005045F7 /* ORCommonUI-Swift in Frameworks */,
 				9C1B6FF028882C49005045F7 /* FirebaseAnalytics in Frameworks */,
 				9C1B6FF228882C49005045F7 /* FirebaseAuth in Frameworks */,
 				9C1B6FF428882C49005045F7 /* FirebaseDatabase in Frameworks */,
@@ -463,6 +465,7 @@
 				9C1B6FF128882C49005045F7 /* FirebaseAuth */,
 				9C1B6FF328882C49005045F7 /* FirebaseDatabase */,
 				9C1B6FF528882C49005045F7 /* FirebaseFirestore */,
+				9C1B701328883ACB005045F7 /* ORCommonUI-Swift */,
 			);
 			productName = "SwiftUI + UIKit";
 			productReference = 9C5C4E7F2859C706008C69F2 /* City Guide.app */;
@@ -539,6 +542,7 @@
 			packageReferences = (
 				9C91BA9F286B167700D3C5B7 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 				9C1B6FEE28882C49005045F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9C1B701228883ACA005045F7 /* XCRemoteSwiftPackageReference "ORCommonUI-Swift" */,
 			);
 			productRefGroup = 9C5C4E802859C706008C69F2 /* Products */;
 			projectDirPath = "";
@@ -998,6 +1002,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		9C1B701228883ACA005045F7 /* XCRemoteSwiftPackageReference "ORCommonUI-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Omega-R/ORCommonUI-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		9C91BA9F286B167700D3C5B7 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
@@ -1028,6 +1040,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9C1B6FEE28882C49005045F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		9C1B701328883ACB005045F7 /* ORCommonUI-Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C1B701228883ACA005045F7 /* XCRemoteSwiftPackageReference "ORCommonUI-Swift" */;
+			productName = "ORCommonUI-Swift";
 		};
 		9C91BAA0286B167700D3C5B7 /* Introspect */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -1,4 +1,4 @@
-//  
+//
 //  LoginProtocols.swift
 //  City Guide
 //
@@ -20,5 +20,5 @@ protocol LoginRouterInput: AnyObject {
 }
 
 protocol LoginRouterOutput: AnyObject {
-    
+
 }

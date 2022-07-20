@@ -9,10 +9,13 @@ import Foundation
 
 protocol MainScreenPresenterInput: AnyObject {
     func cityChanged()
+    func onLoginTouched()
 }
 
 protocol MainScreenViewInput: AnyObject {}
 
-protocol MainScreenRouterInput: AnyObject {}
+protocol MainScreenRouterInput: AnyObject {
+    func showLoginScreen()
+}
 
 protocol MainScreenRouterOutput: AnyObject {}

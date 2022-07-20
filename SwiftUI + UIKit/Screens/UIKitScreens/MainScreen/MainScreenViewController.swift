@@ -5,6 +5,7 @@
 //  Created by Omega on 15.06.2022.
 //
 
+import ORCommonUI_Swift
 import SwiftUI
 import UIKit
 
@@ -13,6 +14,8 @@ final class MainScreenViewController: UIViewController {
 
     private var viewModel: CityViewModel?
 
+    @IBOutlet weak var loginButton: ORButton!
+    @IBOutlet weak var userInfoView: UIView!
     @IBOutlet var cityTableView: UITableView!
 
     var currentCity: City = .kazan
@@ -22,11 +25,23 @@ final class MainScreenViewController: UIViewController {
         selectedCity ?? currentCity
     }
 
+    var isLoggedIn = true
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupHeaderView()
         configureCityTableView()
         prepareNavigationBar()
+    }
+
+    @IBAction func onLoginButtonTouched() {
+        presenter.onLoginTouched()
+    }
+
+    func setupHeaderView() {
+        loginButton.isHidden = isLoggedIn
+        userInfoView.isHidden = !isLoggedIn
     }
 
     func prepareDefaultSelection() {

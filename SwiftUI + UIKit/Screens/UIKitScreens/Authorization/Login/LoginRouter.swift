@@ -1,4 +1,4 @@
-//  
+//
 //  LoginRouter.swift
 //  City Guide
 //
@@ -13,5 +13,5 @@ final class LoginRouter {
 }
 
 extension LoginRouter: LoginRouterInput {
-    
+
 }
