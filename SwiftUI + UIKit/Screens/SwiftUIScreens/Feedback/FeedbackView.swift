@@ -48,7 +48,7 @@ struct FeedbackView: View {
         VStack(spacing: 15) {
             reviewList
                 .listRowSeparator(.hidden)
-            Text("Средняя оценка: " + String(format: "%.2f", middleMark))
+            Text("Средняя оценка: " + (!middleMark.isNaN ? String(format: "%.2f", middleMark) : "0"))
             NavigationLink("Оставить отзыв") {
                 AddFeedbackView(objectId: objectId)
             }

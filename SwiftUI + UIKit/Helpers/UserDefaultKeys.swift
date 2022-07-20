@@ -21,7 +21,6 @@ import Foundation
                 return value
             }
 
-            assertionFailure("UserDefaults decoding error with key \(key)")
             return defaultValue
         }
         set {
