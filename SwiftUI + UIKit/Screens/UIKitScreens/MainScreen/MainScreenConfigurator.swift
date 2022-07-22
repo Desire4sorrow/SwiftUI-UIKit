@@ -8,10 +8,14 @@
 import UIKit
 
 struct MainScreenConfigurator {
-    static func configure() -> MainScreenViewController {
+    static func configure(isRegistration: Bool? = nil, name: String? = nil, email: String? = nil) -> MainScreenViewController {
         let storyboard = UIStoryboard(name: "MainScreen", bundle: nil)
         let view = storyboard.instantiateViewController(withIdentifier: "MainScreenViewController") as! MainScreenViewController
-        let presenter = MainScreenPresenter()
+        let presenter = MainScreenPresenter(
+            isRegistration: isRegistration ?? false,
+            name: name ?? "",
+            email: email ?? ""
+        )
         let router = MainScreenRouter()
 
         view.presenter = presenter

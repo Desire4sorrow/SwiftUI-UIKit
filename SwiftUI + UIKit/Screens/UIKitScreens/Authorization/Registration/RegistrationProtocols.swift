@@ -8,15 +8,15 @@
 import Foundation
 
 protocol RegistrationPresenterInput: AnyObject {
-
+    func registrationButtonTouched(_ fields: RegistrationViewModel)
 }
 
 protocol RegistrationViewInput: AnyObject {
-
 }
 
 protocol RegistrationRouterInput: AnyObject {
-
+    func showError(_ error: Error)
+    func showMainScreen(name: String, email: String)
 }
 
 protocol RegistrationRouterOutput: AnyObject {

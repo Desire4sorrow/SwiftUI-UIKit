@@ -17,4 +17,13 @@ extension MainScreenRouter: MainScreenRouterInput {
     func showLoginScreen() {
         view.show(LoginConfigurator.configure(), sender: nil)
     }
+
+    func showWelcomeAlert(name: String) {
+        view.or_showAlert(
+            title: "Поздравляем!",
+            message: "Уважаемый \(name), Вы успешно зарегистрированы!",
+            buttonTitle: "Понятно",
+            animated: true
+        )
+    }
 }

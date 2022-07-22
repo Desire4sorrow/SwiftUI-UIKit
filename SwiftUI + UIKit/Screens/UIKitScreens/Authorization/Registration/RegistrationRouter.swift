@@ -14,4 +14,22 @@ final class RegistrationRouter {
 
 extension RegistrationRouter: RegistrationRouterInput {
 
+    func showError(_ error: Error) {
+        view.or_showAlert(
+            title: "Ошибка",
+            message: error.localizedDescription,
+            buttonTitle: "Понятно",
+            animated: true
+        )
+    }
+
+    func showMainScreen(name: String, email: String) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let nav = UINavigationController(rootViewController: MainScreenConfigurator.configure(
+            isRegistration: true,
+            name: name,
+            email: email
+        ))
+        appDelegate.window!.rootViewController = nav
+    }
 }

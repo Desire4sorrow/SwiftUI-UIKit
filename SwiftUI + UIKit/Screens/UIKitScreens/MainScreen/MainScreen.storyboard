@@ -90,18 +90,26 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login/Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceB-f3-Y2U">
-                                        <rect key="frame" x="58" y="14.666666666666671" width="87" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="refer@mail.ru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceB-f3-Y2U">
+                                        <rect key="frame" x="57.999999999999993" y="5.0000000000000009" width="88.333333333333314" height="12.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="12"/>
+                                        <color key="textColor" name="GuidePurple"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Владимир" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7n-7r-UPc">
+                                        <rect key="frame" x="58.000000000000007" y="24.666666666666671" width="102.66666666666669" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                        <color key="textColor" name="GuidePurple"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" name="GuidePink"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="y7n-7r-UPc" secondAttribute="bottom" constant="5" id="A7c-rk-jrM"/>
                                     <constraint firstAttribute="height" constant="50" id="AFR-IT-LwI"/>
                                     <constraint firstItem="GeN-WW-eOw" firstAttribute="leading" secondItem="BQ8-GI-MUK" secondAttribute="leading" constant="5" id="CQh-dM-JZa"/>
-                                    <constraint firstItem="ceB-f3-Y2U" firstAttribute="centerY" secondItem="BQ8-GI-MUK" secondAttribute="centerY" id="Pge-zz-tLZ"/>
+                                    <constraint firstItem="y7n-7r-UPc" firstAttribute="leading" secondItem="GeN-WW-eOw" secondAttribute="trailing" constant="8" symbolic="YES" id="mJ8-BC-Byb"/>
+                                    <constraint firstItem="ceB-f3-Y2U" firstAttribute="top" secondItem="BQ8-GI-MUK" secondAttribute="top" constant="5" id="oJT-dM-pAQ"/>
                                     <constraint firstAttribute="width" constant="200" id="s9i-9i-FMv"/>
                                     <constraint firstItem="ceB-f3-Y2U" firstAttribute="leading" secondItem="GeN-WW-eOw" secondAttribute="trailing" constant="8" symbolic="YES" id="wXa-cI-Fzz"/>
                                     <constraint firstItem="GeN-WW-eOw" firstAttribute="centerY" secondItem="BQ8-GI-MUK" secondAttribute="centerY" id="xfL-5t-k59"/>
@@ -140,7 +148,9 @@
                     <connections>
                         <outlet property="cityTableView" destination="vCC-tD-WLs" id="JZQ-8h-Q1w"/>
                         <outlet property="loginButton" destination="vee-9z-SFh" id="Zkx-TX-Sjr"/>
+                        <outlet property="userInfoLabel" destination="ceB-f3-Y2U" id="yie-63-3h4"/>
                         <outlet property="userInfoView" destination="BQ8-GI-MUK" id="0dM-yF-KWl"/>
+                        <outlet property="userNameLabel" destination="y7n-7r-UPc" id="duV-sJ-06b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -70,6 +70,10 @@
 		9C91BABC286D93CD00D3C5B7 /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BABB286D93CD00D3C5B7 /* FeedbackView.swift */; };
 		9C91BABF286D988200D3C5B7 /* AddFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BABE286D988200D3C5B7 /* AddFeedbackView.swift */; };
 		9C91BAC3286DD6FF00D3C5B7 /* UIApplication + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BAC2286DD6FF00D3C5B7 /* UIApplication + extension.swift */; };
+		9C95901F2889369F002971C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C95901E2889369F002971C1 /* GoogleService-Info.plist */; };
+		9C9590212889475E002971C1 /* String + validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9590202889475E002971C1 /* String + validation.swift */; };
+		9C9590242889506B002971C1 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9590232889506B002971C1 /* RegistrationViewModel.swift */; };
+		9C959027288963CE002971C1 /* AuthFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C959026288963CE002971C1 /* AuthFields.swift */; };
 		9CA301FA2886B334006A0D44 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA301F92886B334006A0D44 /* ImagePicker.swift */; };
 		9CF0D2AA286F19CC006B6DEB /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2A9286F19CC006B6DEB /* UserDefaultKeys.swift */; };
 		9CF0D2AC286F4538006B6DEB /* ReviewTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2AB286F4538006B6DEB /* ReviewTextView.swift */; };
@@ -156,6 +160,10 @@
 		9C91BABB286D93CD00D3C5B7 /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
 		9C91BABE286D988200D3C5B7 /* AddFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeedbackView.swift; sourceTree = "<group>"; };
 		9C91BAC2286DD6FF00D3C5B7 /* UIApplication + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + extension.swift"; sourceTree = "<group>"; };
+		9C95901E2889369F002971C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9C9590202889475E002971C1 /* String + validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + validation.swift"; sourceTree = "<group>"; };
+		9C9590232889506B002971C1 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		9C959026288963CE002971C1 /* AuthFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFields.swift; sourceTree = "<group>"; };
 		9CA301F92886B334006A0D44 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		9CF0D2A9286F19CC006B6DEB /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 		9CF0D2AB286F4538006B6DEB /* ReviewTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTextView.swift; sourceTree = "<group>"; };
@@ -203,6 +211,7 @@
 				9C0D5CA32869DCBD0048C06F /* NotificationName + extension.swift */,
 				9C91BAC2286DD6FF00D3C5B7 /* UIApplication + extension.swift */,
 				9C4FC1A12885481400815124 /* ScaledFont + extension.swift */,
+				9C9590202889475E002971C1 /* String + validation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -219,6 +228,8 @@
 		9C1B6FF828883161005045F7 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				9C959025288963B9002971C1 /* AuthFields */,
+				9C95902228895056002971C1 /* ViewModel */,
 				9C1B7006288831CD005045F7 /* Registration.storyboard */,
 				9C1B7007288831CD005045F7 /* RegistrationPresenter.swift */,
 				9C1B7008288831CD005045F7 /* RegistrationRouter.swift */,
@@ -309,6 +320,7 @@
 				9C4B6C20285CAA3800064537 /* Helpers */,
 				9C5C4E822859C706008C69F2 /* AppDelegate.swift */,
 				9C5C4E882859C706008C69F2 /* Main.storyboard */,
+				9C95901E2889369F002971C1 /* GoogleService-Info.plist */,
 				9C5C4E902859C709008C69F2 /* Info.plist */,
 			);
 			path = "SwiftUI + UIKit";
@@ -442,6 +454,22 @@
 			path = AddFeedback;
 			sourceTree = "<group>";
 		};
+		9C95902228895056002971C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C9590232889506B002971C1 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9C959025288963B9002971C1 /* AuthFields */ = {
+			isa = PBXGroup;
+			children = (
+				9C959026288963CE002971C1 /* AuthFields.swift */,
+			);
+			path = AuthFields;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -561,6 +589,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5C4EC02859D01E008C69F2 /* CityTableViewCell.xib in Resources */,
+				9C95901F2889369F002971C1 /* GoogleService-Info.plist in Resources */,
 				9C5C4EB92859C743008C69F2 /* MainScreen.storyboard in Resources */,
 				9C1B7000288831B5005045F7 /* Login.storyboard in Resources */,
 				9C1B700C288831CD005045F7 /* Registration.storyboard in Resources */,
@@ -620,7 +649,9 @@
 				9C0D5CA42869DCBD0048C06F /* NotificationName + extension.swift in Sources */,
 				9C0D5C97286999650048C06F /* ObjectDescriptionView.swift in Sources */,
 				9C91BAAD286C9B1D00D3C5B7 /* Descriptions.swift in Sources */,
+				9C9590212889475E002971C1 /* String + validation.swift in Sources */,
 				9C5C4ECA2859FC98008C69F2 /* City.swift in Sources */,
+				9C959027288963CE002971C1 /* AuthFields.swift in Sources */,
 				9C5C4ECE285A207A008C69F2 /* CityViewModel.swift in Sources */,
 				9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */,
 				9C5C4EBA2859C743008C69F2 /* MainScreenPresenter.swift in Sources */,
@@ -632,6 +663,7 @@
 				9C1B7002288831B5005045F7 /* LoginRouter.swift in Sources */,
 				9C91BAB5286D874B00D3C5B7 /* Image.swift in Sources */,
 				9C658DFA28647D730023DAB0 /* Object.swift in Sources */,
+				9C9590242889506B002971C1 /* RegistrationViewModel.swift in Sources */,
 				9C91BAA3286C392400D3C5B7 /* ObjectDescriptionModel.swift in Sources */,
 				9C91BA97286AD4B400D3C5B7 /* CityImageView.swift in Sources */,
 				9C0D5C9928699B1E0048C06F /* ObjectsViewModel.swift in Sources */,

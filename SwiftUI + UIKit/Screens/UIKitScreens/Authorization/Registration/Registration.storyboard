@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,17 +11,125 @@
         <!--Registration View Controller-->
         <scene sceneID="XJ1-QA-Nrj">
             <objects>
-                <viewController storyboardIdentifier="RegistrationViewController" id="zIc-eW-6fX" customClass="RegistrationViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationViewController" id="zIc-eW-6fX" customClass="RegistrationViewController" customModule="City_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z2g-4m-atm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-image" translatesAutoresizingMaskIntoConstraints="NO" id="Buo-Zo-q1G">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="PPg-nA-ACc">
+                                <rect key="frame" x="65" y="180.5" width="245.5" height="312"/>
+                                <subviews>
+                                    <textField opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите почту" textAlignment="natural" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hgK-EW-c6g">
+                                        <rect key="frame" x="0.0" y="0.0" width="245.5" height="60"/>
+                                        <color key="backgroundColor" name="GuidePink"/>
+                                        <color key="tintColor" name="GuidePurple"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="lj2-36-ajh"/>
+                                        </constraints>
+                                        <color key="textColor" name="GuidePurple"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QMb-GN-AMI">
+                                        <rect key="frame" x="0.0" y="84" width="245.5" height="60"/>
+                                        <color key="backgroundColor" name="GuidePink"/>
+                                        <color key="tintColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="0gk-rz-5fh"/>
+                                        </constraints>
+                                        <color key="textColor" name="GuidePurple"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите телефон" textAlignment="natural" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FG8-Od-8mv">
+                                        <rect key="frame" x="0.0" y="168" width="245.5" height="60"/>
+                                        <color key="backgroundColor" name="GuidePink"/>
+                                        <color key="tintColor" name="GuidePurple"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="fh4-pt-NQm"/>
+                                        </constraints>
+                                        <color key="textColor" name="GuidePurple"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="natural" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0Ln-y0-SeX">
+                                        <rect key="frame" x="0.0" y="252" width="245.5" height="60"/>
+                                        <color key="backgroundColor" name="GuidePink"/>
+                                        <color key="tintColor" name="GuidePurple"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="45m-rI-sYe"/>
+                                        </constraints>
+                                        <color key="textColor" name="GuidePurple"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diD-ke-UX2">
+                                <rect key="frame" x="85" y="100" width="205.5" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
+                                <color key="textColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ij6-be-LdN" customClass="ORButton" customModule="ORCommonUI_Swift">
+                                <rect key="frame" x="70" y="557" width="235" height="50"/>
+                                <color key="backgroundColor" name="GuidePink"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ylP-3m-Qan"/>
+                                </constraints>
+                                <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Зарегистрироваться"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onRegistrationButtonTouched" destination="zIc-eW-6fX" eventType="touchUpInside" id="7tp-1e-NUW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="bottom" secondItem="ij6-be-LdN" secondAttribute="bottom" constant="60" id="3CM-zx-yD9"/>
+                            <constraint firstItem="Buo-Zo-q1G" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" id="3lw-xT-L7G"/>
+                            <constraint firstItem="diD-ke-UX2" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="MZC-f8-TK8"/>
+                            <constraint firstItem="diD-ke-UX2" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" constant="100" id="PST-M4-Wju"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="Buo-Zo-q1G" secondAttribute="trailing" id="Sol-HN-Oh9"/>
+                            <constraint firstItem="PPg-nA-ACc" firstAttribute="top" secondItem="diD-ke-UX2" secondAttribute="bottom" constant="50" id="h5i-GA-K4P"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="ij6-be-LdN" secondAttribute="trailing" constant="70" id="lLf-w5-o5n"/>
+                            <constraint firstItem="ij6-be-LdN" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="70" id="mkg-Go-VxH"/>
+                            <constraint firstItem="Buo-Zo-q1G" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="nf4-q1-Ry8"/>
+                            <constraint firstItem="diD-ke-UX2" firstAttribute="trailing" secondItem="PPg-nA-ACc" secondAttribute="trailing" constant="-20" id="oEN-pU-ZXI"/>
+                            <constraint firstItem="PPg-nA-ACc" firstAttribute="leading" secondItem="diD-ke-UX2" secondAttribute="leading" constant="-20" id="tyF-o9-ORx"/>
+                            <constraint firstAttribute="bottom" secondItem="Buo-Zo-q1G" secondAttribute="bottom" id="w33-Zy-7F8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="hgK-EW-c6g" id="PHM-kI-Lbe"/>
+                        <outlet property="nameTextField" destination="0Ln-y0-SeX" id="Y2B-2i-Rim"/>
+                        <outlet property="passwordTextField" destination="QMb-GN-AMI" id="yJ2-Bq-iyC"/>
+                        <outlet property="phoneTextField" destination="FG8-Od-8mv" id="kRO-c4-eow"/>
+                        <outlet property="registrationButton" destination="ij6-be-LdN" id="1EP-ix-sln"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="306" y="303"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background-image" width="640" height="1136"/>
+        <namedColor name="GuidePink">
+            <color red="1" green="0.75400000810623169" blue="0.91299998760223389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GuidePurple">
+            <color red="0.68000000715255737" green="0.31999999284744263" blue="0.87000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

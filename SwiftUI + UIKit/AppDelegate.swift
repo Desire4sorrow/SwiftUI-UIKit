@@ -5,6 +5,7 @@
 //  Created by Omega on 15.06.2022.
 //
 
+import FirebaseCore
 import UIKit
 
 @main class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,8 @@ import UIKit
         window.rootViewController = nc
         window.makeKeyAndVisible()
         self.window = window
+
+        FirebaseApp.configure()
 
         return true
     }

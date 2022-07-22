@@ -14,9 +14,11 @@ final class MainScreenViewController: UIViewController {
 
     private var viewModel: CityViewModel?
 
+    @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var loginButton: ORButton!
     @IBOutlet weak var userInfoView: UIView!
     @IBOutlet var cityTableView: UITableView!
+    @IBOutlet weak var userInfoLabel: UILabel!
 
     var currentCity: City = .kazan
     var selectedCity: City?
@@ -25,12 +27,15 @@ final class MainScreenViewController: UIViewController {
         selectedCity ?? currentCity
     }
 
-    var isLoggedIn = false
+    var isLoggedIn: Bool {
+        !presenter.email.isEmpty && !presenter.name.isEmpty
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupHeaderView()
+        presenter.viewDidLoad()
         configureCityTableView()
         prepareNavigationBar()
     }
@@ -42,6 +47,8 @@ final class MainScreenViewController: UIViewController {
     func setupHeaderView() {
         loginButton.isHidden = isLoggedIn
         userInfoView.isHidden = !isLoggedIn
+        userInfoLabel.text = presenter.email
+        userNameLabel.text = presenter.name
     }
 
     func prepareDefaultSelection() {
