@@ -13,11 +13,15 @@ protocol MainScreenPresenterInput: AnyObject {
     func cityChanged()
     func onLoginTouched()
     func viewDidLoad()
+    func viewWillAppear()
+    func onExitTouched()
 }
 
-protocol MainScreenViewInput: AnyObject {}
+protocol MainScreenViewInput: AnyObject {
+    func makeUserView()
+}
 
-protocol MainScreenRouterInput: AnyObject {
+protocol MainScreenRouterInput: ErrorRouter {
     func showLoginScreen()
     func showWelcomeAlert(name: String)
 }

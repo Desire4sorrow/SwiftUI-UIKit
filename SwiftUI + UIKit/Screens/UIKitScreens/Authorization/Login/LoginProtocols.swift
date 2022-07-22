@@ -16,10 +16,9 @@ protocol LoginViewInput: AnyObject {
 
 }
 
-protocol LoginRouterInput: AnyObject {
+protocol LoginRouterInput: ErrorRouter {
     func showRegistrationScreen()
-    func showMainScreen(name: String, email: String)
-    func showError(_ error: Error)
+    func showMainScreen(email: String)
 }
 
 protocol LoginRouterOutput: AnyObject {

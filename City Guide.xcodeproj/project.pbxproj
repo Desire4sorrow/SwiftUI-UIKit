@@ -75,6 +75,7 @@
 		9C9590242889506B002971C1 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9590232889506B002971C1 /* RegistrationViewModel.swift */; };
 		9C959027288963CE002971C1 /* AuthFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C959026288963CE002971C1 /* AuthFields.swift */; };
 		9CA301FA2886B334006A0D44 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA301F92886B334006A0D44 /* ImagePicker.swift */; };
+		9CA817F5288A86AF00BCC8B0 /* ErrorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA817F4288A86AF00BCC8B0 /* ErrorRouter.swift */; };
 		9CF0D2AA286F19CC006B6DEB /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2A9286F19CC006B6DEB /* UserDefaultKeys.swift */; };
 		9CF0D2AC286F4538006B6DEB /* ReviewTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2AB286F4538006B6DEB /* ReviewTextView.swift */; };
 		9CF0D2B0286F4A26006B6DEB /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2AF286F4A26006B6DEB /* ReviewModel.swift */; };
@@ -165,6 +166,7 @@
 		9C9590232889506B002971C1 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		9C959026288963CE002971C1 /* AuthFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFields.swift; sourceTree = "<group>"; };
 		9CA301F92886B334006A0D44 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9CA817F4288A86AF00BCC8B0 /* ErrorRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorRouter.swift; sourceTree = "<group>"; };
 		9CF0D2A9286F19CC006B6DEB /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 		9CF0D2AB286F4538006B6DEB /* ReviewTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTextView.swift; sourceTree = "<group>"; };
 		9CF0D2AF286F4A26006B6DEB /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 		9C4B6C20285CAA3800064537 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9CA817F3288A868F00BCC8B0 /* Classes */,
 				9C91BAA9286C956500D3C5B7 /* Modifiers */,
 				9C4B6C1B285C7C7100064537 /* CustomActivityView */,
 				9C0D5C9E2869A3BE0048C06F /* Extensions */,
@@ -470,6 +473,14 @@
 			path = AuthFields;
 			sourceTree = "<group>";
 		};
+		9CA817F3288A868F00BCC8B0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9CA817F4288A86AF00BCC8B0 /* ErrorRouter.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -655,6 +666,7 @@
 				9C5C4ECE285A207A008C69F2 /* CityViewModel.swift in Sources */,
 				9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */,
 				9C5C4EBA2859C743008C69F2 /* MainScreenPresenter.swift in Sources */,
+				9CA817F5288A86AF00BCC8B0 /* ErrorRouter.swift in Sources */,
 				9CF0D2B2286F4FA6006B6DEB /* ReviewRow.swift in Sources */,
 				9C1B7003288831B5005045F7 /* LoginViewController.swift in Sources */,
 				9C91BAA6286C8FF800D3C5B7 /* TopBar.swift in Sources */,

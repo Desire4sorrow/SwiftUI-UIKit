@@ -13,13 +13,6 @@ import Foundation
 final class LoginPresenter {
     unowned var view: LoginViewInput!
     var router: LoginRouterInput!
-
-    func handleAuthorizedUser() {
-        let db = Firestore.firestore().collection(AuthFields.dbName)
-        db.getDocuments { snapshot, _ in
-            print(snapshot?.documents.count)
-        }
-    }
 }
 
 // MARK: - LoginPresenterInput
@@ -35,7 +28,7 @@ extension LoginPresenter: LoginPresenterInput {
             if error != nil {
                 self.router.showError(error!)
             } else {
-                self.handleAuthorizedUser()
+                self.router.showMainScreen(email: email)
             }
         }
     }

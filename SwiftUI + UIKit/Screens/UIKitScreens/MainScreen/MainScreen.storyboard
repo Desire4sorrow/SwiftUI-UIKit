@@ -79,10 +79,10 @@
                                 <rect key="frame" x="166" y="50" width="200" height="50"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-image" translatesAutoresizingMaskIntoConstraints="NO" id="GeN-WW-eOw">
-                                        <rect key="frame" x="5" y="2.6666666666666643" width="45" height="45"/>
+                                        <rect key="frame" x="5" y="5" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="cVd-9u-yWr"/>
-                                            <constraint firstAttribute="width" constant="45" id="tem-pF-Ltp"/>
+                                            <constraint firstAttribute="height" constant="40" id="cVd-9u-yWr"/>
+                                            <constraint firstAttribute="width" constant="40" id="tem-pF-Ltp"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -91,25 +91,17 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="refer@mail.ru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceB-f3-Y2U">
-                                        <rect key="frame" x="57.999999999999993" y="5.0000000000000009" width="88.333333333333314" height="12.333333333333336"/>
-                                        <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="12"/>
-                                        <color key="textColor" name="GuidePurple"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Владимир" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7n-7r-UPc">
-                                        <rect key="frame" x="58.000000000000007" y="24.666666666666671" width="102.66666666666669" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                        <rect key="frame" x="53.000000000000007" y="18.333333333333329" width="95.666666666666686" height="13.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="13"/>
                                         <color key="textColor" name="GuidePurple"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" name="GuidePink"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="y7n-7r-UPc" secondAttribute="bottom" constant="5" id="A7c-rk-jrM"/>
                                     <constraint firstAttribute="height" constant="50" id="AFR-IT-LwI"/>
+                                    <constraint firstItem="ceB-f3-Y2U" firstAttribute="centerY" secondItem="BQ8-GI-MUK" secondAttribute="centerY" id="Aeg-05-OWV"/>
                                     <constraint firstItem="GeN-WW-eOw" firstAttribute="leading" secondItem="BQ8-GI-MUK" secondAttribute="leading" constant="5" id="CQh-dM-JZa"/>
-                                    <constraint firstItem="y7n-7r-UPc" firstAttribute="leading" secondItem="GeN-WW-eOw" secondAttribute="trailing" constant="8" symbolic="YES" id="mJ8-BC-Byb"/>
-                                    <constraint firstItem="ceB-f3-Y2U" firstAttribute="top" secondItem="BQ8-GI-MUK" secondAttribute="top" constant="5" id="oJT-dM-pAQ"/>
                                     <constraint firstAttribute="width" constant="200" id="s9i-9i-FMv"/>
                                     <constraint firstItem="ceB-f3-Y2U" firstAttribute="leading" secondItem="GeN-WW-eOw" secondAttribute="trailing" constant="8" symbolic="YES" id="wXa-cI-Fzz"/>
                                     <constraint firstItem="GeN-WW-eOw" firstAttribute="centerY" secondItem="BQ8-GI-MUK" secondAttribute="centerY" id="xfL-5t-k59"/>
@@ -120,10 +112,29 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epe-ys-Ddt">
+                                <rect key="frame" x="24" y="50" width="75" height="50"/>
+                                <color key="backgroundColor" name="GuidePink"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="i2E-Vc-7Yd"/>
+                                </constraints>
+                                <color key="tintColor" name="GuidePurple"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Выйти"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onExitTouched:" destination="zIc-eW-6fX" eventType="touchUpInside" id="zmr-rg-x6D"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="BQ8-GI-MUK" firstAttribute="bottom" secondItem="epe-ys-Ddt" secondAttribute="bottom" id="2Lo-rG-goZ"/>
                             <constraint firstItem="cSs-qD-Gl5" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="10" id="EL0-Km-2RB"/>
                             <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="CST-Xm-WMt" secondAttribute="trailing" id="FzR-eW-3P3"/>
                             <constraint firstItem="BQ8-GI-MUK" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" constant="50" id="Iaw-bw-ZM7"/>
@@ -134,6 +145,8 @@
                             <constraint firstItem="Hrt-Mq-bPX" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" constant="120" id="QeK-GG-kca"/>
                             <constraint firstItem="vCC-tD-WLs" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="24" id="Ujz-KX-uUc"/>
                             <constraint firstItem="3bm-lr-Tu2" firstAttribute="top" secondItem="vCC-tD-WLs" secondAttribute="bottom" constant="24" id="W25-JJ-T6N"/>
+                            <constraint firstItem="epe-ys-Ddt" firstAttribute="top" secondItem="BQ8-GI-MUK" secondAttribute="top" id="YLD-3W-rw0"/>
+                            <constraint firstItem="epe-ys-Ddt" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" constant="24" id="YOr-RC-xqx"/>
                             <constraint firstItem="CST-Xm-WMt" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="aPE-wr-ZWg"/>
                             <constraint firstItem="3pi-N7-nbV" firstAttribute="trailing" secondItem="cSs-qD-Gl5" secondAttribute="trailing" constant="10" id="eq9-8W-aLJ"/>
                             <constraint firstItem="vCC-tD-WLs" firstAttribute="top" secondItem="Hrt-Mq-bPX" secondAttribute="bottom" constant="24" id="hYM-vm-Yu9"/>
@@ -147,10 +160,10 @@
                     </view>
                     <connections>
                         <outlet property="cityTableView" destination="vCC-tD-WLs" id="JZQ-8h-Q1w"/>
+                        <outlet property="exitButton" destination="epe-ys-Ddt" id="8YV-JD-eWe"/>
                         <outlet property="loginButton" destination="vee-9z-SFh" id="Zkx-TX-Sjr"/>
                         <outlet property="userInfoLabel" destination="ceB-f3-Y2U" id="yie-63-3h4"/>
                         <outlet property="userInfoView" destination="BQ8-GI-MUK" id="0dM-yF-KWl"/>
-                        <outlet property="userNameLabel" destination="y7n-7r-UPc" id="duV-sJ-06b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>

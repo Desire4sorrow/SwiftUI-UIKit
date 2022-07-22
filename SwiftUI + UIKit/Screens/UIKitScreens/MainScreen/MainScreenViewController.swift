@@ -14,10 +14,10 @@ final class MainScreenViewController: UIViewController {
 
     private var viewModel: CityViewModel?
 
-    @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var loginButton: ORButton!
     @IBOutlet weak var userInfoView: UIView!
     @IBOutlet var cityTableView: UITableView!
+    @IBOutlet weak var exitButton: UIButton!
     @IBOutlet weak var userInfoLabel: UILabel!
 
     var currentCity: City = .kazan
@@ -28,7 +28,7 @@ final class MainScreenViewController: UIViewController {
     }
 
     var isLoggedIn: Bool {
-        !presenter.email.isEmpty && !presenter.name.isEmpty
+        !presenter.email.isEmpty
     }
 
     override func viewDidLoad() {
@@ -40,15 +40,25 @@ final class MainScreenViewController: UIViewController {
         prepareNavigationBar()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        presenter.viewWillAppear()
+    }
+
     @IBAction func onLoginButtonTouched() {
         presenter.onLoginTouched()
     }
 
+    @IBAction func onExitTouched(_: Any) {
+        presenter.onExitTouched()
+    }
+
     func setupHeaderView() {
-        loginButton.isHidden = isLoggedIn
-        userInfoView.isHidden = !isLoggedIn
-        userInfoLabel.text = presenter.email
-        userNameLabel.text = presenter.name
+        makeUserView()
+        if isLoggedIn {
+            userInfoLabel.text = presenter.email
+        }
     }
 
     func prepareDefaultSelection() {
@@ -106,4 +116,11 @@ extension MainScreenViewController: UITableViewDataSource {
     }
 }
 
-extension MainScreenViewController: MainScreenViewInput {}
+extension MainScreenViewController: MainScreenViewInput {
+
+    func makeUserView() {
+        loginButton.isHidden = isLoggedIn
+        exitButton.isHidden = !isLoggedIn
+        userInfoView.isHidden = !isLoggedIn
+    }
+}

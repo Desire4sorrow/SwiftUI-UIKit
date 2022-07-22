@@ -14,8 +14,7 @@ protocol RegistrationPresenterInput: AnyObject {
 protocol RegistrationViewInput: AnyObject {
 }
 
-protocol RegistrationRouterInput: AnyObject {
-    func showError(_ error: Error)
+protocol RegistrationRouterInput: ErrorRouter {
     func showMainScreen(name: String, email: String)
 }
 
