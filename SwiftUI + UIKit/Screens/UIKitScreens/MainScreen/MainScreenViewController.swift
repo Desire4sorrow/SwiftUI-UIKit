@@ -9,7 +9,7 @@ import ORCommonUI_Swift
 import SwiftUI
 import UIKit
 
-final class MainScreenViewController: UIViewController {
+final class MainScreenViewController: BaseViewController {
     var presenter: MainScreenPresenterInput!
 
     private var viewModel: CityViewModel?
@@ -64,11 +64,6 @@ final class MainScreenViewController: UIViewController {
     func prepareDefaultSelection() {
         let indexPath = NSIndexPath(row: 0, section: 0)
         cityTableView.selectRow(at: indexPath as IndexPath, animated: false, scrollPosition: .none)
-    }
-
-    func prepareNavigationBar() {
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
     }
 
     @IBSegueAction func toCityInfoView(_ coder: NSCoder) -> UIViewController? {

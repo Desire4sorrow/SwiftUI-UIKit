@@ -8,7 +8,7 @@
 import ORCommonUI_Swift
 import UIKit
 
-final class LoginViewController: UIViewController, UITextFieldDelegate {
+final class LoginViewController: BaseViewController, UITextFieldDelegate {
     var presenter: LoginPresenterInput!
 
     @IBOutlet weak var emailTextField: UITextField!
@@ -33,7 +33,6 @@ final class LoginViewController: UIViewController, UITextFieldDelegate {
         addNotificationObserver(name: UITextField.textDidChangeNotification) { [weak self] _ in
             self?.textFieldChanged()
         }
-
     }
 
     @IBAction func onLoginButtonTouched() {

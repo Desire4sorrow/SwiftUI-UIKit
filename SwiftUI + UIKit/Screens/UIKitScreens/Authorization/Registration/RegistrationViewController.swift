@@ -8,7 +8,7 @@
 import ORCommonUI_Swift
 import UIKit
 
-final class RegistrationViewController: UIViewController, UITextFieldDelegate {
+final class RegistrationViewController: BaseViewController, UITextFieldDelegate {
     var presenter: RegistrationPresenterInput!
 
     @IBOutlet weak var emailTextField: UITextField!

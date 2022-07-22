@@ -88,6 +88,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="T1S-jz-Voc" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="7ZY-oy-XVA"/>
                             <constraint firstItem="Woh-Fa-VSG" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="7zM-bt-Wsx"/>
