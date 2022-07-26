@@ -36,6 +36,20 @@
 		9C3EF78F288FD41300AE1705 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF78E288FD41300AE1705 /* SheetView.swift */; };
 		9C3EF7932890028E00AE1705 /* TransportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7922890028E00AE1705 /* TransportRow.swift */; };
 		9C3EF7952890081F00AE1705 /* ReachInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7942890081F00AE1705 /* ReachInfo.swift */; };
+		9C3EF79828902F9400AE1705 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF79728902F9400AE1705 /* Environment.swift */; };
+		9C3EF79A2890353B00AE1705 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7992890353B00AE1705 /* AppConfig.swift */; };
+		9C3EF79D2890366700AE1705 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3EF79C2890366700AE1705 /* Alamofire */; };
+		9C3EF7A0289036DA00AE1705 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3EF79F289036DA00AE1705 /* Moya */; };
+		9C3EF7A32890376200AE1705 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3EF7A22890376200AE1705 /* Swinject */; };
+		9C3EF7A6289037CD00AE1705 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7A5289037CD00AE1705 /* Config.swift */; };
+		9C3EF7AA2890385E00AE1705 /* MainAssemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7A92890385E00AE1705 /* MainAssemblies.swift */; };
+		9C3EF7AC289038A500AE1705 /* ApiServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7AB289038A500AE1705 /* ApiServicesAssembly.swift */; };
+		9C3EF7B42890399100AE1705 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3EF7B32890399100AE1705 /* SwinjectAutoregistration */; };
+		9C3EF7B628903A3D00AE1705 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7B528903A3D00AE1705 /* DI.swift */; };
+		9C3EF7B828903A6900AE1705 /* CitiesApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7B728903A6900AE1705 /* CitiesApiService.swift */; };
+		9C3EF7BB28903BEB00AE1705 /* Promises in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3EF7BA28903BEB00AE1705 /* Promises */; };
+		9C3EF7BF28903C4C00AE1705 /* PlacesRequirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7BE28903C4C00AE1705 /* PlacesRequirements.swift */; };
+		9C3EF7C128903D0000AE1705 /* CitiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7C028903D0000AE1705 /* CitiesResponse.swift */; };
 		9C4B6C1D285C7C9000064537 /* CustomActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C1C285C7C9000064537 /* CustomActivityView.swift */; };
 		9C4B6C1F285C82DB00064537 /* CustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C1E285C82DB00064537 /* CustomActivity.swift */; };
 		9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C21285CAA5C00064537 /* LocationManager.swift */; };
@@ -128,6 +142,15 @@
 		9C3EF78E288FD41300AE1705 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		9C3EF7922890028E00AE1705 /* TransportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportRow.swift; sourceTree = "<group>"; };
 		9C3EF7942890081F00AE1705 /* ReachInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachInfo.swift; sourceTree = "<group>"; };
+		9C3EF79728902F9400AE1705 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		9C3EF7992890353B00AE1705 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		9C3EF7A5289037CD00AE1705 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		9C3EF7A92890385E00AE1705 /* MainAssemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssemblies.swift; sourceTree = "<group>"; };
+		9C3EF7AB289038A500AE1705 /* ApiServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServicesAssembly.swift; sourceTree = "<group>"; };
+		9C3EF7B528903A3D00AE1705 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		9C3EF7B728903A6900AE1705 /* CitiesApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesApiService.swift; sourceTree = "<group>"; };
+		9C3EF7BE28903C4C00AE1705 /* PlacesRequirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesRequirements.swift; sourceTree = "<group>"; };
+		9C3EF7C028903D0000AE1705 /* CitiesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesResponse.swift; sourceTree = "<group>"; };
 		9C4B6C1C285C7C9000064537 /* CustomActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityView.swift; sourceTree = "<group>"; };
 		9C4B6C1E285C82DB00064537 /* CustomActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivity.swift; sourceTree = "<group>"; };
 		9C4B6C21285CAA5C00064537 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -187,7 +210,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3EF7B42890399100AE1705 /* SwinjectAutoregistration in Frameworks */,
 				9C1B701428883ACB005045F7 /* ORCommonUI-Swift in Frameworks */,
+				9C3EF7BB28903BEB00AE1705 /* Promises in Frameworks */,
+				9C3EF7A32890376200AE1705 /* Swinject in Frameworks */,
+				9C3EF79D2890366700AE1705 /* Alamofire in Frameworks */,
+				9C3EF7A0289036DA00AE1705 /* Moya in Frameworks */,
 				9C1B6FF028882C49005045F7 /* FirebaseAnalytics in Frameworks */,
 				9C3EF78D288FD2DA00AE1705 /* BottomSheet in Frameworks */,
 				9C1B6FF228882C49005045F7 /* FirebaseAuth in Frameworks */,
@@ -265,6 +293,60 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		9C3EF79628902F7300AE1705 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				9C3EF79728902F9400AE1705 /* Environment.swift */,
+				9C3EF7992890353B00AE1705 /* AppConfig.swift */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		9C3EF7A4289037C100AE1705 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9C3EF7BC28903C2E00AE1705 /* APIModel */,
+				9C3EF7A72890381300AE1705 /* APIServices */,
+				9C3EF7A5289037CD00AE1705 /* Config.swift */,
+				9C3EF7B528903A3D00AE1705 /* DI.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9C3EF7A72890381300AE1705 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				9C3EF7B728903A6900AE1705 /* CitiesApiService.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		9C3EF7A82890384A00AE1705 /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				9C3EF7A92890385E00AE1705 /* MainAssemblies.swift */,
+				9C3EF7AB289038A500AE1705 /* ApiServicesAssembly.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		9C3EF7BC28903C2E00AE1705 /* APIModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C3EF7BD28903C3A00AE1705 /* Cities */,
+			);
+			path = APIModel;
+			sourceTree = "<group>";
+		};
+		9C3EF7BD28903C3A00AE1705 /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				9C3EF7BE28903C4C00AE1705 /* PlacesRequirements.swift */,
+				9C3EF7C028903D0000AE1705 /* CitiesResponse.swift */,
+			);
+			path = Cities;
+			sourceTree = "<group>";
+		};
 		9C4B6C1B285C7C7100064537 /* CustomActivityView */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +410,9 @@
 		9C5C4E812859C706008C69F2 /* SwiftUI + UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9C3EF7A82890384A00AE1705 /* Assembler */,
+				9C3EF7A4289037C100AE1705 /* Domain */,
+				9C3EF79628902F7300AE1705 /* AppConfig */,
 				9C91BAAE286D75E000D3C5B7 /* Screens */,
 				9C91BA9A286AF87F00D3C5B7 /* Resources */,
 				9C4B6C23285CC5F100064537 /* Models */,
@@ -520,6 +605,11 @@
 				9C1B6FF528882C49005045F7 /* FirebaseFirestore */,
 				9C1B701328883ACB005045F7 /* ORCommonUI-Swift */,
 				9C3EF78C288FD2DA00AE1705 /* BottomSheet */,
+				9C3EF79C2890366700AE1705 /* Alamofire */,
+				9C3EF79F289036DA00AE1705 /* Moya */,
+				9C3EF7A22890376200AE1705 /* Swinject */,
+				9C3EF7B32890399100AE1705 /* SwinjectAutoregistration */,
+				9C3EF7BA28903BEB00AE1705 /* Promises */,
 			);
 			productName = "SwiftUI + UIKit";
 			productReference = 9C5C4E7F2859C706008C69F2 /* City Guide.app */;
@@ -598,6 +688,11 @@
 				9C1B6FEE28882C49005045F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				9C1B701228883ACA005045F7 /* XCRemoteSwiftPackageReference "ORCommonUI-Swift" */,
 				9C3EF78B288FD2DA00AE1705 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+				9C3EF79B2890366700AE1705 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9C3EF79E289036DA00AE1705 /* XCRemoteSwiftPackageReference "Moya" */,
+				9C3EF7A12890376200AE1705 /* XCRemoteSwiftPackageReference "Swinject" */,
+				9C3EF7B22890399000AE1705 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+				9C3EF7B928903BEB00AE1705 /* XCRemoteSwiftPackageReference "promises" */,
 			);
 			productRefGroup = 9C5C4E802859C706008C69F2 /* Products */;
 			projectDirPath = "";
@@ -688,20 +783,27 @@
 				9C1B7003288831B5005045F7 /* LoginViewController.swift in Sources */,
 				9C91BAA6286C8FF800D3C5B7 /* TopBar.swift in Sources */,
 				9CA301FA2886B334006A0D44 /* ImagePicker.swift in Sources */,
+				9C3EF7B828903A6900AE1705 /* CitiesApiService.swift in Sources */,
 				9C3EF78F288FD41300AE1705 /* SheetView.swift in Sources */,
+				9C3EF7AA2890385E00AE1705 /* MainAssemblies.swift in Sources */,
 				9C0D5CA62869E7A90048C06F /* CityButtonInfoView.swift in Sources */,
 				9C1B7002288831B5005045F7 /* LoginRouter.swift in Sources */,
 				9C91BAB5286D874B00D3C5B7 /* Image.swift in Sources */,
 				9C658DFA28647D730023DAB0 /* Object.swift in Sources */,
 				9C9590242889506B002971C1 /* RegistrationViewModel.swift in Sources */,
 				9C91BAA3286C392400D3C5B7 /* ObjectDescriptionModel.swift in Sources */,
+				9C3EF7B628903A3D00AE1705 /* DI.swift in Sources */,
 				9C91BA97286AD4B400D3C5B7 /* CityImageView.swift in Sources */,
 				9C0D5C9928699B1E0048C06F /* ObjectsViewModel.swift in Sources */,
 				9C1B700D288831CD005045F7 /* RegistrationPresenter.swift in Sources */,
 				9C4FC1A428854AE900815124 /* RoundedCorner.swift in Sources */,
 				9C0D5C9D2869A3990048C06F /* View + extension.swift in Sources */,
+				9C3EF79828902F9400AE1705 /* Environment.swift in Sources */,
 				9C5C4EC52859D187008C69F2 /* UITableView + extension.swift in Sources */,
 				9C91BAC3286DD6FF00D3C5B7 /* UIApplication + extension.swift in Sources */,
+				9C3EF7BF28903C4C00AE1705 /* PlacesRequirements.swift in Sources */,
+				9C3EF79A2890353B00AE1705 /* AppConfig.swift in Sources */,
+				9C3EF7AC289038A500AE1705 /* ApiServicesAssembly.swift in Sources */,
 				9C723D06285B228500B2D09E /* CityDescriptionView.swift in Sources */,
 				9C5C4EC32859D0B5008C69F2 /* CityTableViewCell.swift in Sources */,
 				9C5C4E832859C706008C69F2 /* AppDelegate.swift in Sources */,
@@ -723,7 +825,9 @@
 				9C1B7004288831B5005045F7 /* LoginProtocols.swift in Sources */,
 				9C5C4EC82859E0AD008C69F2 /* CityInfoView.swift in Sources */,
 				9C5C4EBE2859C743008C69F2 /* MainScreenConfigurator.swift in Sources */,
+				9C3EF7C128903D0000AE1705 /* CitiesResponse.swift in Sources */,
 				9C3EF7932890028E00AE1705 /* TransportRow.swift in Sources */,
+				9C3EF7A6289037CD00AE1705 /* Config.swift in Sources */,
 				9C4B6C25285CC67000064537 /* CityObjectsView.swift in Sources */,
 				9C4B6C1F285C82DB00064537 /* CustomActivity.swift in Sources */,
 				9C1B7005288831B5005045F7 /* LoginConfigurator.swift in Sources */,
@@ -1082,6 +1186,46 @@
 				minimumVersion = 0.2.4;
 			};
 		};
+		9C3EF79B2890366700AE1705 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		9C3EF79E289036DA00AE1705 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		9C3EF7A12890376200AE1705 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		9C3EF7B22890399000AE1705 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		9C3EF7B928903BEB00AE1705 /* XCRemoteSwiftPackageReference "promises" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/promises";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		9C91BA9F286B167700D3C5B7 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
@@ -1122,6 +1266,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9C3EF78B288FD2DA00AE1705 /* XCRemoteSwiftPackageReference "BottomSheet" */;
 			productName = BottomSheet;
+		};
+		9C3EF79C2890366700AE1705 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C3EF79B2890366700AE1705 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9C3EF79F289036DA00AE1705 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C3EF79E289036DA00AE1705 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		9C3EF7A22890376200AE1705 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C3EF7A12890376200AE1705 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		9C3EF7B32890399100AE1705 /* SwinjectAutoregistration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C3EF7B22890399000AE1705 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
+			productName = SwinjectAutoregistration;
+		};
+		9C3EF7BA28903BEB00AE1705 /* Promises */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C3EF7B928903BEB00AE1705 /* XCRemoteSwiftPackageReference "promises" */;
+			productName = Promises;
 		};
 		9C91BAA0286B167700D3C5B7 /* Introspect */ = {
 			isa = XCSwiftPackageProductDependency;
