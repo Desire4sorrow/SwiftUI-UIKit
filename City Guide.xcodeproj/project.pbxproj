@@ -32,6 +32,10 @@
 		9C1B7010288831CD005045F7 /* RegistrationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B700A288831CD005045F7 /* RegistrationProtocols.swift */; };
 		9C1B7011288831CD005045F7 /* RegistrationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B700B288831CD005045F7 /* RegistrationConfigurator.swift */; };
 		9C1B701428883ACB005045F7 /* ORCommonUI-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1B701328883ACB005045F7 /* ORCommonUI-Swift */; };
+		9C3EF78D288FD2DA00AE1705 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3EF78C288FD2DA00AE1705 /* BottomSheet */; };
+		9C3EF78F288FD41300AE1705 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF78E288FD41300AE1705 /* SheetView.swift */; };
+		9C3EF7932890028E00AE1705 /* TransportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7922890028E00AE1705 /* TransportRow.swift */; };
+		9C3EF7952890081F00AE1705 /* ReachInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7942890081F00AE1705 /* ReachInfo.swift */; };
 		9C4B6C1D285C7C9000064537 /* CustomActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C1C285C7C9000064537 /* CustomActivityView.swift */; };
 		9C4B6C1F285C82DB00064537 /* CustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C1E285C82DB00064537 /* CustomActivity.swift */; };
 		9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B6C21285CAA5C00064537 /* LocationManager.swift */; };
@@ -121,6 +125,9 @@
 		9C1B7009288831CD005045F7 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		9C1B700A288831CD005045F7 /* RegistrationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationProtocols.swift; sourceTree = "<group>"; };
 		9C1B700B288831CD005045F7 /* RegistrationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationConfigurator.swift; sourceTree = "<group>"; };
+		9C3EF78E288FD41300AE1705 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		9C3EF7922890028E00AE1705 /* TransportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportRow.swift; sourceTree = "<group>"; };
+		9C3EF7942890081F00AE1705 /* ReachInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachInfo.swift; sourceTree = "<group>"; };
 		9C4B6C1C285C7C9000064537 /* CustomActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityView.swift; sourceTree = "<group>"; };
 		9C4B6C1E285C82DB00064537 /* CustomActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivity.swift; sourceTree = "<group>"; };
 		9C4B6C21285CAA5C00064537 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -182,6 +189,7 @@
 			files = (
 				9C1B701428883ACB005045F7 /* ORCommonUI-Swift in Frameworks */,
 				9C1B6FF028882C49005045F7 /* FirebaseAnalytics in Frameworks */,
+				9C3EF78D288FD2DA00AE1705 /* BottomSheet in Frameworks */,
 				9C1B6FF228882C49005045F7 /* FirebaseAuth in Frameworks */,
 				9C1B6FF428882C49005045F7 /* FirebaseDatabase in Frameworks */,
 				9C1B6FF628882C49005045F7 /* FirebaseFirestore in Frameworks */,
@@ -294,6 +302,7 @@
 				9C91BAA2286C392400D3C5B7 /* ObjectDescriptionModel.swift */,
 				9C91BAB2286D794D00D3C5B7 /* TopBarModel.swift */,
 				9CF0D2AF286F4A26006B6DEB /* ReviewModel.swift */,
+				9C3EF7942890081F00AE1705 /* ReachInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -359,6 +368,8 @@
 			children = (
 				9C4B6C24285CC67000064537 /* CityObjectsView.swift */,
 				9C4FC1A52885964C00815124 /* PurposalLinkCell.swift */,
+				9C3EF78E288FD41300AE1705 /* SheetView.swift */,
+				9C3EF7922890028E00AE1705 /* TransportRow.swift */,
 			);
 			path = CityObjects;
 			sourceTree = "<group>";
@@ -508,6 +519,7 @@
 				9C1B6FF328882C49005045F7 /* FirebaseDatabase */,
 				9C1B6FF528882C49005045F7 /* FirebaseFirestore */,
 				9C1B701328883ACB005045F7 /* ORCommonUI-Swift */,
+				9C3EF78C288FD2DA00AE1705 /* BottomSheet */,
 			);
 			productName = "SwiftUI + UIKit";
 			productReference = 9C5C4E7F2859C706008C69F2 /* City Guide.app */;
@@ -585,6 +597,7 @@
 				9C91BA9F286B167700D3C5B7 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 				9C1B6FEE28882C49005045F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				9C1B701228883ACA005045F7 /* XCRemoteSwiftPackageReference "ORCommonUI-Swift" */,
+				9C3EF78B288FD2DA00AE1705 /* XCRemoteSwiftPackageReference "BottomSheet" */,
 			);
 			productRefGroup = 9C5C4E802859C706008C69F2 /* Products */;
 			projectDirPath = "";
@@ -675,6 +688,7 @@
 				9C1B7003288831B5005045F7 /* LoginViewController.swift in Sources */,
 				9C91BAA6286C8FF800D3C5B7 /* TopBar.swift in Sources */,
 				9CA301FA2886B334006A0D44 /* ImagePicker.swift in Sources */,
+				9C3EF78F288FD41300AE1705 /* SheetView.swift in Sources */,
 				9C0D5CA62869E7A90048C06F /* CityButtonInfoView.swift in Sources */,
 				9C1B7002288831B5005045F7 /* LoginRouter.swift in Sources */,
 				9C91BAB5286D874B00D3C5B7 /* Image.swift in Sources */,
@@ -709,11 +723,13 @@
 				9C1B7004288831B5005045F7 /* LoginProtocols.swift in Sources */,
 				9C5C4EC82859E0AD008C69F2 /* CityInfoView.swift in Sources */,
 				9C5C4EBE2859C743008C69F2 /* MainScreenConfigurator.swift in Sources */,
+				9C3EF7932890028E00AE1705 /* TransportRow.swift in Sources */,
 				9C4B6C25285CC67000064537 /* CityObjectsView.swift in Sources */,
 				9C4B6C1F285C82DB00064537 /* CustomActivity.swift in Sources */,
 				9C1B7005288831B5005045F7 /* LoginConfigurator.swift in Sources */,
 				9C0D5CA02869A3E00048C06F /* ViewDidLoadModifier.swift in Sources */,
 				9C1B7011288831CD005045F7 /* RegistrationConfigurator.swift in Sources */,
+				9C3EF7952890081F00AE1705 /* ReachInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1058,6 +1074,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		9C3EF78B288FD2DA00AE1705 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamfootdev/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.4;
+			};
+		};
 		9C91BA9F286B167700D3C5B7 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
@@ -1093,6 +1117,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9C1B701228883ACA005045F7 /* XCRemoteSwiftPackageReference "ORCommonUI-Swift" */;
 			productName = "ORCommonUI-Swift";
+		};
+		9C3EF78C288FD2DA00AE1705 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C3EF78B288FD2DA00AE1705 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
 		};
 		9C91BAA0286B167700D3C5B7 /* Introspect */ = {
 			isa = XCSwiftPackageProductDependency;

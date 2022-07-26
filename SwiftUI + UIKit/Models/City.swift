@@ -105,7 +105,7 @@ public enum City: CaseIterable {
         }
     }
 
-    public var cityObjects: [Object] {
+    var cityObjects: [Object] {
         switch self {
         case .kazan:
             return [
@@ -114,21 +114,76 @@ public enum City: CaseIterable {
                     objectIcon: "kazan-kul-sharif",
                     objectName: "Мечеть Кул-Шариф",
                     timeOfWork: "9:00 - 17:00",
-                    objectDescription: Description.kulCharif.rawValue
+                    objectDescription: Description.kulCharif.rawValue,
+                    reachInfo: [
+                        .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                        .init(
+                            id: 1,
+                            imagePath: "bus",
+                            transportType: "Автобус",
+                            transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                        ),
+                        .init(
+                            id: 2,
+                            imagePath: "underground",
+                            transportType: "Метро",
+                            transportVariables: "Ст. «Кремлевская»"
+                        ),
+                        .init(
+                            id: 3,
+                            imagePath: "trolleybus",
+                            transportType: "Троллейбус",
+                            transportVariables: "Ост. «Центральный стадион», № 2"
+                        )
+                    ]
                 ),
                 .init(
                     id: 2,
                     objectIcon: "kazan-cup",
                     objectName: "Загс Чаша",
                     timeOfWork: "9:00 - 16:00",
-                    objectDescription: Description.chasha.rawValue
+                    objectDescription: Description.chasha.rawValue,
+                    reachInfo: [
+                        .init(
+                            id: 4,
+                            imagePath: "bus",
+                            transportType: "Автобус",
+                            transportVariables: "№1, 6, 15, 22, 28, 29, 35, 37, 47, 74, 75, 89, 98, 117"
+                        ),
+                        .init(
+                            id: 2,
+                            imagePath: "underground",
+                            transportType: "Метро",
+                            transportVariables: "Ст. «Козья слобода»"
+                        )
+                    ]
                 ),
                 .init(
                     id: 3,
                     objectIcon: "kazan-kremlin",
                     objectName: "Казанский кремль",
                     timeOfWork: "8:00 - 18:00",
-                    objectDescription: Description.kazanKremlin.rawValue
+                    objectDescription: Description.kazanKremlin.rawValue,
+                    reachInfo: [
+                        .init(
+                            id: 1,
+                            imagePath: "bus",
+                            transportType: "Автобус",
+                            transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                        ),
+                        .init(
+                            id: 2,
+                            imagePath: "underground",
+                            transportType: "Метро",
+                            transportVariables: "Ст. «Кремлевская»"
+                        ),
+                        .init(
+                            id: 3,
+                            imagePath: "trolleybus",
+                            transportType: "Троллейбус",
+                            transportVariables: "1, 4, 10, 17, 18"
+                        )
+                    ]
                 )
             ]
         case .moskow:
@@ -138,21 +193,84 @@ public enum City: CaseIterable {
                     objectIcon: "moskow-kremlin",
                     objectName: "Московский Кремль",
                     timeOfWork: "9:00 - 17:00",
-                    objectDescription: Description.moskowKremlin.rawValue
+                    objectDescription: Description.moskowKremlin.rawValue,
+                    reachInfo: [
+                        .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                        .init(
+                            id: 1,
+                            imagePath: "bus",
+                            transportType: "Автобус",
+                            transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                        ),
+                        .init(
+                            id: 2,
+                            imagePath: "underground",
+                            transportType: "Метро",
+                            transportVariables: "Ст. «Кремлевская»"
+                        ),
+                        .init(
+                            id: 3,
+                            imagePath: "trolleybus",
+                            transportType: "Троллейбус",
+                            transportVariables: "Ост. «Центральный стадион», № 2"
+                        )
+                    ]
                 ),
                 .init(
                     id: 5,
                     objectIcon: "sobor-vasiliy",
                     objectName: "Собор Василия Блаженного",
                     timeOfWork: "9:00 - 16:00",
-                    objectDescription: Description.vasiliy.rawValue
+                    objectDescription: Description.vasiliy.rawValue,
+                    reachInfo: [
+                        .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                        .init(
+                            id: 1,
+                            imagePath: "bus",
+                            transportType: "Автобус",
+                            transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                        ),
+                        .init(
+                            id: 2,
+                            imagePath: "underground",
+                            transportType: "Метро",
+                            transportVariables: "Ст. «Кремлевская»"
+                        ),
+                        .init(
+                            id: 3,
+                            imagePath: "trolleybus",
+                            transportType: "Троллейбус",
+                            transportVariables: "Ост. «Центральный стадион», № 2"
+                        )
+                    ]
                 ),
                 .init(
                     id: 6,
                     objectIcon: "izmailovskiy-park",
                     objectName: "Измайловский парк",
                     timeOfWork: "24 часа",
-                    objectDescription: Description.ismailovskiy.rawValue
+                    objectDescription: Description.ismailovskiy.rawValue,
+                    reachInfo: [
+                        .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                        .init(
+                            id: 1,
+                            imagePath: "bus",
+                            transportType: "Автобус",
+                            transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                        ),
+                        .init(
+                            id: 2,
+                            imagePath: "underground",
+                            transportType: "Метро",
+                            transportVariables: "Ст. «Кремлевская»"
+                        ),
+                        .init(
+                            id: 3,
+                            imagePath: "trolleybus",
+                            transportType: "Троллейбус",
+                            transportVariables: "Ост. «Центральный стадион», № 2"
+                        )
+                    ]
                 )
             ]
         case .saintP:
@@ -162,21 +280,84 @@ public enum City: CaseIterable {
                     objectIcon: "hermitage",
                     objectName: "Эрмитаж",
                     timeOfWork: "8:00 - 17:00",
-                    objectDescription: Description.ermitage.rawValue
+                    objectDescription: Description.ermitage.rawValue,
+                    reachInfo: [
+                        .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                        .init(
+                            id: 1,
+                            imagePath: "bus",
+                            transportType: "Автобус",
+                            transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                        ),
+                        .init(
+                            id: 2,
+                            imagePath: "underground",
+                            transportType: "Метро",
+                            transportVariables: "Ст. «Кремлевская»"
+                        ),
+                        .init(
+                            id: 3,
+                            imagePath: "trolleybus",
+                            transportType: "Троллейбус",
+                            transportVariables: "Ост. «Центральный стадион», № 2"
+                        )
+                    ]
                 ),
                 .init(
                     id: 8,
                     objectIcon: "isaakievskiy",
                     objectName: "Исаакиевский собор",
                     timeOfWork: "6:00 - 20:00",
-                    objectDescription: Description.isaakievskiy.rawValue
+                    objectDescription: Description.isaakievskiy.rawValue,
+                    reachInfo: [
+                        .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                        .init(
+                            id: 1,
+                            imagePath: "bus",
+                            transportType: "Автобус",
+                            transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                        ),
+                        .init(
+                            id: 2,
+                            imagePath: "underground",
+                            transportType: "Метро",
+                            transportVariables: "Ст. «Кремлевская»"
+                        ),
+                        .init(
+                            id: 3,
+                            imagePath: "trolleybus",
+                            transportType: "Троллейбус",
+                            transportVariables: "Ост. «Центральный стадион», № 2"
+                        )
+                    ]
                 ),
                 .init(
                     id: 9,
                     objectIcon: "petropavlovskaya",
                     objectName: "Петропавловская крепость",
                     timeOfWork: "24 часа",
-                    objectDescription: Description.petropavlovskaya.rawValue
+                    objectDescription: Description.petropavlovskaya.rawValue,
+                    reachInfo: [
+                        .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                        .init(
+                            id: 1,
+                            imagePath: "bus",
+                            transportType: "Автобус",
+                            transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                        ),
+                        .init(
+                            id: 2,
+                            imagePath: "underground",
+                            transportType: "Метро",
+                            transportVariables: "Ст. «Кремлевская»"
+                        ),
+                        .init(
+                            id: 3,
+                            imagePath: "trolleybus",
+                            transportType: "Троллейбус",
+                            transportVariables: "Ост. «Центральный стадион», № 2"
+                        )
+                    ]
                 )
             ]
         case .novgorod:
@@ -186,21 +367,84 @@ public enum City: CaseIterable {
                     objectIcon: "nizhniy-kremlin",
                     objectName: "Нижегородский кремль",
                     timeOfWork: "8:00 - 17:00",
-                    objectDescription: Description.nizhniyKremlin.rawValue
+                    objectDescription: Description.nizhniyKremlin.rawValue,
+                    reachInfo: [
+                        .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                        .init(
+                            id: 1,
+                            imagePath: "bus",
+                            transportType: "Автобус",
+                            transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                        ),
+                        .init(
+                            id: 2,
+                            imagePath: "underground",
+                            transportType: "Метро",
+                            transportVariables: "Ст. «Кремлевская»"
+                        ),
+                        .init(
+                            id: 3,
+                            imagePath: "trolleybus",
+                            transportType: "Троллейбус",
+                            transportVariables: "Ост. «Центральный стадион», № 2"
+                        )
+                    ]
                 ),
                 .init(
                     id: 11,
                     objectIcon: "nizhniy-naberezhnaya",
                     objectName: "Набережная Федоровского",
                     timeOfWork: "24 часа",
-                    objectDescription: Description.nizhniyNaberezhnaya.rawValue
+                    objectDescription: Description.nizhniyNaberezhnaya.rawValue,
+                    reachInfo: [
+                        .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                        .init(
+                            id: 1,
+                            imagePath: "bus",
+                            transportType: "Автобус",
+                            transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                        ),
+                        .init(
+                            id: 2,
+                            imagePath: "underground",
+                            transportType: "Метро",
+                            transportVariables: "Ст. «Кремлевская»"
+                        ),
+                        .init(
+                            id: 3,
+                            imagePath: "trolleybus",
+                            transportType: "Троллейбус",
+                            transportVariables: "Ост. «Центральный стадион», № 2"
+                        )
+                    ]
                 ),
                 .init(
                     id: 12,
                     objectIcon: "nizhniy-lestnitsa",
                     objectName: "Чкаловская лестница",
                     timeOfWork: "24 часа",
-                    objectDescription: Description.nizhniyLestnitsa.rawValue
+                    objectDescription: Description.nizhniyLestnitsa.rawValue,
+                    reachInfo: [
+                        .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                        .init(
+                            id: 1,
+                            imagePath: "bus",
+                            transportType: "Автобус",
+                            transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                        ),
+                        .init(
+                            id: 2,
+                            imagePath: "underground",
+                            transportType: "Метро",
+                            transportVariables: "Ст. «Кремлевская»"
+                        ),
+                        .init(
+                            id: 3,
+                            imagePath: "trolleybus",
+                            transportType: "Троллейбус",
+                            transportVariables: "Ост. «Центральный стадион», № 2"
+                        )
+                    ]
                 )
             ]
         case .cheboksary:
@@ -209,7 +453,28 @@ public enum City: CaseIterable {
                 objectIcon: "No",
                 objectName: "No",
                 timeOfWork: "No",
-                objectDescription: ""
+                objectDescription: "",
+                reachInfo: [
+                    .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                    .init(
+                        id: 1,
+                        imagePath: "bus",
+                        transportType: "Автобус",
+                        transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                    ),
+                    .init(
+                        id: 2,
+                        imagePath: "underground",
+                        transportType: "Метро",
+                        transportVariables: "Ст. «Кремлевская»"
+                    ),
+                    .init(
+                        id: 3,
+                        imagePath: "trolleybus",
+                        transportType: "Троллейбус",
+                        transportVariables: "Ост. «Центральный стадион», № 2"
+                    )
+                ]
             )]
         case .ekaterinburg:
             return [.init(
@@ -217,7 +482,28 @@ public enum City: CaseIterable {
                 objectIcon: "No",
                 objectName: "No",
                 timeOfWork: "No",
-                objectDescription: ""
+                objectDescription: "",
+                reachInfo: [
+                    .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                    .init(
+                        id: 1,
+                        imagePath: "bus",
+                        transportType: "Автобус",
+                        transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                    ),
+                    .init(
+                        id: 2,
+                        imagePath: "underground",
+                        transportType: "Метро",
+                        transportVariables: "Ст. «Кремлевская»"
+                    ),
+                    .init(
+                        id: 3,
+                        imagePath: "trolleybus",
+                        transportType: "Троллейбус",
+                        transportVariables: "Ост. «Центральный стадион», № 2"
+                    )
+                ]
             )]
         case .novosibirsk:
             return [.init(
@@ -225,7 +511,28 @@ public enum City: CaseIterable {
                 objectIcon: "No",
                 objectName: "No",
                 timeOfWork: "No",
-                objectDescription: ""
+                objectDescription: "",
+                reachInfo: [
+                    .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                    .init(
+                        id: 1,
+                        imagePath: "bus",
+                        transportType: "Автобус",
+                        transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                    ),
+                    .init(
+                        id: 2,
+                        imagePath: "underground",
+                        transportType: "Метро",
+                        transportVariables: "Ст. «Кремлевская»"
+                    ),
+                    .init(
+                        id: 3,
+                        imagePath: "trolleybus",
+                        transportType: "Троллейбус",
+                        transportVariables: "Ост. «Центральный стадион», № 2"
+                    )
+                ]
             )]
         case .yoshkarOla:
             return [.init(
@@ -233,7 +540,28 @@ public enum City: CaseIterable {
                 objectIcon: "No",
                 objectName: "No",
                 timeOfWork: "No",
-                objectDescription: ""
+                objectDescription: "",
+                reachInfo: [
+                    .init(id: 0, imagePath: "car", transportType: "Такси", transportVariables: "~300 P"),
+                    .init(
+                        id: 1,
+                        imagePath: "bus",
+                        transportType: "Автобус",
+                        transportVariables: "Ост. «Батурина», № 22, 28, 28а, 89"
+                    ),
+                    .init(
+                        id: 2,
+                        imagePath: "underground",
+                        transportType: "Метро",
+                        transportVariables: "Ст. «Кремлевская»"
+                    ),
+                    .init(
+                        id: 3,
+                        imagePath: "trolleybus",
+                        transportType: "Троллейбус",
+                        transportVariables: "Ост. «Центральный стадион», № 2"
+                    )
+                ]
             )]
         }
     }

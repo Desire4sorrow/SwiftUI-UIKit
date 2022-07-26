@@ -5,11 +5,14 @@
 //  Created by Omega on 17.06.2022.
 //
 
+import BottomSheet
 import Introspect
 import SwiftUI
 
 struct CityObjectsView: View {
     @State private var needShowDarkTheme = false
+    @State private var isSheetPresented = false
+    @State private var currentObject: Object?
 
     @Environment(\.presentationMode) var presentationMode
 
@@ -70,6 +73,10 @@ struct CityObjectsView: View {
                     Text(object.timeOfWork)
                 }
             }
+            .onLongPressGesture {
+                isSheetPresented = true
+                currentObject = object
+            }
             .padding(.trailing, 10)
             .background(needShowDarkTheme ? Color.white : Color.guidePink.opacity(0.7))
             .cornerRadius(16)
@@ -94,6 +101,13 @@ struct CityObjectsView: View {
             .navigationBarItems(leading: backButton, trailing: themeButton)
             .introspectViewController { nav in
                 nav.navigationItem.title = objectsViewModel.city
+            }
+            .bottomSheet(
+                isPresented: $isSheetPresented,
+                detents: [.medium()],
+                isModalInPresentation: true
+            ) {
+                SheetView(object: currentObject!)
             }
     }
 }

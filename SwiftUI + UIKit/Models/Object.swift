@@ -8,10 +8,11 @@
 import Foundation
 import UIKit
 
-public struct Object: Identifiable {
-    public var id: Int
-    public var objectIcon: String
-    public var objectName: String
-    public var timeOfWork: String
-    public var objectDescription: String
+struct Object: Identifiable {
+    let id: Int
+    let objectIcon: String
+    let objectName: String
+    let timeOfWork: String
+    let objectDescription: String
+    let reachInfo: [ReachInfo]
 }
