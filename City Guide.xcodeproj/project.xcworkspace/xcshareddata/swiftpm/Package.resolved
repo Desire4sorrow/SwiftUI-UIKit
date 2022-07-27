@@ -91,6 +91,15 @@
       }
     },
     {
+      "identity" : "lettercase",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rwbutler/LetterCase",
+      "state" : {
+        "branch" : "master",
+        "revision" : "03589da8c6554655b276ba187cfc1cd35ad711d2"
+      }
+    },
+    {
       "identity" : "leveldb",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/leveldb.git",

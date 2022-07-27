@@ -12,7 +12,7 @@ import SwinjectAutoregistration
 
 final class ApiServicesAssembly: Assembly {
 
-    public func assemble(container _: Container) {
-
+    public func assemble(container: Container) {
+        container.autoregister(CitiesApiService.self, initializer: CityApiService.init)
     }
 }
