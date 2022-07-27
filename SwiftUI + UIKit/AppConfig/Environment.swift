@@ -12,7 +12,7 @@ public enum EnvironmentURL: String {
     case dev
 
     public var baseUrl: URL {
-        URL(string: "http://api.opentripmap.com/0.1")!
+        URL(string: "https://api.opentripmap.com/0.1")!
     }
 
     var langModifier: String { "ru" }

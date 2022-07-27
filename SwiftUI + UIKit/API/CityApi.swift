@@ -15,14 +15,13 @@ public enum CityApi: TargetType {
     public var path: String {
         switch self {
         case .getCities:
-            return "places/bbox" + AppConfig.apiKey
+            return "places/bbox"
         }
     }
 
     public var baseURL: URL {
         AppConfig.baseUrl
     }
-
 
     public var headers: [String : String]? {
         nil
@@ -33,7 +32,7 @@ public enum CityApi: TargetType {
     public var task: Task {
         switch self {
         case .getCities(let info):
-            return .requestJSONEncodable(info)
+            return .requestParameters(parameters: info.parameters, encoding: URLEncoding.default)
         }
     }
 }

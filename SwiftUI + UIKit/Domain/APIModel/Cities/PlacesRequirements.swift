@@ -32,4 +32,13 @@ public struct PlacesRequirements: Encodable {
         case minLatitude = "lat_min"
         case maxLatitude = "lat_max"
     }
+
+    public var parameters: [String: Any] {
+        [
+            "lon_min": minLongitude,
+            "lon_max": maxLongitude,
+            "lat_min": minLatitude,
+            "lat_max": maxLatitude
+        ]
+    }
 }

@@ -19,6 +19,7 @@ public extension MoyaProvider {
                 return resource
             } catch {
                 Logger.errorText(error)
+                let error = ApiError.invalidJson
                 print(error)
                 throw error
             }
@@ -49,11 +50,16 @@ public extension MoyaProvider {
     }
 
     private func handleSuccessResponse(_ response: Moya.Response) throws -> Data {
-        response.data
+        logResponse(response)
+        if let serverError = try? JSONDecoder().decode(ServerError.self, from: response.data) {
+            throw serverError
+        }
+        return response.data
     }
 
     private func logResponse(_ response: Moya.Response) {
         Logger.debug(response.request?.logDescription ?? "")
+        Logger.debug("\nResponse:\n\(response.data.prettyPrintedJSON)\n")
     }
 }
 
