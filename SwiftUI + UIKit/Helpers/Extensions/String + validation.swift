@@ -31,13 +31,3 @@ extension String {
         prefix(1).uppercased() + dropFirst()
     }
 }
-
-public extension String {
-
-    func localized() -> String {
-        let languageCode = LanguageCode.currentCode
-        let path = Bundle.main.path(forResource: languageCode, ofType: "lproj")
-        let bundle = Bundle(path: path!)
-        return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")
-    }
-}

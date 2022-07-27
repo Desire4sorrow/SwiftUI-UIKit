@@ -16,7 +16,7 @@ public extension BaseError {
         let prefix = String(describing: Self.self)
         let title = rawValue.withCapitalizedFirstLetter
         let localizationKey = (prefix + title).convert(from: .upperCamel, to: .kebab)
-        return localizationKey.localized()
+        return localizationKey
     }
 }
 

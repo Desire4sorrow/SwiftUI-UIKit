@@ -9,18 +9,24 @@ import FirebaseAuth
 import FirebaseCore
 import FirebaseFirestore
 import Foundation
+import Promises
 
 final class MainScreenPresenter {
     unowned var view: MainScreenViewInput!
     var router: MainScreenRouterInput!
 
+    @DI var cityApiService: CitiesApiService
     var isRegistration = false
     var handle: AuthStateDidChangeListenerHandle?
 
     var name = ""
     var email = ""
 
-    init(isRegistration: Bool, name: String, email: String) {
+    init(
+        isRegistration: Bool,
+        name: String,
+        email: String
+    ) {
         self.isRegistration = isRegistration
         self.name = name
         self.email = email
@@ -40,6 +46,17 @@ extension MainScreenPresenter: MainScreenPresenterInput {
         if isRegistration {
             router.showWelcomeAlert(name: name)
         }
+        print(AppConfig.baseUrl)
+        cityApiService.getCities(info: .init(
+            minLongitude: 36.37,
+            maxLongitude: 38.5,
+            minLatitude: 57.11,
+            maxLatitude: 58.01
+        ))
+        .then {
+            print($0.name)
+        }
+        .catch(router.showError)
     }
 
     func viewWillAppear() {

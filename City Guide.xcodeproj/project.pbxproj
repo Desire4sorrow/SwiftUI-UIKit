@@ -68,7 +68,6 @@
 		9C5A36EF28916E2300D4ECCE /* LetterCase in Frameworks */ = {isa = PBXBuildFile; productRef = 9C5A36EE28916E2300D4ECCE /* LetterCase */; };
 		9C5A36F228916E5E00D4ECCE /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A36F128916E5E00D4ECCE /* ApiError.swift */; };
 		9C5A36F428916E7700D4ECCE /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A36F328916E7700D4ECCE /* BaseError.swift */; };
-		9C5A36F628916F0200D4ECCE /* LanguageCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A36F528916F0200D4ECCE /* LanguageCode.swift */; };
 		9C5A36F828916F3A00D4ECCE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A36F728916F3A00D4ECCE /* NetworkError.swift */; };
 		9C5C4E832859C706008C69F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5C4E822859C706008C69F2 /* AppDelegate.swift */; };
 		9C5C4E8A2859C706008C69F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5C4E882859C706008C69F2 /* Main.storyboard */; };
@@ -181,7 +180,6 @@
 		9C5A36EB2891627D00D4ECCE /* Date + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + extension.swift"; sourceTree = "<group>"; };
 		9C5A36F128916E5E00D4ECCE /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		9C5A36F328916E7700D4ECCE /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
-		9C5A36F528916F0200D4ECCE /* LanguageCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCode.swift; sourceTree = "<group>"; };
 		9C5A36F728916F3A00D4ECCE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		9C5C4E7F2859C706008C69F2 /* City Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5C4E822859C706008C69F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -637,7 +635,6 @@
 				9C5A36DF28914E0600D4ECCE /* Logger.swift */,
 				9C5A36E128914E4F00D4ECCE /* JSONDecoder + default.swift */,
 				9C5A36E92891624D00D4ECCE /* LogDescription.swift */,
-				9C5A36F528916F0200D4ECCE /* LanguageCode.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -867,7 +864,6 @@
 				9C0D5C9928699B1E0048C06F /* ObjectsViewModel.swift in Sources */,
 				9C1B700D288831CD005045F7 /* RegistrationPresenter.swift in Sources */,
 				9C4FC1A428854AE900815124 /* RoundedCorner.swift in Sources */,
-				9C5A36F628916F0200D4ECCE /* LanguageCode.swift in Sources */,
 				9C0D5C9D2869A3990048C06F /* View + extension.swift in Sources */,
 				9C3EF79828902F9400AE1705 /* Environment.swift in Sources */,
 				9C5C4EC52859D187008C69F2 /* UITableView + extension.swift in Sources */,

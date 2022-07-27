@@ -14,4 +14,8 @@ public enum AppConfig {
     public static var baseUrl: URL {
         EnvironmentURL.current.baseUrl.appendingPathComponent(localEnvironment.langModifier)
     }
+
+    public static var apiKey: String {
+        "5ae2e3f221c38a28845f05b61f9b9c513c70321767d7e6983b550432"
+    }
 }

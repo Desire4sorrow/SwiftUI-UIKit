@@ -14,6 +14,8 @@ import UIKit
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
+        MainAssembler.start()
+
         let window = UIWindow(frame: UIScreen.main.bounds)
         let nc = UINavigationController(rootViewController: MainScreenConfigurator.configure())
         window.rootViewController = nc
