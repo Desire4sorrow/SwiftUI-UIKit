@@ -38,7 +38,8 @@ public struct PlacesRequirements: Encodable {
             "lon_min": minLongitude,
             "lon_max": maxLongitude,
             "lat_min": minLatitude,
-            "lat_max": maxLatitude
+            "lat_max": maxLatitude,
+            "apikey": AppConfig.apiKey
         ]
     }
 }

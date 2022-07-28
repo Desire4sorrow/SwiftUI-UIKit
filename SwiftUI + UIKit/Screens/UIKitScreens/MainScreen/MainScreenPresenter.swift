@@ -33,10 +33,10 @@ final class MainScreenPresenter {
     }
 
     let info: PlacesRequirements = .init(
-        minLongitude: 36.35,
-        maxLongitude: 38.5,
-        minLatitude: 57.115,
-        maxLatitude: 58.015
+        minLongitude: 38.35,
+        maxLongitude: 38.4,
+        minLatitude: 58.00,
+        maxLatitude: 58.1
     )
 
     func handleLogoutEvent() {
@@ -55,7 +55,7 @@ extension MainScreenPresenter: MainScreenPresenterInput {
         }
         cityApiService.getCities(info: info)
             .then {
-                print($0.name)
+                print($0)
             }
             .catch(router.showError)
     }

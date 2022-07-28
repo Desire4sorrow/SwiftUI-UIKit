@@ -7,17 +7,34 @@
 
 import Foundation
 
-public struct CitiesResponse: Decodable {
+public struct CitiesFormResponse: Decodable {
+    public let type: String
+    public let features: [Features]
+}
+
+public struct Features: Decodable {
+    public let id: String
+    public let properties: CityProperty
+    public let type: String
+    public let geometry: Geometry
+}
+
+public struct CityProperty: Decodable {
     public let xid: String
     public let name: String
     public let kinds: String
     public let osm: String?
     public let wikidata: String?
     public let dist: Double?
-    public let point: Points
+    public let rate: Int
 }
 
-public struct Points: Decodable {
+public struct Geometry: Decodable {
+    public let type: String
+    public let coordinates: [Coordinates]
+}
+
+public struct Coordinates: Decodable {
     public let lon: Double
     public let lat: Double
 }
