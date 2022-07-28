@@ -12,10 +12,10 @@ public enum AppConfig {
     static let localEnvironment: EnvironmentURL = .dev
 
     public static var baseUrl: URL {
-        EnvironmentURL.current.baseUrl.appendingPathComponent(localEnvironment.langModifier)
+        EnvironmentURL.current.baseUrl
     }
 
     public static var apiKey: String {
-        "5ae2e3f221c38a28845f05b61f9b9c513c70321767d7e6983b550432"
+        "1cb0705bec08070580b46bce9304ac5b"
     }
 }

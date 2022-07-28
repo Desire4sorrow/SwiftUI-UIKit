@@ -2,7 +2,7 @@
 //  EnvironmentURL.swift
 //  City Guide
 //
-//  Created by Omega on 26.07.2022.
+//  Created by roman LaPtop on 26.07.2022.
 //
 
 import Foundation
@@ -12,10 +12,8 @@ public enum EnvironmentURL: String {
     case dev
 
     public var baseUrl: URL {
-        URL(string: "https://api.opentripmap.com/0.1")!
+        URL(string: "https://htmlweb.ru/json/geo")!
     }
-
-    var langModifier: String { "ru" }
 
     public static var current: Self {
         AppConfig.localEnvironment

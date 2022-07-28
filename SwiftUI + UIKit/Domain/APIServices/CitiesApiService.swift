@@ -9,5 +9,5 @@ import Foundation
 import Promises
 
 public protocol CitiesApiService {
-    func getCities(info: PlacesRequirements) -> Promise<CitiesFormResponse>
+    func getCities(info: PlacesRequirements) -> Promise<CitiesResponse>
 }

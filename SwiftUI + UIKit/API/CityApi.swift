@@ -15,7 +15,7 @@ public enum CityApi: TargetType {
     public var path: String {
         switch self {
         case .getCities:
-            return "places/bbox"
+            return "/city_list"
         }
     }
 

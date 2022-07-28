@@ -15,7 +15,7 @@ public struct CityApiService: CitiesApiService {
 
     public init() {}
 
-    public func getCities(info: PlacesRequirements) -> Promise<CitiesFormResponse> {
+    public func getCities(info: PlacesRequirements) -> Promise<CitiesResponse> {
         provider.request(.getCities(info: info))
     }
 }

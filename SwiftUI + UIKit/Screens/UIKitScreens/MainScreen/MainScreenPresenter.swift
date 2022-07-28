@@ -32,13 +32,6 @@ final class MainScreenPresenter {
         self.email = email
     }
 
-    let info: PlacesRequirements = .init(
-        minLongitude: 38.35,
-        maxLongitude: 38.4,
-        minLatitude: 58.00,
-        maxLatitude: 58.1
-    )
-
     func handleLogoutEvent() {
         email = ""
         view.makeUserView()
@@ -53,7 +46,7 @@ extension MainScreenPresenter: MainScreenPresenterInput {
         if isRegistration {
             router.showWelcomeAlert(name: name)
         }
-        cityApiService.getCities(info: info)
+        cityApiService.getCities(info: .init())
             .then {
                 print($0)
             }
