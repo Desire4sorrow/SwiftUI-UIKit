@@ -42,7 +42,7 @@
 		9C3EF7A0289036DA00AE1705 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3EF79F289036DA00AE1705 /* Moya */; };
 		9C3EF7A32890376200AE1705 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3EF7A22890376200AE1705 /* Swinject */; };
 		9C3EF7A6289037CD00AE1705 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7A5289037CD00AE1705 /* Config.swift */; };
-		9C3EF7AA2890385E00AE1705 /* MainAssemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7A92890385E00AE1705 /* MainAssemblies.swift */; };
+		9C3EF7AA2890385E00AE1705 /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7A92890385E00AE1705 /* MainAssembler.swift */; };
 		9C3EF7AC289038A500AE1705 /* ApiServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7AB289038A500AE1705 /* ApiServicesAssembly.swift */; };
 		9C3EF7B42890399100AE1705 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3EF7B32890399100AE1705 /* SwinjectAutoregistration */; };
 		9C3EF7B628903A3D00AE1705 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7B528903A3D00AE1705 /* DI.swift */; };
@@ -113,6 +113,7 @@
 		9CF0D2AC286F4538006B6DEB /* ReviewTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2AB286F4538006B6DEB /* ReviewTextView.swift */; };
 		9CF0D2B0286F4A26006B6DEB /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2AF286F4A26006B6DEB /* ReviewModel.swift */; };
 		9CF0D2B2286F4FA6006B6DEB /* ReviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2B1286F4FA6006B6DEB /* ReviewRow.swift */; };
+		9CF33AD7289277DA00ADB810 /* URL + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF33AD6289277DA00ADB810 /* URL + extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,7 +160,7 @@
 		9C3EF79728902F9400AE1705 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		9C3EF7992890353B00AE1705 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		9C3EF7A5289037CD00AE1705 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		9C3EF7A92890385E00AE1705 /* MainAssemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssemblies.swift; sourceTree = "<group>"; };
+		9C3EF7A92890385E00AE1705 /* MainAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
 		9C3EF7AB289038A500AE1705 /* ApiServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServicesAssembly.swift; sourceTree = "<group>"; };
 		9C3EF7B528903A3D00AE1705 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		9C3EF7B728903A6900AE1705 /* CitiesApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesApiService.swift; sourceTree = "<group>"; };
@@ -230,6 +231,7 @@
 		9CF0D2AB286F4538006B6DEB /* ReviewTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTextView.swift; sourceTree = "<group>"; };
 		9CF0D2AF286F4A26006B6DEB /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
 		9CF0D2B1286F4FA6006B6DEB /* ReviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRow.swift; sourceTree = "<group>"; };
+		9CF33AD6289277DA00ADB810 /* URL + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL + extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +286,7 @@
 				9C5A36E328914E7D00D4ECCE /* DateFormatter + extension.swift */,
 				9C5A36EB2891627D00D4ECCE /* Date + extension.swift */,
 				9C5A36FB28917A3C00D4ECCE /* Data + extension.swift */,
+				9CF33AD6289277DA00ADB810 /* URL + extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -356,7 +359,7 @@
 		9C3EF7A82890384A00AE1705 /* Assembler */ = {
 			isa = PBXGroup;
 			children = (
-				9C3EF7A92890385E00AE1705 /* MainAssemblies.swift */,
+				9C3EF7A92890385E00AE1705 /* MainAssembler.swift */,
 				9C3EF7AB289038A500AE1705 /* ApiServicesAssembly.swift */,
 			);
 			path = Assembler;
@@ -857,7 +860,7 @@
 				9CA301FA2886B334006A0D44 /* ImagePicker.swift in Sources */,
 				9C3EF7B828903A6900AE1705 /* CitiesApiService.swift in Sources */,
 				9C3EF78F288FD41300AE1705 /* SheetView.swift in Sources */,
-				9C3EF7AA2890385E00AE1705 /* MainAssemblies.swift in Sources */,
+				9C3EF7AA2890385E00AE1705 /* MainAssembler.swift in Sources */,
 				9C0D5CA62869E7A90048C06F /* CityButtonInfoView.swift in Sources */,
 				9C1B7002288831B5005045F7 /* LoginRouter.swift in Sources */,
 				9C91BAB5286D874B00D3C5B7 /* Image.swift in Sources */,
@@ -906,6 +909,7 @@
 				9C5C4EBE2859C743008C69F2 /* MainScreenConfigurator.swift in Sources */,
 				9C3EF7C128903D0000AE1705 /* CitiesResponse.swift in Sources */,
 				9C3EF7932890028E00AE1705 /* TransportRow.swift in Sources */,
+				9CF33AD7289277DA00ADB810 /* URL + extension.swift in Sources */,
 				9C3EF7A6289037CD00AE1705 /* Config.swift in Sources */,
 				9C4B6C25285CC67000064537 /* CityObjectsView.swift in Sources */,
 				9C4B6C1F285C82DB00064537 /* CustomActivity.swift in Sources */,

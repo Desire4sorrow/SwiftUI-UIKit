@@ -1,5 +1,5 @@
 //
-//  MainAssemblies.swift
+//  MainAssembler.swift
 //  City Guide
 //
 //  Created by Omega on 26.07.2022.
