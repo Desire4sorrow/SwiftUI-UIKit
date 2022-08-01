@@ -48,8 +48,8 @@ extension MainScreenPresenter: MainScreenPresenterInput {
             router.showWelcomeAlert(name: name)
         }
         cityApiService.getCities(info: .init())
-            .then {
-                self.availableCities = $0.items
+            .then { [weak self] in
+                self?.availableCities = $0.items
                 postNotification(.dataConfigured)
             }
             .catch(router.showError)
