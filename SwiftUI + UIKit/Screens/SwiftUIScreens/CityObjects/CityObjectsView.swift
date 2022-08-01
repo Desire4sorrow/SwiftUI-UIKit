@@ -104,7 +104,7 @@ struct CityObjectsView: View {
             }
             .bottomSheet(
                 isPresented: $isSheetPresented,
-                detents: [.medium()],
+                detents: [.medium(), .large()],
                 isModalInPresentation: true
             ) {
                 SheetView(object: currentObject!)

@@ -10,6 +10,7 @@ import Foundation
 protocol MainScreenPresenterInput: AnyObject {
     var name: String { get }
     var email: String { get }
+    var availableCities: [Items] { get }
     func cityChanged()
     func onLoginTouched()
     func viewDidLoad()

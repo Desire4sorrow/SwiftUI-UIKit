@@ -21,6 +21,7 @@ final class MainScreenPresenter {
 
     var name = ""
     var email = ""
+    var availableCities: [Items] = []
 
     init(
         isRegistration: Bool,
@@ -48,7 +49,8 @@ extension MainScreenPresenter: MainScreenPresenterInput {
         }
         cityApiService.getCities(info: .init())
             .then {
-                print($0)
+                self.availableCities = $0.items
+                postNotification(.dataConfigured)
             }
             .catch(router.showError)
     }

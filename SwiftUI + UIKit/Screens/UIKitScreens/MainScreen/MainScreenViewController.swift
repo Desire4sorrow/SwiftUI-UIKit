@@ -38,6 +38,10 @@ final class MainScreenViewController: BaseViewController {
         presenter.viewDidLoad()
         configureCityTableView()
         prepareNavigationBar()
+
+        addNotificationObserver(name: .dataConfigured) { [weak self] _ in
+            self?.cityTableView.reloadData()
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
