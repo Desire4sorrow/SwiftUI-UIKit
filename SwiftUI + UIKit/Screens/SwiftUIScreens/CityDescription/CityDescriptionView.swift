@@ -126,6 +126,7 @@ struct CityDescriptionView: View {
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
+        .navigationViewStyle(.stack)
     }
 
     func actionSheet() {
@@ -134,7 +135,12 @@ struct CityDescriptionView: View {
             activityItems: [urlShare],
             applicationActivities: nil
         )
-        UIApplication.shared.windows.first?.rootViewController?.present(
+
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScenes = scenes.first as? UIWindowScene
+        let currentWindow = windowScenes?.windows.first
+
+        currentWindow?.rootViewController?.present(
             activityVC,
             animated: true,
             completion: nil
