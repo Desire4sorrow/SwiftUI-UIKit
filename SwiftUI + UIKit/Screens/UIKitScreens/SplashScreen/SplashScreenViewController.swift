@@ -8,15 +8,17 @@
 import UIKit
 
 final class SplashScreenViewController: UIViewController {
-    var presenter: SplashScreenPresenterInput!
 
     @IBOutlet var gradientView: GradientView!
 
+    @IBOutlet weak var guidLabel: UILabel!
+    @IBOutlet weak var logoImageView: UIImageView!
+
+    static let logoImageBig = UIImage(named: "splash-icon")!
+
+    var logoIsHidden = false
+
     override func viewDidLoad() {
-
+        logoImageView.isHidden = logoIsHidden
     }
-}
-
-extension SplashScreenViewController: SplashScreenViewInput {
-
 }

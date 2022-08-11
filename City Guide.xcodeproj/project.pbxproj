@@ -115,12 +115,10 @@
 		9CF33AD7289277DA00ADB810 /* URL + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF33AD6289277DA00ADB810 /* URL + extension.swift */; };
 		9CFC4C7328A4D81200498645 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 9CFC4C7228A4D81200498645 /* BottomSheet */; };
 		9CFC4C7F28A4DA6E00498645 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFC4C7928A4DA6E00498645 /* SplashScreen.storyboard */; };
-		9CFC4C8028A4DA6E00498645 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C7A28A4DA6E00498645 /* SplashScreenPresenter.swift */; };
-		9CFC4C8128A4DA6E00498645 /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C7B28A4DA6E00498645 /* SplashScreenRouter.swift */; };
 		9CFC4C8228A4DA6E00498645 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C7C28A4DA6E00498645 /* SplashScreenViewController.swift */; };
-		9CFC4C8328A4DA6E00498645 /* SplashScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C7D28A4DA6E00498645 /* SplashScreenProtocols.swift */; };
-		9CFC4C8428A4DA6E00498645 /* SplashScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C7E28A4DA6E00498645 /* SplashScreenConfigurator.swift */; };
 		9CFC4C8928A4DD5100498645 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C8828A4DD5100498645 /* GradientView.swift */; };
+		9CFC4C8B28A4ED7000498645 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C8A28A4ED7000498645 /* SplashPresenter.swift */; };
+		9CFC4C8D28A4EF3B00498645 /* SplashAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C8C28A4EF3B00498645 /* SplashAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,12 +238,10 @@
 		9CF0D2B1286F4FA6006B6DEB /* ReviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRow.swift; sourceTree = "<group>"; };
 		9CF33AD6289277DA00ADB810 /* URL + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL + extension.swift"; sourceTree = "<group>"; };
 		9CFC4C7928A4DA6E00498645 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
-		9CFC4C7A28A4DA6E00498645 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
-		9CFC4C7B28A4DA6E00498645 /* SplashScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
 		9CFC4C7C28A4DA6E00498645 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
-		9CFC4C7D28A4DA6E00498645 /* SplashScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenProtocols.swift; sourceTree = "<group>"; };
-		9CFC4C7E28A4DA6E00498645 /* SplashScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenConfigurator.swift; sourceTree = "<group>"; };
 		9CFC4C8828A4DD5100498645 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		9CFC4C8A28A4ED7000498645 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		9CFC4C8C28A4EF3B00498645 /* SplashAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -668,11 +664,9 @@
 			isa = PBXGroup;
 			children = (
 				9CFC4C7928A4DA6E00498645 /* SplashScreen.storyboard */,
-				9CFC4C7A28A4DA6E00498645 /* SplashScreenPresenter.swift */,
-				9CFC4C7B28A4DA6E00498645 /* SplashScreenRouter.swift */,
 				9CFC4C7C28A4DA6E00498645 /* SplashScreenViewController.swift */,
-				9CFC4C7D28A4DA6E00498645 /* SplashScreenProtocols.swift */,
-				9CFC4C7E28A4DA6E00498645 /* SplashScreenConfigurator.swift */,
+				9CFC4C8A28A4ED7000498645 /* SplashPresenter.swift */,
+				9CFC4C8C28A4EF3B00498645 /* SplashAnimator.swift */,
 			);
 			path = SplashScreen;
 			sourceTree = "<group>";
@@ -870,7 +864,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CFC4C8428A4DA6E00498645 /* SplashScreenConfigurator.swift in Sources */,
 				9C5A36E228914E4F00D4ECCE /* JSONDecoder + default.swift in Sources */,
 				9C1B7010288831CD005045F7 /* RegistrationProtocols.swift in Sources */,
 				9C5A36E428914E7D00D4ECCE /* DateFormatter + extension.swift in Sources */,
@@ -882,11 +875,11 @@
 				9C91BABF286D988200D3C5B7 /* AddFeedbackView.swift in Sources */,
 				9C0D5CA42869DCBD0048C06F /* NotificationName + extension.swift in Sources */,
 				9C0D5C97286999650048C06F /* ObjectDescriptionView.swift in Sources */,
+				9CFC4C8D28A4EF3B00498645 /* SplashAnimator.swift in Sources */,
 				9C91BAAD286C9B1D00D3C5B7 /* Descriptions.swift in Sources */,
 				9C9590212889475E002971C1 /* String + validation.swift in Sources */,
 				9C5C4ECA2859FC98008C69F2 /* City.swift in Sources */,
 				9C959027288963CE002971C1 /* AuthFields.swift in Sources */,
-				9CFC4C8128A4DA6E00498645 /* SplashScreenRouter.swift in Sources */,
 				9C5C4ECE285A207A008C69F2 /* CityViewModel.swift in Sources */,
 				9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */,
 				9C5A36DC2891426100D4ECCE /* CityApi.swift in Sources */,
@@ -895,7 +888,6 @@
 				9CF0D2B2286F4FA6006B6DEB /* ReviewRow.swift in Sources */,
 				9C5A36E028914E0600D4ECCE /* Logger.swift in Sources */,
 				9C1B7003288831B5005045F7 /* LoginViewController.swift in Sources */,
-				9CFC4C8028A4DA6E00498645 /* SplashScreenPresenter.swift in Sources */,
 				9C5A36F228916E5E00D4ECCE /* ApiError.swift in Sources */,
 				9C91BAA6286C8FF800D3C5B7 /* TopBar.swift in Sources */,
 				9CFC4C8228A4DA6E00498645 /* SplashScreenViewController.swift in Sources */,
@@ -938,6 +930,7 @@
 				9C4B6C1D285C7C9000064537 /* CustomActivityView.swift in Sources */,
 				9C5A36D72891413000D4ECCE /* CityApiService.swift in Sources */,
 				9C0D5C9B2869A3480048C06F /* NSObject + extension.swift in Sources */,
+				9CFC4C8B28A4ED7000498645 /* SplashPresenter.swift in Sources */,
 				9CF0D2AA286F19CC006B6DEB /* UserDefaultKeys.swift in Sources */,
 				9C4FC1A62885964C00815124 /* PurposalLinkCell.swift in Sources */,
 				9CFC4C8928A4DD5100498645 /* GradientView.swift in Sources */,
@@ -958,7 +951,6 @@
 				9C4B6C1F285C82DB00064537 /* CustomActivity.swift in Sources */,
 				9C1B7005288831B5005045F7 /* LoginConfigurator.swift in Sources */,
 				9C0D5CA02869A3E00048C06F /* ViewDidLoadModifier.swift in Sources */,
-				9CFC4C8328A4DA6E00498645 /* SplashScreenProtocols.swift in Sources */,
 				9C1B7011288831CD005045F7 /* RegistrationConfigurator.swift in Sources */,
 				9C5A36FC28917A3C00D4ECCE /* Data + extension.swift in Sources */,
 				9C3EF7952890081F00AE1705 /* ReachInfo.swift in Sources */,

@@ -47,12 +47,12 @@ extension MainScreenPresenter: MainScreenPresenterInput {
         if isRegistration {
             router.showWelcomeAlert(name: name)
         }
-        cityApiService.getCities(info: .init())
-            .then { [weak self] in
-                self?.availableCities = $0.items
-                postNotification(.dataConfigured)
-            }
-            .catch(router.showError)
+//        cityApiService.getCities(info: .init())
+//            .then { [weak self] in
+//                self?.availableCities = $0.items
+//                postNotification(.dataConfigured)
+//            }
+//            .catch(router.showError)
     }
 
     func viewWillAppear() {
