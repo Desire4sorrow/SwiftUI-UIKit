@@ -47,6 +47,7 @@ struct SheetView: View {
             Spacer()
             hideButton
         }
+        .padding(.bottom, 10)
         .background(
             Image("transport-background")
                 .opacity(0.7)

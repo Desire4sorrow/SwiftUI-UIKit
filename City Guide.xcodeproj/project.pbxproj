@@ -32,7 +32,6 @@
 		9C1B7010288831CD005045F7 /* RegistrationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B700A288831CD005045F7 /* RegistrationProtocols.swift */; };
 		9C1B7011288831CD005045F7 /* RegistrationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B700B288831CD005045F7 /* RegistrationConfigurator.swift */; };
 		9C1B701428883ACB005045F7 /* ORCommonUI-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1B701328883ACB005045F7 /* ORCommonUI-Swift */; };
-		9C3EF78D288FD2DA00AE1705 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3EF78C288FD2DA00AE1705 /* BottomSheet */; };
 		9C3EF78F288FD41300AE1705 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF78E288FD41300AE1705 /* SheetView.swift */; };
 		9C3EF7932890028E00AE1705 /* TransportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7922890028E00AE1705 /* TransportRow.swift */; };
 		9C3EF7952890081F00AE1705 /* ReachInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3EF7942890081F00AE1705 /* ReachInfo.swift */; };
@@ -114,6 +113,14 @@
 		9CF0D2B0286F4A26006B6DEB /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2AF286F4A26006B6DEB /* ReviewModel.swift */; };
 		9CF0D2B2286F4FA6006B6DEB /* ReviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF0D2B1286F4FA6006B6DEB /* ReviewRow.swift */; };
 		9CF33AD7289277DA00ADB810 /* URL + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF33AD6289277DA00ADB810 /* URL + extension.swift */; };
+		9CFC4C7328A4D81200498645 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 9CFC4C7228A4D81200498645 /* BottomSheet */; };
+		9CFC4C7F28A4DA6E00498645 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFC4C7928A4DA6E00498645 /* SplashScreen.storyboard */; };
+		9CFC4C8028A4DA6E00498645 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C7A28A4DA6E00498645 /* SplashScreenPresenter.swift */; };
+		9CFC4C8128A4DA6E00498645 /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C7B28A4DA6E00498645 /* SplashScreenRouter.swift */; };
+		9CFC4C8228A4DA6E00498645 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C7C28A4DA6E00498645 /* SplashScreenViewController.swift */; };
+		9CFC4C8328A4DA6E00498645 /* SplashScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C7D28A4DA6E00498645 /* SplashScreenProtocols.swift */; };
+		9CFC4C8428A4DA6E00498645 /* SplashScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C7E28A4DA6E00498645 /* SplashScreenConfigurator.swift */; };
+		9CFC4C8928A4DD5100498645 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC4C8828A4DD5100498645 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +239,13 @@
 		9CF0D2AF286F4A26006B6DEB /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
 		9CF0D2B1286F4FA6006B6DEB /* ReviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRow.swift; sourceTree = "<group>"; };
 		9CF33AD6289277DA00ADB810 /* URL + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL + extension.swift"; sourceTree = "<group>"; };
+		9CFC4C7928A4DA6E00498645 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		9CFC4C7A28A4DA6E00498645 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
+		9CFC4C7B28A4DA6E00498645 /* SplashScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
+		9CFC4C7C28A4DA6E00498645 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		9CFC4C7D28A4DA6E00498645 /* SplashScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenProtocols.swift; sourceTree = "<group>"; };
+		9CFC4C7E28A4DA6E00498645 /* SplashScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenConfigurator.swift; sourceTree = "<group>"; };
+		9CFC4C8828A4DD5100498645 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,8 +260,8 @@
 				9C3EF79D2890366700AE1705 /* Alamofire in Frameworks */,
 				9C3EF7A0289036DA00AE1705 /* Moya in Frameworks */,
 				9C1B6FF028882C49005045F7 /* FirebaseAnalytics in Frameworks */,
+				9CFC4C7328A4D81200498645 /* BottomSheet in Frameworks */,
 				9C5A36EF28916E2300D4ECCE /* LetterCase in Frameworks */,
-				9C3EF78D288FD2DA00AE1705 /* BottomSheet in Frameworks */,
 				9C1B6FF228882C49005045F7 /* FirebaseAuth in Frameworks */,
 				9C1B6FF428882C49005045F7 /* FirebaseDatabase in Frameworks */,
 				9C1B6FF628882C49005045F7 /* FirebaseFirestore in Frameworks */,
@@ -573,6 +587,7 @@
 		9C91BAAF286D75EE00D3C5B7 /* UIKitScreens */ = {
 			isa = PBXGroup;
 			children = (
+				9CFC4C7828A4DA5500498645 /* SplashScreen */,
 				9C1B6FF728882D16005045F7 /* Authorization */,
 				9C5C4EB22859C71E008C69F2 /* MainScreen */,
 			);
@@ -638,14 +653,36 @@
 		9CA817F3288A868F00BCC8B0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9CFC4C8528A4DACA00498645 /* Routers */,
 				9C5A36F028916E5200D4ECCE /* Errors */,
-				9CA817F4288A86AF00BCC8B0 /* ErrorRouter.swift */,
 				9CA817F6288A933100BCC8B0 /* BaseViewController.swift */,
 				9C5A36DF28914E0600D4ECCE /* Logger.swift */,
 				9C5A36E128914E4F00D4ECCE /* JSONDecoder + default.swift */,
 				9C5A36E92891624D00D4ECCE /* LogDescription.swift */,
+				9CFC4C8828A4DD5100498645 /* GradientView.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		9CFC4C7828A4DA5500498645 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC4C7928A4DA6E00498645 /* SplashScreen.storyboard */,
+				9CFC4C7A28A4DA6E00498645 /* SplashScreenPresenter.swift */,
+				9CFC4C7B28A4DA6E00498645 /* SplashScreenRouter.swift */,
+				9CFC4C7C28A4DA6E00498645 /* SplashScreenViewController.swift */,
+				9CFC4C7D28A4DA6E00498645 /* SplashScreenProtocols.swift */,
+				9CFC4C7E28A4DA6E00498645 /* SplashScreenConfigurator.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		9CFC4C8528A4DACA00498645 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				9CA817F4288A86AF00BCC8B0 /* ErrorRouter.swift */,
+			);
+			path = Routers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -672,13 +709,13 @@
 				9C1B6FF328882C49005045F7 /* FirebaseDatabase */,
 				9C1B6FF528882C49005045F7 /* FirebaseFirestore */,
 				9C1B701328883ACB005045F7 /* ORCommonUI-Swift */,
-				9C3EF78C288FD2DA00AE1705 /* BottomSheet */,
 				9C3EF79C2890366700AE1705 /* Alamofire */,
 				9C3EF79F289036DA00AE1705 /* Moya */,
 				9C3EF7A22890376200AE1705 /* Swinject */,
 				9C3EF7B32890399100AE1705 /* SwinjectAutoregistration */,
 				9C3EF7BA28903BEB00AE1705 /* Promises */,
 				9C5A36EE28916E2300D4ECCE /* LetterCase */,
+				9CFC4C7228A4D81200498645 /* BottomSheet */,
 			);
 			productName = "SwiftUI + UIKit";
 			productReference = 9C5C4E7F2859C706008C69F2 /* City Guide.app */;
@@ -756,13 +793,13 @@
 				9C91BA9F286B167700D3C5B7 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 				9C1B6FEE28882C49005045F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				9C1B701228883ACA005045F7 /* XCRemoteSwiftPackageReference "ORCommonUI-Swift" */,
-				9C3EF78B288FD2DA00AE1705 /* XCRemoteSwiftPackageReference "BottomSheet" */,
 				9C3EF79B2890366700AE1705 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				9C3EF79E289036DA00AE1705 /* XCRemoteSwiftPackageReference "Moya" */,
 				9C3EF7A12890376200AE1705 /* XCRemoteSwiftPackageReference "Swinject" */,
 				9C3EF7B22890399000AE1705 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
 				9C3EF7B928903BEB00AE1705 /* XCRemoteSwiftPackageReference "promises" */,
 				9C5A36ED28916E2300D4ECCE /* XCRemoteSwiftPackageReference "LetterCase" */,
+				9CFC4C7128A4D81200498645 /* XCRemoteSwiftPackageReference "BottomSheet" */,
 			);
 			productRefGroup = 9C5C4E802859C706008C69F2 /* Products */;
 			projectDirPath = "";
@@ -781,6 +818,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5C4EC02859D01E008C69F2 /* CityTableViewCell.xib in Resources */,
+				9CFC4C7F28A4DA6E00498645 /* SplashScreen.storyboard in Resources */,
 				9C95901F2889369F002971C1 /* GoogleService-Info.plist in Resources */,
 				9C5C4EB92859C743008C69F2 /* MainScreen.storyboard in Resources */,
 				9C1B7000288831B5005045F7 /* Login.storyboard in Resources */,
@@ -832,6 +870,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFC4C8428A4DA6E00498645 /* SplashScreenConfigurator.swift in Sources */,
 				9C5A36E228914E4F00D4ECCE /* JSONDecoder + default.swift in Sources */,
 				9C1B7010288831CD005045F7 /* RegistrationProtocols.swift in Sources */,
 				9C5A36E428914E7D00D4ECCE /* DateFormatter + extension.swift in Sources */,
@@ -847,6 +886,7 @@
 				9C9590212889475E002971C1 /* String + validation.swift in Sources */,
 				9C5C4ECA2859FC98008C69F2 /* City.swift in Sources */,
 				9C959027288963CE002971C1 /* AuthFields.swift in Sources */,
+				9CFC4C8128A4DA6E00498645 /* SplashScreenRouter.swift in Sources */,
 				9C5C4ECE285A207A008C69F2 /* CityViewModel.swift in Sources */,
 				9C4B6C22285CAA5C00064537 /* LocationManager.swift in Sources */,
 				9C5A36DC2891426100D4ECCE /* CityApi.swift in Sources */,
@@ -855,8 +895,10 @@
 				9CF0D2B2286F4FA6006B6DEB /* ReviewRow.swift in Sources */,
 				9C5A36E028914E0600D4ECCE /* Logger.swift in Sources */,
 				9C1B7003288831B5005045F7 /* LoginViewController.swift in Sources */,
+				9CFC4C8028A4DA6E00498645 /* SplashScreenPresenter.swift in Sources */,
 				9C5A36F228916E5E00D4ECCE /* ApiError.swift in Sources */,
 				9C91BAA6286C8FF800D3C5B7 /* TopBar.swift in Sources */,
+				9CFC4C8228A4DA6E00498645 /* SplashScreenViewController.swift in Sources */,
 				9CA301FA2886B334006A0D44 /* ImagePicker.swift in Sources */,
 				9C3EF7B828903A6900AE1705 /* CitiesApiService.swift in Sources */,
 				9C3EF78F288FD41300AE1705 /* SheetView.swift in Sources */,
@@ -898,6 +940,7 @@
 				9C0D5C9B2869A3480048C06F /* NSObject + extension.swift in Sources */,
 				9CF0D2AA286F19CC006B6DEB /* UserDefaultKeys.swift in Sources */,
 				9C4FC1A62885964C00815124 /* PurposalLinkCell.swift in Sources */,
+				9CFC4C8928A4DD5100498645 /* GradientView.swift in Sources */,
 				9C5C4EBB2859C743008C69F2 /* MainScreenRouter.swift in Sources */,
 				9C5C4EBC2859C743008C69F2 /* MainScreenViewController.swift in Sources */,
 				9C91BA9E286B02C400D3C5B7 /* Theme.swift in Sources */,
@@ -915,6 +958,7 @@
 				9C4B6C1F285C82DB00064537 /* CustomActivity.swift in Sources */,
 				9C1B7005288831B5005045F7 /* LoginConfigurator.swift in Sources */,
 				9C0D5CA02869A3E00048C06F /* ViewDidLoadModifier.swift in Sources */,
+				9CFC4C8328A4DA6E00498645 /* SplashScreenProtocols.swift in Sources */,
 				9C1B7011288831CD005045F7 /* RegistrationConfigurator.swift in Sources */,
 				9C5A36FC28917A3C00D4ECCE /* Data + extension.swift in Sources */,
 				9C3EF7952890081F00AE1705 /* ReachInfo.swift in Sources */,
@@ -1262,14 +1306,6 @@
 				minimumVersion = 6.0.0;
 			};
 		};
-		9C3EF78B288FD2DA00AE1705 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/adamfootdev/BottomSheet";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.4;
-			};
-		};
 		9C3EF79B2890366700AE1705 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -1326,6 +1362,14 @@
 				minimumVersion = 0.1.4;
 			};
 		};
+		9CFC4C7128A4D81200498645 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamfootdev/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1353,11 +1397,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9C1B701228883ACA005045F7 /* XCRemoteSwiftPackageReference "ORCommonUI-Swift" */;
 			productName = "ORCommonUI-Swift";
-		};
-		9C3EF78C288FD2DA00AE1705 /* BottomSheet */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9C3EF78B288FD2DA00AE1705 /* XCRemoteSwiftPackageReference "BottomSheet" */;
-			productName = BottomSheet;
 		};
 		9C3EF79C2890366700AE1705 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1393,6 +1432,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9C91BA9F286B167700D3C5B7 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
+		};
+		9CFC4C7228A4D81200498645 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CFC4C7128A4D81200498645 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

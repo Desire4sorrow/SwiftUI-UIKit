@@ -15,17 +15,13 @@ public enum CityApi: TargetType {
     public var path: String {
         switch self {
         case .getCities:
-            return "/city_list"
+            return "city_list"
         }
     }
 
-    public var baseURL: URL {
-        AppConfig.baseUrl
-    }
+    public var baseURL: URL { AppConfig.baseUrl }
 
-    public var headers: [String : String]? {
-        nil
-    }
+    public var headers: [String : String]? { nil }
 
     public var method: Moya.Method { .get }
 

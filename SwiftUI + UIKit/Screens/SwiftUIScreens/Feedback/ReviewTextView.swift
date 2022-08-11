@@ -47,8 +47,9 @@ struct ReviewTextView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 starsView
-                Text("Автор:  \(model.name)")
+                Text("Автор: ")
                     .font(.title3.bold())
+                Text(model.name)
                 Text("Содержание: ")
                     .font(.title3.bold())
                 Text(model.reviewText)
@@ -65,6 +66,7 @@ struct ReviewTextView: View {
                 actingStars = maxMark - hiddenStars
             }
         }
+        .padding(.horizontal, 10)
         .background(Color.guidePinkWithHighOpacity)
     }
 }

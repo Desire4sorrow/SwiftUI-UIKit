@@ -17,7 +17,7 @@ import UIKit
         MainAssembler.start()
 
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let nc = UINavigationController(rootViewController: MainScreenConfigurator.configure())
+        let nc = UINavigationController(rootViewController: SplashScreenConfigurator.configure())
         window.rootViewController = nc
         window.makeKeyAndVisible()
         self.window = window
