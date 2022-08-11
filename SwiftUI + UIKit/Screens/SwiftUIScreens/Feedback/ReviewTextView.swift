@@ -66,7 +66,6 @@ struct ReviewTextView: View {
                 actingStars = maxMark - hiddenStars
             }
         }
-        .padding(.horizontal, 10)
         .background(Color.guidePinkWithHighOpacity)
     }
 }

@@ -23,21 +23,32 @@
                                     <constraint firstAttribute="width" constant="100" id="mG9-3J-bd0"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Гид в вашем кармане" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJN-e8-gGs">
-                                <rect key="frame" x="35" y="80" width="305" height="33"/>
-                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Гид в вашем кармане" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJN-e8-gGs">
+                                <rect key="frame" x="30" y="100" width="315" height="105"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Guide, 2022" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpR-W1-udN">
+                                <rect key="frame" x="116.5" y="618" width="142.5" height="29"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fJN-e8-gGs" secondAttribute="trailing" constant="30" id="Dzv-M0-ZTJ"/>
                             <constraint firstItem="g9C-H4-1yV" firstAttribute="centerY" secondItem="Z2g-4m-atm" secondAttribute="centerY" id="EDX-XO-Oxg"/>
                             <constraint firstItem="fJN-e8-gGs" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="KwO-vJ-26d"/>
+                            <constraint firstItem="fJN-e8-gGs" firstAttribute="leading" secondItem="Z2g-4m-atm" secondAttribute="leading" constant="30" id="VXs-AI-fAa"/>
                             <constraint firstItem="g9C-H4-1yV" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="hGI-US-73B"/>
-                            <constraint firstItem="fJN-e8-gGs" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" constant="80" id="iUF-ah-pcG"/>
+                            <constraint firstItem="fJN-e8-gGs" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" constant="100" id="iUF-ah-pcG"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="bottom" secondItem="MpR-W1-udN" secondAttribute="bottom" constant="20" id="iqx-u2-nPl"/>
+                            <constraint firstItem="MpR-W1-udN" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="yda-05-zUV"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="startColor">
