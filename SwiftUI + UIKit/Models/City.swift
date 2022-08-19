@@ -586,4 +586,18 @@ public enum City: CaseIterable {
             return baseUrl + "41/yoshkar-ola/?ll=47.842594%2C56.645599&z=15"
         }
     }
+
+    var nearestObjects: [NearestObjectsModel] {
+        switch self {
+        case .kazan:
+            return [
+                .init(objectName: "Альметьевск", imagePath: "almetyevsk"),
+                .init(objectName: "Зеленодольск", imagePath: "zelenodolsk"),
+                .init(objectName: "Мамадыш", imagePath: "mamadysh"),
+                .init(objectName: "Набережные Челны", imagePath: "chelny")
+            ]
+        default:
+            return []
+        }
+    }
 }

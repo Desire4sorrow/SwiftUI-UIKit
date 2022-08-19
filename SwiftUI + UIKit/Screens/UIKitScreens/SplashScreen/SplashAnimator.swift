@@ -86,7 +86,7 @@ final class SplashAnimator: SplashAnimatorDescription {
             addRotationAnimation(to: layer, duration: 0.6)
         }
 
-        UIView.animate(withDuration: 0.1, delay: 0.1, options: [], animations: {
+        UIView.animate(withDuration: 1, delay: 0.1, options: [], animations: {
             maskBackgroundView.alpha = 0
         }) { _ in
             maskBackgroundView.removeFromSuperview()

@@ -74,6 +74,17 @@ struct CityDescriptionView: View {
             .shadow(radius: 3)
     }
 
+    var otherObjectsButton: some View {
+        NavigationLink("Просмотреть другие объекты рядом") {
+            NearestObjectsView(city: currentCity)
+        }
+        .padding()
+        .background(Color.guidePurpleWithLowOpacity)
+        .foregroundColor(.white)
+        .cornerRadius(8)
+        .shadow(radius: 3)
+    }
+
     init(currentCity: City) {
         self.currentCity = currentCity
     }
@@ -91,6 +102,7 @@ struct CityDescriptionView: View {
                 .shadow(radius: 3)
             objectsButton
             mapsButton
+            otherObjectsButton
         }
     }
 
@@ -99,23 +111,11 @@ struct CityDescriptionView: View {
             ScrollView {
                 cityView
                     .onLoad {
-                        region = MKCoordinateRegion(
-                            center: CLLocationCoordinate2D(
-                                latitude: currentCity.latitude,
-                                longitude: currentCity.longitude
-                            ),
-                            span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
-                        )
+                        updateCurrentRegion()
                     }
                     .onAppear {
                         withAnimation {
-                            region = MKCoordinateRegion(
-                                center: CLLocationCoordinate2D(
-                                    latitude: currentCity.latitude,
-                                    longitude: currentCity.longitude
-                                ),
-                                span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
-                            )
+                            updateCurrentRegion()
                         }
                     }
                     .padding()
@@ -127,6 +127,16 @@ struct CityDescriptionView: View {
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .navigationViewStyle(.stack)
+    }
+
+    func updateCurrentRegion() {
+        region = MKCoordinateRegion(
+            center: CLLocationCoordinate2D(
+                latitude: currentCity.latitude,
+                longitude: currentCity.longitude
+            ),
+            span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
+        )
     }
 
     func actionSheet() {
