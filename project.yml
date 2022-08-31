@@ -1,0 +1,80 @@
+name: City Guide
+configs:
+    Release: release
+    Debug: debug
+packages:
+  Promises:
+    url: https://github.com/google/promises
+    majorVersion: 2.0.0
+  ORCommonUI-Swift:
+    url: https://github.com/Omega-R/ORCommonUI-Swift
+    majorVersion: 6.0.0
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk.git
+    majorVersion: 8.15.0
+  Swinject:
+    url: https://github.com/Swinject/Swinject
+    majorVersion: 2.0.0
+  SwinjectAutoregistration:
+    url: https://github.com/Swinject/SwinjectAutoregistration
+    majorVersion: 2.0.0
+  Introspect:
+    url: https://github.com/siteline/SwiftUI-Introspect.git
+    majorVersion: 0.1.4
+targets:
+  Novomet:
+    scheme:
+      environmentVariables:
+        OS_ACTIVITY_MODE: disable
+    type: application
+    platform: iOS
+    deploymentTarget: "12.0"
+    sources:
+      - path: Novomet
+    dependencies:
+      - package: Firebase
+        product: FirebaseMessaging
+      - package: SnapKit
+      - package: Promises
+      - package: ORCommonCode-Swift
+      - package: ORCommonUI-Swift
+      - package: PhoneNumberKit
+      - package: PanModal
+      - package: Kingfisher
+      - package: SideMenu
+      - package: LifetimeTracker
+      - package: Common
+      - package: Domain
+      - package: Assembler
+      - package: AppConfig
+    settings:
+      base:
+        TARGETED_DEVICE_FAMILY: 1
+        ENABLE_BITCODE: false
+        PRODUCT_BUNDLE_IDENTIFIER: com.omega-r.novomet
+        DEVELOPMENT_TEAM: NWAXZVJAA5
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_ENTITLEMENTS: Novomet/Novomet.entitlements
+      configs:
+        Debug:
+          CODE_SIGN_IDENTITY: Apple Development
+          PROVISIONING_PROFILE_SPECIFIER: "Dev: Novomet"
+        Release:
+          CODE_SIGN_IDENTITY: iPhone Distribution
+          PROVISIONING_PROFILE_SPECIFIER: "AppStore: Novomet"
+    postCompileScripts:
+      - script: |
+                if which swiftlint >/dev/null; then
+                    swiftlint
+                else
+                    echo "error SwiftLint does not exist, download it from https://github.com/realm/SwiftLint"
+                fi
+                if which swiftformat >/dev/null; then
+                    swiftformat .
+                else
+                    echo "warning SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat"
+                fi
+        name: Run SwiftFormatters
+      
+        
+

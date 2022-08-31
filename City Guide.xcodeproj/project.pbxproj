@@ -90,6 +90,7 @@
 		9C5C4ECE285A207A008C69F2 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5C4ECD285A207A008C69F2 /* CityViewModel.swift */; };
 		9C658DFA28647D730023DAB0 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C658DF928647D730023DAB0 /* Object.swift */; };
 		9C723D06285B228500B2D09E /* CityDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C723D05285B228500B2D09E /* CityDescriptionView.swift */; };
+		9C854FD728BF3CFA001C8E1C /* CustomScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C854FD628BF3CFA001C8E1C /* CustomScaleView.swift */; };
 		9C91BA97286AD4B400D3C5B7 /* CityImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BA96286AD4B400D3C5B7 /* CityImageView.swift */; };
 		9C91BA99286AF87900D3C5B7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C91BA98286AF87900D3C5B7 /* Colors.xcassets */; };
 		9C91BA9C286AF91E00D3C5B7 /* Color .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91BA9B286AF91E00D3C5B7 /* Color .swift */; };
@@ -218,6 +219,7 @@
 		9C5C4ECD285A207A008C69F2 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		9C658DF928647D730023DAB0 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		9C723D05285B228500B2D09E /* CityDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDescriptionView.swift; sourceTree = "<group>"; };
+		9C854FD628BF3CFA001C8E1C /* CustomScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScaleView.swift; sourceTree = "<group>"; };
 		9C91BA96286AD4B400D3C5B7 /* CityImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityImageView.swift; sourceTree = "<group>"; };
 		9C91BA98286AF87900D3C5B7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		9C91BA9B286AF91E00D3C5B7 /* Color .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color .swift"; sourceTree = "<group>"; };
@@ -616,6 +618,7 @@
 				9C723D05285B228500B2D09E /* CityDescriptionView.swift */,
 				9C28D98628AF69E300FEB504 /* NearestObjectsView.swift */,
 				9C28D98828AF7CBF00FEB504 /* ObjectCardView.swift */,
+				9C854FD628BF3CFA001C8E1C /* CustomScaleView.swift */,
 			);
 			path = CityDescription;
 			sourceTree = "<group>";
@@ -905,6 +908,7 @@
 				9C3EF7B828903A6900AE1705 /* CitiesApiService.swift in Sources */,
 				9C3EF78F288FD41300AE1705 /* SheetView.swift in Sources */,
 				9C3EF7AA2890385E00AE1705 /* MainAssembler.swift in Sources */,
+				9C854FD728BF3CFA001C8E1C /* CustomScaleView.swift in Sources */,
 				9C0D5CA62869E7A90048C06F /* CityButtonInfoView.swift in Sources */,
 				9C1B7002288831B5005045F7 /* LoginRouter.swift in Sources */,
 				9C91BAB5286D874B00D3C5B7 /* Image.swift in Sources */,

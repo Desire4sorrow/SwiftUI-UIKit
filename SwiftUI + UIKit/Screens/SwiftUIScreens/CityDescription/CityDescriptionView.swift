@@ -84,6 +84,17 @@ struct CityDescriptionView: View {
         .cornerRadius(8)
         .shadow(radius: 3)
     }
+    
+    var customScaleButton: some View {
+        NavigationLink("Test") {
+            CustomScaleView()
+        }
+        .padding()
+        .background(Color.guidePurpleWithLowOpacity)
+        .foregroundColor(.white)
+        .cornerRadius(8)
+        .shadow(radius: 3)
+    }
 
     init(currentCity: City) {
         self.currentCity = currentCity
@@ -103,6 +114,7 @@ struct CityDescriptionView: View {
             objectsButton
             mapsButton
             otherObjectsButton
+            customScaleButton
         }
     }
 
